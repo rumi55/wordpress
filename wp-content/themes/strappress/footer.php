@@ -98,20 +98,7 @@
          
          <?php if(of_get_option('scroll_arrow', '1')) {?>
         <div class="span2 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'responsive' ); ?>"><?php _e( '<i class="icon-chevron-up"></i>', 'responsive' ); ?></a></div>
-        <?php } ?> 
-
-        <div class="span5 powered">
-           <?php
-                $powered_text = of_get_option('powered_text');
-                  if ($powered_text){ ?> 
-                <?php echo $powered_text ?>
-                <?php } else { ?>
-               <a href="<?php echo esc_url(__('http://strappress.com','responsive')); ?>" title="<?php esc_attr_e('StrapPress', 'responsive'); ?>">
-                    <?php printf('StrapPress'); ?></a>
-            developed by <a href="<?php echo esc_url(__('http://bragthemes','responsive')); ?>" title="<?php esc_attr_e('Brag Themes', 'responsive'); ?>">
-                    <?php printf('Brag Themes'); ?></a>
-              <?php } ?>    
-        </div><!-- end .powered -->
+        <?php } ?>        
       </div>
         
     </div><!-- end of col-940 -->
