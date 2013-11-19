@@ -17,14 +17,17 @@
         <div class="row-fluid">
         <div class="span4">
             <img class="picto_home" src="wp-content/themes/strappress/images/cash.png"/>            
+            <p class="p_home">Consulter nos tarifs</p>
         </div><!-- end of .span4 -->
 
         <div class="span4">
             <img class="picto_home" src="wp-content/themes/strappress/images/profes.png"/>
+            <p class="p_home">Offres professionnelles</p>
         </div><!-- end of .span4 -->
 
         <div class="span4">
             <img class="picto_home" src="wp-content/themes/strappress/images/tele.png"/>
-        </div><!-- end of .span4 -->
+            <p class="p_home">Vu à la télé</p>
+       </div><!-- end of .span4 -->
         </div>
     </div><!-- end of #widgets -->

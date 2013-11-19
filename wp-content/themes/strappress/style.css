@@ -1416,7 +1416,6 @@ form div {
 -------------------------------------------------------------- */
 .footer-menu {
 	margin-left:0;
-	padding:0 0 30px 0;
 }
 
 .footer-menu li {
@@ -1800,6 +1799,7 @@ img.wp-post-image, img.attachment-thumbnail, img.attachment-medium, img.attachme
 
 #footer a {
 	font-weight:400;
+	font-size: 15px;
 }
 
 #footer a:hover {
@@ -2222,4 +2222,8 @@ BDO[DIR="rtl"] {
 
 .picto_home {
 	margin-left: 35%;
+}
+
+.p_home {
+	text-align: center;
 }
