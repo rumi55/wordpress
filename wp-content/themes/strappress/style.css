@@ -515,7 +515,7 @@ form div {
 
 #wrapper {
 	clear:both;
-	margin: 40px auto 20px auto;
+	margin: 80px auto 20px auto;
 	padding: 0 0 20px 0;
 	position:relative;
 }
@@ -523,7 +523,7 @@ form div {
 .home #wrapper {
 	background-color:transparent;
 	border:none;
-	margin: 0 auto 20px auto;
+	margin: 40px auto 20px auto;
 	padding:0;	
 }
 
