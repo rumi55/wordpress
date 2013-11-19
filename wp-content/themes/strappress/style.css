@@ -27,6 +27,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size:100%;
 	font:inherit;
 	vertical-align:baseline;
+	font-family: 'volkswagen-mediumregular';
 }
 
 /*HTML5 display-role reset for older browsers */
@@ -36,6 +37,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
 	line-height:1;
+}
+
+@font-face {
+    font-family: 'volkswagen-mediumregular';
+    src: url('css/volkswagen-medium.eot');
+    src: url('css/volkswagen-medium.eot?#iefix') format('embedded-opentype'),
+         url('css/volkswagen-medium.woff') format('woff'),
+         url('css/volkswagen-medium.ttf') format('truetype'),
+         url('css/volkswagen-medium.svg#volkswagen-mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 ol, ul {
@@ -120,12 +133,11 @@ body {
 
 	background-repeat: repeat-x;
 	-webkit-font-smoothing:antialiased;
-	color:#404040;
-	font-family: "Arimo", Helvetica, Arial, sans-serif;
+	color:white;
 	font-size:14px;
 	line-height:1.5em;
 	text-rendering:optimizeLegibility;
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 	height: 100%;
 }
 
