@@ -7,7 +7,7 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-.clearfix {
+ .clearfix {
   *zoom: 1;
 }
 .clearfix:before,
@@ -3002,7 +3002,6 @@ input[type="submit"].btn.btn-mini {
   padding: 10px 15px 10px;
   color: #777777;
   text-decoration: none;
-  text-shadow: 0 1px 0 #ffffff;
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
@@ -3156,14 +3155,15 @@ input[type="submit"].btn.btn-mini {
   color: #999999;
 }
 .navbar-inverse .navbar-inner {
+  background: rgba(215, 40, 40, .3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
 }
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  color: black;
+  color: white;
   font-size: 20px;
-  }
+}
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover {
   color: #ffffff;
@@ -3700,7 +3700,7 @@ a.thumbnail:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-/*  background-color: #eeeeee;*/  
+  /*  background-color: #eeeeee;*/  
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
