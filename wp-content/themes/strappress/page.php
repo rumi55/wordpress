@@ -16,7 +16,7 @@
 <?php get_header(); ?>
 
     <div class="row-fluid">
-        <div class="span9">
+        <div class="span12">
             <div id="content">
 
 <?php if (have_posts()) : ?>
