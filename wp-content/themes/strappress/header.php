@@ -23,9 +23,18 @@
 <meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Save my Smartphone - Réparation de smartphone et tablette tactile a Paris et alentours</title>
+<meta content="Save my Smartphone,smartphone, save, réparation,smartphone,smartphones,réparation tablette, réparation tablette tactile, écran cassé, iphone, iphone 4,écran cassé iphone, galaxy S3,réparation galaxy S3, vitre cassé, vitre cassée iphone, batterie iphone, iphone 5,changement batterie iPhone,remplacement écran,ipad,réparation vitre ipad, réparation pas chère,bouton home,réparation bouton home,face arrière iphone,samsung galaxy S4,réparation S4,apple iphone,téléphone portable, réparation téléphone,écran fissuré iphone" name="keywords">
+<meta content="Save my Smarpthone " name="Author">
+<meta content="réparation smartphone et tablette tactile" name="description">
+<meta value="index,follow" name="Robots">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 
-<title><?php wp_title('&#124;', true, 'right'); ?><?php bloginfo('name'); ?></title>
-
+<!-- <title><?php wp_title('&#124;', true, 'right'); ?><?php bloginfo('name'); ?></title> -->
+<link href="wp-content/themes/strappress/images/favicon.ico" rel="shortcut icon">
+<link href="wp-content/themes/strappress/images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="wp-content/themes/strappress/images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
+<link href="wp-content/themes/strappress/images/apple-touch-icon-114x114.png" sizes="114x114" rel="apple-touch-icon">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
