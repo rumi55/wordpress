@@ -91,6 +91,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <div class="cloud-container">
                  
 <?php responsive_container(); // before container hook ?>
 
