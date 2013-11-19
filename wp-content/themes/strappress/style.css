@@ -898,7 +898,6 @@ form div {
 }
 
 .home #widgets {
-	background-color:#FFFFFF;
 }
 
 #widgets a {
@@ -2207,4 +2206,8 @@ BDO[DIR="rtl"] {
 
 #portfolio-list .thumb{
 	margin:0 0 5px 0;
+}
+
+.picto_home {
+	margin-left: 35%;
 }

@@ -16,15 +16,15 @@
     <div id="widgets" class="home-widgets">
         <div class="row-fluid">
         <div class="span4">
-            <img src="wp-content/themes/strappress/images/cash.png"/>            
+            <img class="picto_home" src="wp-content/themes/strappress/images/cash.png"/>            
         </div><!-- end of .span4 -->
 
         <div class="span4">
-            <img src="wp-content/themes/strappress/images/profes.png"/>
+            <img class="picto_home" src="wp-content/themes/strappress/images/profes.png"/>
         </div><!-- end of .span4 -->
 
         <div class="span4">
-            <img src="wp-content/themes/strappress/images/tele.png"/>
+            <img class="picto_home" src="wp-content/themes/strappress/images/tele.png"/>
         </div><!-- end of .span4 -->
         </div>
     </div><!-- end of #widgets -->

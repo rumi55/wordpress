@@ -72,12 +72,7 @@
                             ); ?>
                 </div><!-- end of .post-entry -->
                 
-                <?php if ( comments_open() ) : ?>
-                <div class="post-data">
-				    <?php the_tags(__('Tagged with:', 'responsive') . ' ', ', ', '<br />'); ?> 
-                    <?php the_category(__('Posted in %s', 'responsive') . ', '); ?> 
-                </div><!-- end of .post-data -->
-                <?php endif; ?>             
+                   
             
             <div class="post-edit"><?php edit_post_link(__('Edit', 'responsive')); ?></div> 
             </div><!-- end of #post-<?php the_ID(); ?> -->
