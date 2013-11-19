@@ -39,7 +39,7 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
-				
+		<div class="cloud-container">
 		<header role="banner">
 		
 			<div id="inner-header" class="clearfix">
