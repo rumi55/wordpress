@@ -487,7 +487,7 @@ form div {
 #footer {
 	clear:both;
 	padding:10px 0 0 0;
-	background-color: #222;
+	background-color: #cc051c;
 	background-image: -moz-linear-gradient(center top , #333, #222);
 	background-repeat: repeat-x;
 	box-shadow: 0 -4px 7px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
