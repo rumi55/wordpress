@@ -24,32 +24,32 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 
-			<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+  		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-			<!-- wordpress head functions -->
-			<?php wp_head(); ?>
-			<!-- end of wordpress head -->
+		<!-- wordpress head functions -->
+		<?php wp_head(); ?>
+		<!-- end of wordpress head -->
 
-			<!-- theme options from options panel -->
-			<?php get_wpbs_theme_options(); ?>
+		<!-- theme options from options panel -->
+		<?php get_wpbs_theme_options(); ?>
 
-			<!-- typeahead plugin - if top nav search bar enabled -->
-			<?php require_once('library/typeahead.php'); ?>
-
-		</head>
-
-		<body <?php body_class(); ?>>
-
-			<header role="banner">
-
-				<div id="inner-header" class="clearfix">
-
-					<div class="navbar navbar-fixed-top">
-						<div class="navbar-inner">
-							<div class="container-fluid nav-container">
-								<nav role="navigation">
-									<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
-										<?php if(of_get_option('branding_logo','')!='') { ?>
+		<!-- typeahead plugin - if top nav search bar enabled -->
+		<?php require_once('library/typeahead.php'); ?>
+				
+	</head>
+	
+	<body <?php body_class(); ?>>
+		<div class="cloud-container">
+		<header role="banner">
+		
+			<div id="inner-header" class="clearfix">
+				
+				<div class="navbar navbar-fixed-top">
+					<div class="navbar-inner">
+						<div class="container-fluid nav-container">
+							<nav role="navigation">
+								<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
+									<?php if(of_get_option('branding_logo','')!='') { ?>
 										<img src="<?php echo of_get_option('branding_logo'); ?>" alt="<?php echo get_bloginfo('description'); ?>">
 										<?php }
 										if(of_get_option('site_name','1')) bloginfo('name'); ?></a>

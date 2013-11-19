@@ -168,5 +168,6 @@ $responsive_options = responsive_get_options();
 <?php responsive_footer_after(); ?>
 
 <?php wp_footer(); ?>
+</div>
 </body>
 </html>
