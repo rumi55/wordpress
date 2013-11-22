@@ -20,275 +20,7 @@ Template Name: test
  */
 ?>
 <?php get_header(); ?>
-<div class="sixteen colums">
-	<div id="accordion-container">
 
-		<h2 class="accordion-header"><a href="reparations.php">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
-
-
-		<div class="accordion-content">
-
-			<?php
-			$sql = mysql_query("select * from  phone_company");
-			?>
-
-			<div class="phone_company">
-
-				<ul>
-
-					<?php
-					while ($result = mysql_fetch_array($sql))
-					{
-						echo '
-						<li>
-							<div class="company_logo">
-								<a href="models.php?pc_id='.$result["pc_id"].'">
-									<img src="admin2/'.$result["pc_image"].'"/>
-									<img class="overlay" src="admin2/'.$result["pc_hover_image"].'" alt="overlay" />
-								</a>
-							</div>
-						</li> ';
-					}
-					?>
-
-
-
-
-				</ul>
-
-			</div>
-
-			<div style="clear:both;"></div>
-		</div>
-
-
-
-		<h2 class="accordion-header second-header">Choisissez le modèle de votre smartphone ou tablette</h2>
-
-		<div class="accordion-content second-content">
-
-			<?php
-			$pc_id =  $_GET['pc_id'];
-
-			$_SESSION['pc_id'] = $pc_id;
-
-
-			$sql1 = mysql_query("select pc_image from  phone_company where pc_id = '".$pc_id."'");
-			$result1 = mysql_fetch_array($sql1);
-
-			$sql2 = mysql_query("select * from  phone_model where pc_id = '".$pc_id."'");
-			?>
-
-			<div class="brand_image_container">
-				<div class="brand_image">
-					<!-- <img src="images/brands/apple_hover.png" />-->
-					<?php 
-					echo '<img src="admin2/'.$result1["pc_image"].'" />';
-					?>
-				</div>
-			</div>
-
-			<div class="brand_phone_model_container">
-
-				<div class="brand_phone_model">
-					<div class="phone_model">
-
-						<ul>
-							
-							
-							<?php
-
-
-							
-							if(mysql_num_rows($sql)>0)
-							{
-								while ($result2 = mysql_fetch_array($sql2)) 
-								{
-									echo '<li>
-									<div class="model_image">   
-										
-										<a href="services.php?pm_id='.$result2["pm_id"].'"><img src="admin2/'.$result2["model_image"].'"/></a>
-										
-									</div>
-									
-									
-									
-								</li> ';
-							}
-						}
-						else
-						{  
-							echo "<h3>There are no phone models to list in this category.</h3>";
-						} 
-						?>
-						
-						
-					</ul>
-				</div>
-			</div>
-
-		</div>
-
-		<div style="clear:both;"></div>
-
-	</div>
-
-
-
-
-	<h2 class="accordion-header">Choisissez le type de réparation</h2>
-
-	<div class="accordion-content">
-
-		<div class="phone_service">
-
-			<div class="phone_service_left">
-				<div class="ps_image">
-					<img src="images/phone_model/ipad_retina.png">          
-				</div>
-			</div>
-
-
-			<div class="phone_service_right">
-				<div class="phone_service_box">
-
-					<ul>
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-						<li>
-							<div class="service-name">
-								<a href="#">écran cassé</a>
-							</div>  
-							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
-						</li>
-
-					</ul>
-
-				</div>
-			</div>
-
-		</div>
-
-		<div style="clear:both;"></div>
-	</div>
-
-
-
-	<h2 class="accordion-header">Nous faire parvenir votre appareil</h2>
-
-	<div class="accordion-content">
-
-		<div class="phone_service sub_service_container">
-
-			<div class="phone_service_left">
-				<div class="ps_image">
-					<img src="images/phone_model/ipad_retina.png">          
-				</div>
-			</div>
-
-
-			<div class="phone_service_right">
-				<div class="phone_service_box">
-
-
-					<div class="sub_service_box en_boutique_box">
-						<div class="service_details">
-							<span class="service_name">LCD + Vitre blanc</span>
-							<br/>
-							<span class="service_price">89,00 €</span>
-						</div>
-					</div>
-
-
-
-					<div class="sub_service_box par_courrier_box">
-						<div class="service_details">
-							<span class="service_name">LCD + Vitre blanc</span>
-							<br/>
-							<span class="service_price">89,00 €</span>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-
-		</div>
-
-		<div style="clear:both;"></div>
-
-	</div>
-
-</div>
-</div>
 <div class="row-fluid">
 	<div class="span">
 		<div id="content">
@@ -300,12 +32,12 @@ Template Name: test
 					<?php if(of_get_option('breadcrumbs', '1')) {?>
 					<?php echo responsive_breadcrumb_lists(); ?>
 					<?php } ?>
-					
+
 					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						
+
 						<div class="page-header">
 							<h1 class="page-title"><?php the_title(); ?></h1>
-							
+
 							<div class="post-entry">
 								<?php the_content(__('Read more &#8250;', 'responsive')); ?>
 								<?php custom_link_pages(array(
@@ -318,36 +50,320 @@ Template Name: test
                             'echo' => 1 )
                             ); ?>
                         </div><!-- end of .post-entry -->
-                        
-                        <?php if ( comments_open() ) : ?>
-                        	<div class="post-data">
-                        		<?php the_tags(__('Tagged with:', 'responsive') . ' ', ', ', '<br />'); ?> 
-                        		<?php the_category(__('Posted in %s', 'responsive') . ', '); ?> 
-                        	</div><!-- end of .post-data -->
-                        <?php endif; ?>             
-                        
-                    </div><!-- end of #post-<?php the_ID(); ?> -->
-                    
-                    <?php comments_template( '', true ); ?>
-                    
-                <?php endwhile; ?> 
-                
-                <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-                	<div class="navigation">
-                		<div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
-                		<div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
-                	</div><!-- end of .navigation -->
-                <?php endif; ?>
 
-            <?php else : ?>
+                        <div class="sixteen colums">
+                        	<div id="accordion-container">
 
-            	<h1 class="title-404"><?php _e('404 &#8212; Fancy meeting you here!', 'responsive'); ?></h1>
-            	<p><?php _e('Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here.', 'responsive'); ?></p>
-            	<h6><?php _e( 'You can return', 'responsive' ); ?> <a href="<?php echo home_url(); ?>/" title="<?php esc_attr_e( 'Home', 'responsive' ); ?>"><?php _e( '&#9166; Home', 'responsive' ); ?></a> <?php _e( 'or search for the page you were looking for', 'responsive' ); ?></h6>
-            	<?php get_search_form(); ?>
+                        		<h2 class="accordion-header"><a href="reparations.php">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
 
-            <?php endif; ?>  
-        </div><!-- end of #content -->
-    </div><!-- end of .span9 -->
 
-    <?php get_footer(); ?>
+                        		<div class="accordion-content">
+
+                        			<?php
+                        			$sql = mysql_query("select * from  phone_company");
+                        			?>
+
+                        			<div class="phone_company">
+
+                        				<ul>
+
+                        					<?php
+                        					while ($result = mysql_fetch_array($sql))
+                        					{
+                        						echo '
+                        						<li>
+                        							<div class="company_logo">
+                        								<a href="models.php?pc_id='.$result["pc_id"].'">
+                        									<img src="admin2/'.$result["pc_image"].'"/>
+                        									<img class="overlay" src="admin2/'.$result["pc_hover_image"].'" alt="overlay" />
+                        								</a>
+                        							</div>
+                        						</li> ';
+                        					}
+                        					?>
+
+
+
+
+                        				</ul>
+
+                        			</div>
+
+                        			<div style="clear:both;"></div>
+                        		</div>
+
+
+
+                        		<h2 class="accordion-header second-header">Choisissez le modèle de votre smartphone ou tablette</h2>
+
+                        		<div class="accordion-content second-content">
+
+                        			<?php
+                        			$pc_id =  $_GET['pc_id'];
+
+                        			$_SESSION['pc_id'] = $pc_id;
+
+
+                        			$sql1 = mysql_query("select pc_image from  phone_company where pc_id = '".$pc_id."'");
+                        			$result1 = mysql_fetch_array($sql1);
+
+                        			$sql2 = mysql_query("select * from  phone_model where pc_id = '".$pc_id."'");
+                        			?>
+
+                        			<div class="brand_image_container">
+                        				<div class="brand_image">
+                        					<!-- <img src="images/brands/apple_hover.png" />-->
+                        					<?php 
+                        					echo '<img src="admin2/'.$result1["pc_image"].'" />';
+                        					?>
+                        				</div>
+                        			</div>
+
+                        			<div class="brand_phone_model_container">
+
+                        				<div class="brand_phone_model">
+                        					<div class="phone_model">
+
+                        						<ul>
+
+
+                        							<?php
+
+
+
+                        							if(mysql_num_rows($sql)>0)
+                        							{
+                        								while ($result2 = mysql_fetch_array($sql2)) 
+                        								{
+                        									echo '<li>
+                        									<div class="model_image">   
+
+                        										<a href="services.php?pm_id='.$result2["pm_id"].'"><img src="admin2/'.$result2["model_image"].'"/></a>
+
+                        									</div>
+
+
+
+                        								</li> ';
+                        							}
+                        						}
+                        						else
+                        						{  
+                        							echo "<h3>There are no phone models to list in this category.</h3>";
+                        						} 
+                        						?>
+
+
+                        					</ul>
+                        				</div>
+                        			</div>
+
+                        		</div>
+
+                        		<div style="clear:both;"></div>
+
+                        	</div>
+
+
+
+
+                        	<h2 class="accordion-header">Choisissez le type de réparation</h2>
+
+                        	<div class="accordion-content">
+
+                        		<div class="phone_service">
+
+                        			<div class="phone_service_left">
+                        				<div class="ps_image">
+                        					<img src="images/phone_model/ipad_retina.png">          
+                        				</div>
+                        			</div>
+
+
+                        			<div class="phone_service_right">
+                        				<div class="phone_service_box">
+
+                        					<ul>
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        						<li>
+                        							<div class="service-name">
+                        								<a href="#">écran cassé</a>
+                        							</div>  
+                        							<div class="service-price"><span>à partir de</span> 219,00 €</div>  
+                        						</li>
+
+                        					</ul>
+
+                        				</div>
+                        			</div>
+
+                        		</div>
+
+                        		<div style="clear:both;"></div>
+                        	</div>
+
+
+
+                        	<h2 class="accordion-header">Nous faire parvenir votre appareil</h2>
+
+                        	<div class="accordion-content">
+
+                        		<div class="phone_service sub_service_container">
+
+                        			<div class="phone_service_left">
+                        				<div class="ps_image">
+                        					<img src="images/phone_model/ipad_retina.png">          
+                        				</div>
+                        			</div>
+
+
+                        			<div class="phone_service_right">
+                        				<div class="phone_service_box">
+
+
+                        					<div class="sub_service_box en_boutique_box">
+                        						<div class="service_details">
+                        							<span class="service_name">LCD + Vitre blanc</span>
+                        							<br/>
+                        							<span class="service_price">89,00 €</span>
+                        						</div>
+                        					</div>
+
+
+
+                        					<div class="sub_service_box par_courrier_box">
+                        						<div class="service_details">
+                        							<span class="service_name">LCD + Vitre blanc</span>
+                        							<br/>
+                        							<span class="service_price">89,00 €</span>
+                        						</div>
+                        					</div>
+
+
+                        				</div>
+                        			</div>
+
+                        		</div>
+
+                        		<div style="clear:both;"></div>
+
+                        	</div>
+
+                        </div>
+                        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+                        <script type="text/javascript">
+                        	$(document).ready(function()
+                        	{
+								//Add Inactive Class To All Accordion Headers
+								$('.accordion-header').addClass('inactive-header');
+
+
+								//Open The First Accordion Section When Page Loads
+								$('.second-header').addClass('active-header').removeClass('inactive-header');
+								$('.second-content').slideDown().addClass('open-content');
+								
+							});   
+							                        </script>
+                    </div>
+
+                    <?php if ( comments_open() ) : ?>
+                    	<div class="post-data">
+                    		<?php the_tags(__('Tagged with:', 'responsive') . ' ', ', ', '<br />'); ?> 
+                    		<?php the_category(__('Posted in %s', 'responsive') . ', '); ?> 
+                    	</div><!-- end of .post-data -->
+                    <?php endif; ?>             
+
+                </div><!-- end of #post-<?php the_ID(); ?> -->
+
+                <?php comments_template( '', true ); ?>
+
+            <?php endwhile; ?> 
+
+            <?php if (  $wp_query->max_num_pages > 1 ) : ?>
+            	<div class="navigation">
+            		<div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
+            		<div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
+            	</div><!-- end of .navigation -->
+            <?php endif; ?>
+
+        <?php else : ?>
+
+        	<h1 class="title-404"><?php _e('404 &#8212; Fancy meeting you here!', 'responsive'); ?></h1>
+        	<p><?php _e('Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here.', 'responsive'); ?></p>
+        	<h6><?php _e( 'You can return', 'responsive' ); ?> <a href="<?php echo home_url(); ?>/" title="<?php esc_attr_e( 'Home', 'responsive' ); ?>"><?php _e( '&#9166; Home', 'responsive' ); ?></a> <?php _e( 'or search for the page you were looking for', 'responsive' ); ?></h6>
+        	<?php get_search_form(); ?>
+
+        <?php endif; ?>  
+    </div><!-- end of #content -->
+</div><!-- end of .span9 -->
+
+<?php get_footer(); ?>

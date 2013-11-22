@@ -20,9 +20,8 @@
         <div id="content-full">
             <div id="post-0" class="error404">
                 <div class="post-entry">
-                    <h1 class="title-404"><?php _e('404 &#8212; Whoopsie!', 'responsive'); ?></h1>
-                    <p><?php _e('Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here.', 'responsive'); ?></p>
-                    <h6><?php _e( 'You can return', 'responsive' ); ?> <a href="<?php echo home_url(); ?>/" title="<?php esc_attr_e( 'Home', 'responsive' ); ?>"><?php _e( '&larr; Home', 'responsive' ); ?></a> <?php _e( 'or search for the page you were looking for', 'responsive' ); ?></h6>
+                    <h1 class="title-404"><?php _e('404 &#8212; OUUUUUPS!', 'responsive'); ?></h1>
+                    <p><?php _e('Page introuvable', 'responsive'); ?></p>
                     <?php get_search_form(); ?>
                 </div><!-- end of .post-entry -->
             </div><!-- end of #post-0 -->
