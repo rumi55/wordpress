@@ -96,6 +96,10 @@
                 </style>';
             }
         ?>  
+        <!--<link rel="stylesheet" type="text/css" href="../wp-content/themes/strappress/css/old-site/base.css">-->
+        <link rel="stylesheet" type="text/css" href="../wp-content/themes/strappress/css/old-site/layout.css">
+        <!--<link rel="stylesheet" type="text/css" href="../wp-content/themes/strappress/css/old-site/skeleton.css">-->
+
 
 </head>
 
@@ -143,8 +147,7 @@
                     'theme_location' => 'top-bar',
                     'depth'      => 2,
                     'container'  => false,
-                    'menu_class'     => 'nav',
-                    'walker'     => new Bootstrap_Walker_Nav_Menu()
+                    'menu_class'     => 'nav'                  
                 );
 
                 wp_nav_menu($args);

@@ -1,0 +1,922 @@
+
+.logo {
+  width: 25%;
+  float: left;
+}
+nav ul {
+  margin-top: 5%;
+  background: url(../img/nav-bg.png) repeat-x;
+  height: 32px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+nav ul li {
+  display: block;
+  float: left;
+  height: 32px;
+  padding-left: 3%;
+  padding-right: 1.9%;
+  line-height: 205%;
+  color: #fff;
+  font-weight: bold;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: 'Volkswagen-Medium';
+ 
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Volkswagen-Medium';
+}
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:visited {
+  color: #fff;
+}
+nav ul li:hover {
+  background: #a10113;
+  -webkit-box-shadow: 0 0 5px #000 inset;
+  -moz-box-shadow: 0 0 5px #000 inset;
+  -o-box-shadow: 0 0 5px #000 inset;
+  box-shadow: 0 0 5px #000 inset;
+}
+nav ul li:hover:nth-child(1) {
+  -moz-border-radius-topleft: 15px;
+  -webkit-border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+nav ul li:hover:nth-child(6) {
+  -moz-border-radius-toprright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width:117px;
+}
+
+nav ul li:nth-child(1) {
+  border: 0px;
+}
+nav ul li:nth-child(1).active {
+  background: #a10113;
+  -webkit-box-shadow: 0 0 5px #000 inset;
+  -moz-box-shadow: 0 0 5px #000 inset;
+  -o-box-shadow: 0 0 5px #000 inset;
+  box-shadow: 0 0 5px #000 inset;
+  -moz-border-radius-topleft: 15px;
+  -webkit-border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+nav ul li:nth-child(6).active {
+  -moz-border-radius-toprright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width:117px;
+}
+nav ul li.active {
+  background: #a10113;
+  -webkit-box-shadow: 0 0 5px #000 inset;
+  -moz-box-shadow: 0 0 5px #000 inset;
+  -o-box-shadow: 0 0 5px #000 inset;
+  box-shadow: 0 0 5px #000 inset;
+
+}
+.mob-menu {
+  display: none;
+  width: 100%;
+  height: 30px;
+  color: #f90001;
+  font-weight: bold;
+  font-family: 'Volkswagen-Medium';
+}
+.big img {
+  width: 100%;
+}
+.introtxt {
+  font-family: 'Volkswagen-Medium';
+  font-weight: 700;
+  font-size: 250%;
+  text-transform: uppercase;
+  color: #f90001;
+  margin-left: 4%;
+  padding: 5%;
+}
+.introtxt p {
+  text-align: center;
+  padding: 2%;
+}
+span.title {
+  display: block;
+  margin: 0 auto 0;
+  background-position: center center;
+  text-align: center;
+  color: #f90001;
+  margin-bottom: 2%;
+  font-weight: bold;
+  line-height: 145%;
+  font-size: 140%;
+  font-family: 'Volkswagen-Medium';
+}
+.box {
+  width: 80%;
+  height: 60%;
+  margin: 3% auto 0;
+  -webkit-border-radius: 15px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  padding: 3%;
+}
+
+.box a{
+	text-decoration: none;
+}
+.box p {
+  color: #f90001;
+  display: block;
+  text-align: center;
+  font-family: 'Volkswagen-Medium';
+}
+.box img {
+  display: block;
+  margin: 0 auto 1%;
+}
+.bigbox {
+  width: 95%;
+  height: 60%;
+  margin: 3% auto 0;
+  -webkit-border-radius: 15px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+ul.accessoires {
+  margin-bottom: 16%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul.accessoires li {
+  display: block;
+  float: left;
+  width: 90px;
+  height: 100px;
+  background: #ccc;
+  overflow: hidden;
+  margin-left: 5%;
+}
+ul{
+	margin-bottom: 0;
+}
+ul.footermenu{
+	width:960px;
+	margin: 0 auto 0;
+}
+ul.footermenu li {
+  display: block;
+  float: left;
+  margin-left: 3%;
+  color: #fff;
+  margin-top: 10px;
+  font-family: 'Volkswagen-Medium';
+}
+ul.footermenu li a {
+  color: #fff;
+  text-decoration: none;
+}
+ul.footermenu li a:hover {
+  text-decoration: underline;
+}
+ul.footermenu li.active {
+  text-decoration: underline;
+}
+ul.footermenu li:last-child {
+  float: right;
+}
+footer {
+  background: #cc051c;
+  width:100%;
+  margin-top: 5%;
+  overflow: hidden;
+  clear: both;
+  position:relative;
+  bottom:0; 
+  margin: 0 auto;
+}
+
+
+.footer2 {
+  background: #cc051c;
+  width:100%;
+  margin-top: 5%;
+  overflow: hidden;
+  clear: both;
+  position:absolute;
+  bottom:0; 
+  
+}
+
+  
+/*
+  position:absolute;
+  bottom:0;
+*/
+}
+
+/* contact page */
+.map {
+  -moz-box-shadow: 1px 6px 10px -5px #000000;
+  -webkit-box-shadow: 1px 6px 10px -5px #000000;
+  box-shadow: 1px 6px 10px -5px #000000;
+  height: 232px;
+  background: #fff;
+  background: url(../img/loading.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.shop_img {
+  -moz-box-shadow: -1px 0 10px 0 #000000;
+  -webkit-box-shadow: -1px 0 10px 0 #000000;
+  box-shadow: -1px 0 10px 0 #000000;
+  float: left;
+  margin-right: 11px;
+}
+address {
+ 
+}
+address p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Volkswagen-Medium';
+}
+.contact-title {
+  font-size: 140%;
+  font-family: 'Volkswagen-Medium';
+  font-weight: bold;
+  color: #f90001;
+}
+.contact input[type="text"] {
+  width: 90%;
+  padding: 2%;
+  background-image: -webkit-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -moz-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -ms-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -o-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: linear-gradient(top, #ffffff, #e1e1e1);
+  font-family: 'Volkswagen-Medium';
+}
+.contact textarea {
+  width: 90%;
+  height: 160px;
+  padding: 2%;
+  resize: none;
+  background-image: -webkit-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -moz-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -ms-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -o-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: linear-gradient(top, #ffffff, #e1e1e1);
+  font-family: 'Volkswagen-Medium';
+}
+.contact input[type="submit"] {
+  width: 40%;
+  border: none;
+  background: url(../img/nav-bg.png) repeat-x;
+  text-shadow: none;
+  color: #fff;
+  font-family: 'Volkswagen-Medium';
+}
+.shop-img {
+  background: #cc051c;
+  margin-top: 20px;
+  padding: 2%;
+  width: 100%;
+  overflow: hidden;
+}
+.shop-img span {
+  background: #fff;
+  display: block;
+  font-size: 120%;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.shop-img span p {
+  margin: 0 2% 2% 2%;
+  padding: 0;
+  font-size: 80%;
+  font-family: 'Volkswagen-Medium';
+}
+span.addresse p {
+  padding: 0;
+  margin: 0 2% 0 2%;
+  font-family: 'Volkswagen-Medium';
+}
+.mentionlegales a {
+  text-decoration: none;
+  color: #f90001;
+  font-family: 'Volkswagen-Medium';
+}
+p.descp,
+p {
+  padding: 0;
+  margin: 0;
+  font-family: 'Volkswagen-Medium';
+}
+.content { 
+	display:none;
+	margin: 5px;
+	font-size: 105%;
+	font-family: 'Volkswagen-Medium';
+}
+#improved li {
+	position:relative;
+	overflow:hidden;
+	display: block;
+	font-family: 'Volkswagen-Medium';
+}
+#improved li:before{
+	content: "[+]";
+	color: #f90001;
+}
+#improved li a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+a.anil img{
+	-webkit-transition: all .5s;
+}
+
+a.anil:hover img{
+	opacity: .4;
+}
+
+
+
+#accordion-container {
+    margin-bottom: 35px;
+    margin-top: 35px;
+	position:relative;
+}
+/* Accordion Start */
+
+
+#accordion-container 
+{
+	margin-top: 25px;
+	margin-bottom:35px;
+}
+
+.accordion-header 
+{ font-size: 15px;
+	background-color:#DA021A;
+	margin: 0px 0 0 0;
+	padding: 5px 60px;
+	cursor: auto;
+	border-top:1px solid #a00d1d;
+	border-bottom:1px solid #a00d1d;
+	letter-spacing:1.2px;
+	font-family: 'Volkswagen-Medium';
+	color: #fff;
+}
+
+.accordion-header a
+{ 
+	text-decoration:none;
+	color: #fff;  	
+}
+
+.active-header 
+{
+	background: url(../images/active-header.png) #DA021A;
+	background-repeat: no-repeat;
+	background-position: 15px 50%;
+}
+
+.active-header:hover 
+{
+	background: url(../images/active-header.png) #DA021A;
+	background-repeat: no-repeat;
+	background-position: 15px 50%;
+}
+
+.inactive-header 
+{
+	background: url(../images/inactive-header.png) #DA021A;
+	background-repeat: no-repeat;
+	background-position: 15px 50%;
+}
+
+.inactive-header:hover 
+{
+	background: url(../images/inactive-header.png) #DA021A;
+	background-repeat: no-repeat;
+	background-position: 15px 50%;
+}
+.accordion-content 
+{
+	display: none;
+	padding: 20px 10px;
+	background: url(../images/tab_bg.png) repeat 0 0 transparent;
+	color:#fff;
+}
+
+/* Accordion End */
+
+.phone_company
+{
+	display:block;
+	width:100%;
+}
+
+
+.phone_company ul 
+{
+    list-style: none outside none;
+}
+
+.phone_company ul li 
+{
+    float: left;
+    position: relative;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+
+.phone_company ul li img{
+	width: 100%;
+}
+
+.phone_company ul li div.company_logo 
+{
+    overflow: hidden;
+	height:135px;
+}
+
+.phone_company ul li div.company_logo img 
+{
+
+}
+
+.overlay 
+{ 
+	display: none; 
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+	overflow: hidden;
+}
+
+.phone_company ul li div.company_logo:hover .overlay 
+{
+	 display: block; 
+	 text-align:center;
+}
+
+.brand_image_container {
+    float: left;  margin-top: 10px;
+    position: relative;
+    width: 170px;
+}
+
+.brand_image
+{
+	text-align:left;	
+}
+
+.brand_phone_model_container
+{
+	float:right;
+	position:relative;
+	width:80%;	
+}
+.brand_phone_model_container{
+	width:100%;
+}
+
+
+.phone_model ul 
+{
+    list-style: none outside none;
+}
+
+.phone_model ul li 
+{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 11px;
+	position:relative;
+}
+
+.phone_model ul li div.model_image 
+{
+    display: block;
+	padding-bottom:20px;
+	position:relative;
+}
+
+.phone_model ul li div.model_image img 
+{
+    width: auto;
+	height:170px;
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+
+  /* Netscape */
+  -moz-opacity: 0.5;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+
+  /* Good browsers */
+  opacity: 0.5;
+}
+
+.phone_model ul li div.model_image img:hover
+{
+	
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=100);
+
+  /* Netscape */
+  -moz-opacity: 1;
+
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+
+  /* Good browsers */
+  opacity: 1;
+  position:relative;
+  top:-10px;
+  left:0px;
+}
+.phone_model ul li div.model_image:hover
+{
+	background:url(../images/phone_model/shadow.png) no-repeat center bottom transparent;
+	opacity:1;
+}
+
+.phone_service {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.phone_service_left {
+    float: left;
+    position: relative;
+    width: 250px;
+	margin-left:40px;
+	text-align:left;
+}
+
+.phone_service_left2 {
+    float: left;
+    position: relative;
+    width: 200px;
+	margin-left:10px;
+	text-align:left;
+}
+
+.phone_service_right {
+    float: left;
+    position: relative;
+    width: 88%;;
+	margin-left:140px;
+	
+}
+
+.phone_service_right2 {
+    float: left;
+    position: relative;
+    width: 67%;
+	margin-left:90px;
+	
+}
+
+.phone_service_box
+{
+	position:relative;	
+}
+
+.phone_service_box ul {
+    list-style: none outside none;
+}
+
+.phone_service_box ul li {
+    border-bottom: 1px solid #FFFFFF;
+    float: left;
+    font-family: 'Volkswagen-Medium';
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.phone_service_box ul li .service-name 
+{
+    float: left;
+}
+
+.phone_service_box ul li .service-name a 
+{
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.phone_service_box ul li .service-price 
+{
+    color: #FFFFFF;
+    float: right;
+    font-size: 18px;
+}
+
+.phone_service_box ul li .service-price span 
+{
+    color: #000000;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.phone_service_box ul li:hover .service-name a 
+{
+	cursor:pointer;
+	color:#ff0000;
+}
+
+.phone_service_box ul li:hover .service-price
+{
+	cursor:pointer;
+	color:#ff0000;
+}
+
+.sub_service_container
+{
+	padding-bottom:10px;	
+}
+
+.sub_service_box {
+    display: block;
+    float: left;
+    height: 220px;
+    position: relative;
+    width: 250px;
+	margin-right:25px;
+}
+
+.en_boutique_box
+{
+	background: url("../images/en_boutique.png") no-repeat scroll 0 0 transparent;
+}
+
+.par_courrier_box
+{
+	background: url("../images/par_courrier.png") no-repeat scroll 0 0 transparent;
+}
+
+.par_coursier_box
+{
+	background: url("../images/par_coursier.png") no-repeat scroll 0 0 transparent;
+}
+
+.service_details
+{
+	position:absolute;
+	right:0px;
+	bottom:0px;	
+	font-family: 'Volkswagen-Medium';
+    font-size: 20px;
+	color:#fff;
+	text-align:right;
+}
+
+.service_details .service_name
+{
+	text-transform:capitalize;
+	
+}
+
+.service_details .service_price
+{
+	 font-size: 26px;
+}
+
+.sub_service_box:hover
+{
+	cursor:pointer !important;	
+}
+
+.sub_service_box:hover .service_details
+{
+	color:#ff0000;
+}
+
+.push { height:40px; }
+
+.push:before, .push:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+
+.push:after {
+  clear: both;
+}
+
+/* Media page style */
+p.media-title{
+	font-weight: bold;
+	font-size: 225%;
+	color: #f90001;
+}
+p.media-desc{
+	margin-top: 8px;
+	font-size: 120%;
+	color: #444;
+}
+
+/*animation part*/
+.floating {
+  float: left;
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+@-webkit-keyframes Floatingx {
+  from {
+    -webkit-transform: translate(0, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 15px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+  }
+}
+@-moz-keyframes Floating {
+  from {
+    -moz-transform: translate(0, 0px);
+  }
+  65% {
+    -moz-transform: translate(0, 15px);
+  }
+  to {
+    -moz-transform: translate(0, 0px);
+  }
+}
+.shadow {
+  -webkit-animation-name: Shadow;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Shadow;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Shadow {
+  from {
+    opacity: .2;
+  }
+  65% {
+    opacity: .7;
+  }
+  to {
+    opacity: .2;
+  }
+}
+@-moz-keyframes Shadow {
+  from {
+    opacity: .2;
+  }
+  65% {
+    opacity: .7;
+  }
+  to {
+    opacity: .2;
+  }
+}
+@-webkit-keyframes bgMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500% 0;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .introtxt {
+    font-family: 'volkswagen-regularregular';
+    font-weight: 700;
+    font-size: 180%;
+    text-transform: uppercase;
+    color: #f90001;
+    margin-left: 16%;
+    padding: 5%;
+    -webkit-border-radius: 20px;
+  }
+  nav ul li {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  ul.accessoires {
+    margin: 0 auto 0;
+  }
+  ul.footermenu li:last-child {
+    float: left;
+  }
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  nav ul {
+    display: none;
+  }
+  .mob-menu {
+    display: block;
+  }
+  .bigbox {
+    width: 86%;
+    height: 60%;
+    margin: 3% auto 0;
+    -webkit-border-radius: 15px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .shop-img {
+    background: #cc051c;
+    margin-top: 20px;
+    padding: 2%;
+    width: 92%;
+    overflow: hidden;
+  }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  nav ul {
+    display: none;
+  }
+  .mob-menu {
+    display: block;
+  }
+  .bigbox {
+    width: 88%;
+  }
+  ul.accessoires {
+    margin: 0 9% 0;
+    display: block;
+  }
+  .shop-img {
+    background: #cc051c;
+    margin-top: 20px;
+    padding: 2%;
+    width: 90%;
+    overflow: hidden;
+  }
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
