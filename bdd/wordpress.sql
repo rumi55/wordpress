@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Ven 22 Novembre 2013 à 12:44
+-- Généré le: Ven 22 Novembre 2013 à 13:24
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.12
 
@@ -23,10 +23,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `admin`
+-- Structure de la table `wp_admin`
 --
 
-CREATE TABLE IF NOT EXISTS `admin` (
+CREATE TABLE IF NOT EXISTS `wp_admin` (
   `a_id` int(2) NOT NULL,
   `username` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
   `password` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
@@ -34,19 +34,95 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
--- Contenu de la table `admin`
+-- Contenu de la table `wp_admin`
 --
 
-INSERT INTO `admin` (`a_id`, `username`, `password`) VALUES
+INSERT INTO `wp_admin` (`a_id`, `username`, `password`) VALUES
 (1, 'admin', 'smsp_2013');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `model_service`
+-- Structure de la table `wp_commentmeta`
 --
 
-CREATE TABLE IF NOT EXISTS `model_service` (
+CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
+  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `comment_id` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `meta_key` varchar(255) DEFAULT NULL,
+  `meta_value` longtext,
+  PRIMARY KEY (`meta_id`),
+  KEY `comment_id` (`comment_id`),
+  KEY `meta_key` (`meta_key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `wp_comments`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_comments` (
+  `comment_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `comment_post_ID` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `comment_author` tinytext NOT NULL,
+  `comment_author_email` varchar(100) NOT NULL DEFAULT '',
+  `comment_author_url` varchar(200) NOT NULL DEFAULT '',
+  `comment_author_IP` varchar(100) NOT NULL DEFAULT '',
+  `comment_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `comment_date_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `comment_content` text NOT NULL,
+  `comment_karma` int(11) NOT NULL DEFAULT '0',
+  `comment_approved` varchar(20) NOT NULL DEFAULT '1',
+  `comment_agent` varchar(255) NOT NULL DEFAULT '',
+  `comment_type` varchar(20) NOT NULL DEFAULT '',
+  `comment_parent` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`comment_ID`),
+  KEY `comment_post_ID` (`comment_post_ID`),
+  KEY `comment_approved_date_gmt` (`comment_approved`,`comment_date_gmt`),
+  KEY `comment_date_gmt` (`comment_date_gmt`),
+  KEY `comment_parent` (`comment_parent`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `wp_comments`
+--
+
+INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
+(1, 1, 'Monsieur WordPress', '', 'http://wordpress.org/', '', '2013-11-15 13:54:16', '2013-11-15 13:54:16', 'Bonjour, ceci est un commentaire.\nPour supprimer un commentaire, connectez-vous et affichez les commentaires de cet article. Vous pourrez alors les modifier ou les supprimer.', 0, '1', '', '', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `wp_links`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_links` (
+  `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `link_url` varchar(255) NOT NULL DEFAULT '',
+  `link_name` varchar(255) NOT NULL DEFAULT '',
+  `link_image` varchar(255) NOT NULL DEFAULT '',
+  `link_target` varchar(25) NOT NULL DEFAULT '',
+  `link_description` varchar(255) NOT NULL DEFAULT '',
+  `link_visible` varchar(20) NOT NULL DEFAULT 'Y',
+  `link_owner` bigint(20) unsigned NOT NULL DEFAULT '1',
+  `link_rating` int(11) NOT NULL DEFAULT '0',
+  `link_updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `link_rel` varchar(255) NOT NULL DEFAULT '',
+  `link_notes` mediumtext NOT NULL,
+  `link_rss` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`link_id`),
+  KEY `link_visible` (`link_visible`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `wp_model_service`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_model_service` (
   `ms_id` int(2) NOT NULL,
   `pm_id` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
   `service_name` varchar(100) COLLATE latin1_general_ci DEFAULT NULL,
@@ -55,10 +131,10 @@ CREATE TABLE IF NOT EXISTS `model_service` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
--- Contenu de la table `model_service`
+-- Contenu de la table `wp_model_service`
 --
 
-INSERT INTO `model_service` (`ms_id`, `pm_id`, `service_name`, `service_price`) VALUES
+INSERT INTO `wp_model_service` (`ms_id`, `pm_id`, `service_name`, `service_price`) VALUES
 (1, '103', 'écran cassé', '159,00'),
 (3, '103', 'Bouton Home', '59,00'),
 (5, '103', 'Dock de Charge', '79,00'),
@@ -470,10 +546,10 @@ INSERT INTO `model_service` (`ms_id`, `pm_id`, `service_name`, `service_price`) 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `model_sub_service`
+-- Structure de la table `wp_model_sub_service`
 --
 
-CREATE TABLE IF NOT EXISTS `model_sub_service` (
+CREATE TABLE IF NOT EXISTS `wp_model_sub_service` (
   `mss_id` int(2) NOT NULL,
   `ms_id` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
   `sub_service_name` varchar(100) COLLATE latin1_general_ci DEFAULT NULL,
@@ -482,10 +558,10 @@ CREATE TABLE IF NOT EXISTS `model_sub_service` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
--- Contenu de la table `model_sub_service`
+-- Contenu de la table `wp_model_sub_service`
 --
 
-INSERT INTO `model_sub_service` (`mss_id`, `ms_id`, `sub_service_name`, `sub_service_price`) VALUES
+INSERT INTO `wp_model_sub_service` (`mss_id`, `ms_id`, `sub_service_name`, `sub_service_price`) VALUES
 (7, '3', 'En Boutique', '59,00'),
 (8, '3', 'Par courrier', '59,00'),
 (10, '4', 'En Boutique', '59,00'),
@@ -1671,7 +1747,7 @@ INSERT INTO `model_sub_service` (`mss_id`, `ms_id`, `sub_service_name`, `sub_ser
 (1195, '401', 'En Boutique', '69,00'),
 (1196, '401', 'Par courrier', '69,00'),
 (1197, '401', 'Technicien ÃƒÂ  domicile', '88,00');
-INSERT INTO `model_sub_service` (`mss_id`, `ms_id`, `sub_service_name`, `sub_service_price`) VALUES
+INSERT INTO `wp_model_sub_service` (`mss_id`, `ms_id`, `sub_service_name`, `sub_service_price`) VALUES
 (1198, '402', 'En Boutique', '59,00'),
 (1199, '402', 'Par courrier', '59,00'),
 (1200, '402', 'Technicien ÃƒÂ  domicile', '78,00'),
@@ -1907,203 +1983,6 @@ INSERT INTO `model_sub_service` (`mss_id`, `ms_id`, `sub_service_name`, `sub_ser
 -- --------------------------------------------------------
 
 --
--- Structure de la table `phone_company`
---
-
-CREATE TABLE IF NOT EXISTS `phone_company` (
-  `pc_id` int(2) NOT NULL,
-  `pc_name` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
-  `pc_image` varchar(200) COLLATE latin1_general_ci DEFAULT NULL,
-  `pc_hover_image` varchar(200) COLLATE latin1_general_ci DEFAULT NULL,
-  PRIMARY KEY (`pc_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
---
--- Contenu de la table `phone_company`
---
-
-INSERT INTO `phone_company` (`pc_id`, `pc_name`, `pc_image`, `pc_hover_image`) VALUES
-(1, 'Apple', 'images/company_model/1367238423apple.png', 'images/company_model/1367238423apple_hover.png'),
-(2, 'Samsung', 'images/company_model/1367238780samsung.png', 'images/company_model/1367238780samsung_hover.png'),
-(3, 'Blackberry', 'images/company_model/1367238804blackberry.png', 'images/company_model/1367238804blackberry_hover.png'),
-(4, 'Sony Ericsson', 'images/company_model/1367238845sony.png', 'images/company_model/1367238845sony_hover.png'),
-(5, 'LG', 'images/company_model/1367238871lg.png', 'images/company_model/1367238871lg_hover.png'),
-(6, 'Nokia', 'images/company_model/1367238898nokia.png', 'images/company_model/1367238898nokia_hover.png'),
-(7, 'HTC', 'images/company_model/1367238922htc.png', 'images/company_model/1367238922htc_hover.png'),
-(8, 'ASUS', 'images/company_model/1367238937asus.png', 'images/company_model/1367238937asus_hover.png');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `phone_model`
---
-
-CREATE TABLE IF NOT EXISTS `phone_model` (
-  `pm_id` int(2) NOT NULL,
-  `pc_id` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
-  `model_name` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
-  `model_image` varchar(200) COLLATE latin1_general_ci DEFAULT NULL,
-  PRIMARY KEY (`pm_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
---
--- Contenu de la table `phone_model`
---
-
-INSERT INTO `phone_model` (`pm_id`, `pc_id`, `model_name`, `model_image`) VALUES
-(22, '6', 'Lumia 920', 'images/phone_model/1364292554lumia_920.png'),
-(23, '6', 'Lumia 820', 'images/phone_model/1364292578lumia_820.png'),
-(24, '6', 'Lumia 800', 'images/phone_model/1364292627lumia_800.png'),
-(25, '6', 'Lumia 610', 'images/phone_model/1364292653lumia_610.png'),
-(26, '8', 'Nexus 7 LED', 'images/phone_model/1364293836Nexus_7_LED.png'),
-(27, '8', 'Eee Pad(10.1")', 'images/phone_model/1364294421Eee_pad_10.png'),
-(28, '7', 'One X', 'images/phone_model/1364299399htc_one_x.png'),
-(29, '7', 'One S', 'images/phone_model/1364299434htc_one_s.png'),
-(30, '7', 'One V', 'images/phone_model/1364299461htc_one_v.png'),
-(31, '7', 'HD2', 'images/phone_model/1364299493htc_hd_2.png'),
-(32, '7', 'HD', 'images/phone_model/1364299517htc_hd.png'),
-(33, '7', 'HD Mini', 'images/phone_model/1364299543htc_hd_mini.png'),
-(34, '7', 'Nexus One', 'images/phone_model/1364299578htc_nexus_one.png'),
-(35, '7', 'Desire HD', 'images/phone_model/1364299628htc_desire_hd.png'),
-(36, '7', 'Desire', 'images/phone_model/1364299655htc_desire.png'),
-(37, '7', 'Desire S', 'images/phone_model/1364299678htc_desire_s.png'),
-(38, '7', 'Desire Z', 'images/phone_model/1364299705htc_desire_z.png'),
-(39, '7', 'Desire C', 'images/phone_model/1364299731htc_desire_c.png'),
-(40, '7', 'Sensation', 'images/phone_model/1364299757htc_sensation.png'),
-(41, '7', 'Sensation XL', 'images/phone_model/1364299784htc_sensation_xl.png'),
-(42, '7', 'Wildfire', 'images/phone_model/1364299811htc_wildfire.png'),
-(43, '7', 'Wildfire S', 'images/phone_model/1364299840htc_wildfire_s.png'),
-(44, '3', 'Bold 9900', 'images/phone_model/1364300175blackberry_bold_9900.png'),
-(45, '3', 'Bold 9790', 'images/phone_model/1364300210blackberry_bold_9790.png'),
-(46, '3', 'Bold 9780', 'images/phone_model/1364300225blackberry_bold_9780.png'),
-(47, '3', 'Bold 9700', 'images/phone_model/1364300249blackberry_bold_9700.png'),
-(48, '3', ' Torch 9860', 'images/phone_model/1364300276blackberry_torch_9860.png'),
-(49, '3', 'Torch 9800', 'images/phone_model/1364300300blackberry_torch_9800.png'),
-(50, '3', 'Curve 9300 (3G)', 'images/phone_model/1364300332blackberry_torch_9300(3g).png'),
-(51, '3', 'Curve 9360', 'images/phone_model/1364300355blackberry_curve_9360.png'),
-(52, '3', 'Curve 9320', 'images/phone_model/1364300375blackberry_curve_9320.png'),
-(53, '3', 'Curve 8520', 'images/phone_model/1364300391blackberry_curve_8520.png'),
-(54, '5', 'Optimus L9', 'images/phone_model/1364300592optimus_L9.png'),
-(55, '5', 'Optimus L7', 'images/phone_model/1364300690optimus_L7.png'),
-(56, '5', 'Optimus L3', 'images/phone_model/1364300710optimus_L3.png'),
-(57, '5', 'Optimus Black', 'images/phone_model/1364300726optimus-black.png'),
-(58, '5', 'Optimus One', 'images/phone_model/1364300744optimus-one.png'),
-(59, '5', 'Optimus Nexus 4', 'images/phone_model/1364300768optimus-nexus_4.png'),
-(60, '4', 'Xperia V', 'images/phone_model/1364301043Xperia V.png'),
-(61, '4', 'Xperia J', 'images/phone_model/1364301162xperia J.png'),
-(62, '4', 'Xperia T', 'images/phone_model/1364301187XperiaT.png'),
-(63, '4', 'Xperia GO', 'images/phone_model/1364301209Xperia-GO.png'),
-(64, '4', 'Xperia P', 'images/phone_model/1364301233Xperia-P.png'),
-(65, '4', 'Xperia S', 'images/phone_model/1364302555Xperia-S.png'),
-(66, '4', 'Xperia Arc', 'images/phone_model/1364302581xperia_arc.png'),
-(67, '4', 'Xperia Arc S', 'images/phone_model/1364302618Xperia-Arc-S.png'),
-(68, '4', 'Xperia X10', 'images/phone_model/1364302646Xperia-X10.png'),
-(101, '1', 'iPhone 5s', 'images/phone_model/1363962217iphone_5s.png'),
-(102, '1', 'iPhone 5c', 'images/phone_model/1363962218iphone_5c.png'),
-(103, '1', 'iPhone 5', 'images/phone_model/1364290077iPhone_5.png'),
-(104, '1', 'iPhone 4S', 'images/phone_model/1364290101iPhone_4S.png'),
-(105, '1', 'iPhone 4', 'images/phone_model/1364290136iPhone_4.png'),
-(106, '1', 'iPhone 3GS', 'images/phone_model/1364290170iPhone_3GS.png'),
-(107, '1', 'iPhone 3G', 'images/phone_model/1364290228iPhone_3G.png'),
-(108, '1', 'iPad Retina', 'images/phone_model/1364290351iPad_retina.png'),
-(109, '1', 'iPad 2', 'images/phone_model/1364290268iPad_2.png'),
-(110, '1', 'iPod Touch 4G', 'images/phone_model/iPod-touch-4G_1.png'),
-(111, '1', 'iPod Touch 3G', 'images/phone_model/iPod-touch-3G_1.png'),
-(201, '2', 'Galaxy s4', 'mages/phone_model/samsung_galaxy_s4.png'),
-(202, '2', 'Galaxy S3', 'images/phone_model/1364290760samsung_galaxy_s3.png'),
-(203, '2', 'Galaxy S2', 'images/phone_model/1364290804samsung_galaxy_s2.png'),
-(204, '2', 'Galaxy S', 'images/phone_model/1364290835samsung_galaxy_s.png'),
-(205, '2', 'Samsung Note 3', 'images/phone_model/samsung_note_3.png'),
-(206, '2', 'Galaxy Note 2', 'images/phone_model/1364290868samsung_note_2.png'),
-(207, '2', 'Galaxy Note', 'images/phone_model/1364290918samsung_note.png'),
-(208, '2', 'Galaxy Nexus', 'images/phone_model/1364290950samsung_galaxy_nexus.png'),
-(209, '2', 'Google Nexus S', 'images/phone_model/google_nexus_s.png'),
-(210, '2', 'Galaxy Ace', 'images/phone_model/1364291038samsung_galaxy_ace.png'),
-(211, '2', 'Galaxy Tab 2 (10.1")', 'images/phone_model/1364201248samsung_galaxy-tab_2_10_1.png'),
-(212, '2', 'Galaxy Tab 2 (7")', 'images/phone_model/1364291611samsung_galaxy_tab_2(7).png'),
-(213, '2', 'Galaxy Note (10.1")', 'images/phone_model/samsung_galaxy_note10-1.png'),
-(214, '2', 'Galaxy Tab (8.2")', 'images/phone_model/1364292303samsung_galaxy_tab_8-2.png'),
-(215, '2', 'Galaxy S3 mini', 'images/phone_model/galaxy_s3_mini.png');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `wp_commentmeta`
---
-
-CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
-  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `comment_id` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) DEFAULT NULL,
-  `meta_value` longtext,
-  PRIMARY KEY (`meta_id`),
-  KEY `comment_id` (`comment_id`),
-  KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `wp_comments`
---
-
-CREATE TABLE IF NOT EXISTS `wp_comments` (
-  `comment_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `comment_post_ID` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `comment_author` tinytext NOT NULL,
-  `comment_author_email` varchar(100) NOT NULL DEFAULT '',
-  `comment_author_url` varchar(200) NOT NULL DEFAULT '',
-  `comment_author_IP` varchar(100) NOT NULL DEFAULT '',
-  `comment_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `comment_date_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `comment_content` text NOT NULL,
-  `comment_karma` int(11) NOT NULL DEFAULT '0',
-  `comment_approved` varchar(20) NOT NULL DEFAULT '1',
-  `comment_agent` varchar(255) NOT NULL DEFAULT '',
-  `comment_type` varchar(20) NOT NULL DEFAULT '',
-  `comment_parent` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`comment_ID`),
-  KEY `comment_post_ID` (`comment_post_ID`),
-  KEY `comment_approved_date_gmt` (`comment_approved`,`comment_date_gmt`),
-  KEY `comment_date_gmt` (`comment_date_gmt`),
-  KEY `comment_parent` (`comment_parent`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
-
---
--- Contenu de la table `wp_comments`
---
-
-INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
-(1, 1, 'Monsieur WordPress', '', 'http://wordpress.org/', '', '2013-11-15 13:54:16', '2013-11-15 13:54:16', 'Bonjour, ceci est un commentaire.\nPour supprimer un commentaire, connectez-vous et affichez les commentaires de cet article. Vous pourrez alors les modifier ou les supprimer.', 0, '1', '', '', 0, 0);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `wp_links`
---
-
-CREATE TABLE IF NOT EXISTS `wp_links` (
-  `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `link_url` varchar(255) NOT NULL DEFAULT '',
-  `link_name` varchar(255) NOT NULL DEFAULT '',
-  `link_image` varchar(255) NOT NULL DEFAULT '',
-  `link_target` varchar(25) NOT NULL DEFAULT '',
-  `link_description` varchar(255) NOT NULL DEFAULT '',
-  `link_visible` varchar(20) NOT NULL DEFAULT 'Y',
-  `link_owner` bigint(20) unsigned NOT NULL DEFAULT '1',
-  `link_rating` int(11) NOT NULL DEFAULT '0',
-  `link_updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `link_rel` varchar(255) NOT NULL DEFAULT '',
-  `link_notes` mediumtext NOT NULL,
-  `link_rss` varchar(255) NOT NULL DEFAULT '',
-  PRIMARY KEY (`link_id`),
-  KEY `link_visible` (`link_visible`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `wp_options`
 --
 
@@ -2283,6 +2162,127 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (274, '_transient_timeout_dash_de3249c4736ad3bd2cd29147c4a0d43e', '1385161333', 'no'),
 (275, '_transient_dash_de3249c4736ad3bd2cd29147c4a0d43e', '<h4>Plus populaire</h4>\n<h5><a href=''http://wordpress.org/plugins/contact-form-plugin/''>Contact Form</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=contact-form-plugin&amp;_wpnonce=767f4b7c1e&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''Contact Form''>Installer</a>)</span>\n<p>Add Contact Form to your WordPress website.</p>\n<h4>Nouvelles extensions</h4>\n<h5><a href=''http://wordpress.org/plugins/linkwelove/''>LinkWeLove Plugin</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=linkwelove&amp;_wpnonce=fe1735ad13&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''LinkWeLove Plugin''>Installer</a>)</span>\n<p>A plugin to add widgets created with linkwelove</p>\n', 'no'),
 (276, 'tagportfolio_children', 'a:0:{}', 'yes');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `wp_phone_company`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_phone_company` (
+  `pc_id` int(2) NOT NULL,
+  `pc_name` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
+  `pc_image` varchar(200) COLLATE latin1_general_ci DEFAULT NULL,
+  `pc_hover_image` varchar(200) COLLATE latin1_general_ci DEFAULT NULL,
+  PRIMARY KEY (`pc_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Contenu de la table `wp_phone_company`
+--
+
+INSERT INTO `wp_phone_company` (`pc_id`, `pc_name`, `pc_image`, `pc_hover_image`) VALUES
+(1, 'Apple', 'images/company_model/1367238423apple.png', 'images/company_model/1367238423apple_hover.png'),
+(2, 'Samsung', 'images/company_model/1367238780samsung.png', 'images/company_model/1367238780samsung_hover.png'),
+(3, 'Blackberry', 'images/company_model/1367238804blackberry.png', 'images/company_model/1367238804blackberry_hover.png'),
+(4, 'Sony Ericsson', 'images/company_model/1367238845sony.png', 'images/company_model/1367238845sony_hover.png'),
+(5, 'LG', 'images/company_model/1367238871lg.png', 'images/company_model/1367238871lg_hover.png'),
+(6, 'Nokia', 'images/company_model/1367238898nokia.png', 'images/company_model/1367238898nokia_hover.png'),
+(7, 'HTC', 'images/company_model/1367238922htc.png', 'images/company_model/1367238922htc_hover.png'),
+(8, 'ASUS', 'images/company_model/1367238937asus.png', 'images/company_model/1367238937asus_hover.png');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `wp_phone_model`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_phone_model` (
+  `pm_id` int(2) NOT NULL,
+  `pc_id` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
+  `model_name` varchar(30) COLLATE latin1_general_ci DEFAULT NULL,
+  `model_image` varchar(200) COLLATE latin1_general_ci DEFAULT NULL,
+  PRIMARY KEY (`pm_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Contenu de la table `wp_phone_model`
+--
+
+INSERT INTO `wp_phone_model` (`pm_id`, `pc_id`, `model_name`, `model_image`) VALUES
+(22, '6', 'Lumia 920', 'images/phone_model/1364292554lumia_920.png'),
+(23, '6', 'Lumia 820', 'images/phone_model/1364292578lumia_820.png'),
+(24, '6', 'Lumia 800', 'images/phone_model/1364292627lumia_800.png'),
+(25, '6', 'Lumia 610', 'images/phone_model/1364292653lumia_610.png'),
+(26, '8', 'Nexus 7 LED', 'images/phone_model/1364293836Nexus_7_LED.png'),
+(27, '8', 'Eee Pad(10.1")', 'images/phone_model/1364294421Eee_pad_10.png'),
+(28, '7', 'One X', 'images/phone_model/1364299399htc_one_x.png'),
+(29, '7', 'One S', 'images/phone_model/1364299434htc_one_s.png'),
+(30, '7', 'One V', 'images/phone_model/1364299461htc_one_v.png'),
+(31, '7', 'HD2', 'images/phone_model/1364299493htc_hd_2.png'),
+(32, '7', 'HD', 'images/phone_model/1364299517htc_hd.png'),
+(33, '7', 'HD Mini', 'images/phone_model/1364299543htc_hd_mini.png'),
+(34, '7', 'Nexus One', 'images/phone_model/1364299578htc_nexus_one.png'),
+(35, '7', 'Desire HD', 'images/phone_model/1364299628htc_desire_hd.png'),
+(36, '7', 'Desire', 'images/phone_model/1364299655htc_desire.png'),
+(37, '7', 'Desire S', 'images/phone_model/1364299678htc_desire_s.png'),
+(38, '7', 'Desire Z', 'images/phone_model/1364299705htc_desire_z.png'),
+(39, '7', 'Desire C', 'images/phone_model/1364299731htc_desire_c.png'),
+(40, '7', 'Sensation', 'images/phone_model/1364299757htc_sensation.png'),
+(41, '7', 'Sensation XL', 'images/phone_model/1364299784htc_sensation_xl.png'),
+(42, '7', 'Wildfire', 'images/phone_model/1364299811htc_wildfire.png'),
+(43, '7', 'Wildfire S', 'images/phone_model/1364299840htc_wildfire_s.png'),
+(44, '3', 'Bold 9900', 'images/phone_model/1364300175blackberry_bold_9900.png'),
+(45, '3', 'Bold 9790', 'images/phone_model/1364300210blackberry_bold_9790.png'),
+(46, '3', 'Bold 9780', 'images/phone_model/1364300225blackberry_bold_9780.png'),
+(47, '3', 'Bold 9700', 'images/phone_model/1364300249blackberry_bold_9700.png'),
+(48, '3', ' Torch 9860', 'images/phone_model/1364300276blackberry_torch_9860.png'),
+(49, '3', 'Torch 9800', 'images/phone_model/1364300300blackberry_torch_9800.png'),
+(50, '3', 'Curve 9300 (3G)', 'images/phone_model/1364300332blackberry_torch_9300(3g).png'),
+(51, '3', 'Curve 9360', 'images/phone_model/1364300355blackberry_curve_9360.png'),
+(52, '3', 'Curve 9320', 'images/phone_model/1364300375blackberry_curve_9320.png'),
+(53, '3', 'Curve 8520', 'images/phone_model/1364300391blackberry_curve_8520.png'),
+(54, '5', 'Optimus L9', 'images/phone_model/1364300592optimus_L9.png'),
+(55, '5', 'Optimus L7', 'images/phone_model/1364300690optimus_L7.png'),
+(56, '5', 'Optimus L3', 'images/phone_model/1364300710optimus_L3.png'),
+(57, '5', 'Optimus Black', 'images/phone_model/1364300726optimus-black.png'),
+(58, '5', 'Optimus One', 'images/phone_model/1364300744optimus-one.png'),
+(59, '5', 'Optimus Nexus 4', 'images/phone_model/1364300768optimus-nexus_4.png'),
+(60, '4', 'Xperia V', 'images/phone_model/1364301043Xperia V.png'),
+(61, '4', 'Xperia J', 'images/phone_model/1364301162xperia J.png'),
+(62, '4', 'Xperia T', 'images/phone_model/1364301187XperiaT.png'),
+(63, '4', 'Xperia GO', 'images/phone_model/1364301209Xperia-GO.png'),
+(64, '4', 'Xperia P', 'images/phone_model/1364301233Xperia-P.png'),
+(65, '4', 'Xperia S', 'images/phone_model/1364302555Xperia-S.png'),
+(66, '4', 'Xperia Arc', 'images/phone_model/1364302581xperia_arc.png'),
+(67, '4', 'Xperia Arc S', 'images/phone_model/1364302618Xperia-Arc-S.png'),
+(68, '4', 'Xperia X10', 'images/phone_model/1364302646Xperia-X10.png'),
+(101, '1', 'iPhone 5s', 'images/phone_model/1363962217iphone_5s.png'),
+(102, '1', 'iPhone 5c', 'images/phone_model/1363962218iphone_5c.png'),
+(103, '1', 'iPhone 5', 'images/phone_model/1364290077iPhone_5.png'),
+(104, '1', 'iPhone 4S', 'images/phone_model/1364290101iPhone_4S.png'),
+(105, '1', 'iPhone 4', 'images/phone_model/1364290136iPhone_4.png'),
+(106, '1', 'iPhone 3GS', 'images/phone_model/1364290170iPhone_3GS.png'),
+(107, '1', 'iPhone 3G', 'images/phone_model/1364290228iPhone_3G.png'),
+(108, '1', 'iPad Retina', 'images/phone_model/1364290351iPad_retina.png'),
+(109, '1', 'iPad 2', 'images/phone_model/1364290268iPad_2.png'),
+(110, '1', 'iPod Touch 4G', 'images/phone_model/iPod-touch-4G_1.png'),
+(111, '1', 'iPod Touch 3G', 'images/phone_model/iPod-touch-3G_1.png'),
+(201, '2', 'Galaxy s4', 'mages/phone_model/samsung_galaxy_s4.png'),
+(202, '2', 'Galaxy S3', 'images/phone_model/1364290760samsung_galaxy_s3.png'),
+(203, '2', 'Galaxy S2', 'images/phone_model/1364290804samsung_galaxy_s2.png'),
+(204, '2', 'Galaxy S', 'images/phone_model/1364290835samsung_galaxy_s.png'),
+(205, '2', 'Samsung Note 3', 'images/phone_model/samsung_note_3.png'),
+(206, '2', 'Galaxy Note 2', 'images/phone_model/1364290868samsung_note_2.png'),
+(207, '2', 'Galaxy Note', 'images/phone_model/1364290918samsung_note.png'),
+(208, '2', 'Galaxy Nexus', 'images/phone_model/1364290950samsung_galaxy_nexus.png'),
+(209, '2', 'Google Nexus S', 'images/phone_model/google_nexus_s.png'),
+(210, '2', 'Galaxy Ace', 'images/phone_model/1364291038samsung_galaxy_ace.png'),
+(211, '2', 'Galaxy Tab 2 (10.1")', 'images/phone_model/1364201248samsung_galaxy-tab_2_10_1.png'),
+(212, '2', 'Galaxy Tab 2 (7")', 'images/phone_model/1364291611samsung_galaxy_tab_2(7).png'),
+(213, '2', 'Galaxy Note (10.1")', 'images/phone_model/samsung_galaxy_note10-1.png'),
+(214, '2', 'Galaxy Tab (8.2")', 'images/phone_model/1364292303samsung_galaxy_tab_8-2.png'),
+(215, '2', 'Galaxy S3 mini', 'images/phone_model/galaxy_s3_mini.png');
 
 -- --------------------------------------------------------
 
