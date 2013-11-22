@@ -5,7 +5,7 @@
 }
 nav ul {
   margin-top: 5%;
-  background: url(../img/nav-bg.png) repeat-x;
+  background: url(../../img/nav-bg.png) repeat-x;
   height: 32px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -404,28 +404,28 @@ a.anil:hover img{
 
 .active-header 
 {
-	background: url(../images/active-header.png) #DA021A;
+	background: url(../../images/active-header.png) #DA021A;
 	background-repeat: no-repeat;
 	background-position: 15px 50%;
 }
 
 .active-header:hover 
 {
-	background: url(../images/active-header.png) #DA021A;
+	background: url(../../images/active-header.png) #DA021A;
 	background-repeat: no-repeat;
 	background-position: 15px 50%;
 }
 
 .inactive-header 
 {
-	background: url(../images/inactive-header.png) #DA021A;
+	background: url(../../images/inactive-header.png) #DA021A;
 	background-repeat: no-repeat;
 	background-position: 15px 50%;
 }
 
 .inactive-header:hover 
 {
-	background: url(../images/inactive-header.png) #DA021A;
+	background: url(../../images/inactive-header.png) #DA021A;
 	background-repeat: no-repeat;
 	background-position: 15px 50%;
 }
@@ -433,7 +433,7 @@ a.anil:hover img{
 {
 	display: none;
 	padding: 20px 10px;
-	background: url(../images/tab_bg.png) repeat 0 0 transparent;
+	background: url(../../images/tab_bg.png) repeat 0 0 transparent;
 	color:#fff;
 }
 
