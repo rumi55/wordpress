@@ -89,7 +89,7 @@ Template Name: test
                 <div class="accordion-content">
                 	
 					<?php
-                    	$sql = mysql_query("select * from  phone_company");
+                    	$list_marque = $wpdb->get_results("SELECT * FROM wp_phone_company");
                     ?>
 
                     <div class="phone_company">
@@ -97,13 +97,13 @@ Template Name: test
                         <ul>
                         
 							<?php
-								while ($result = mysql_fetch_array($sql))
-								{
+                                $dir = get_template_directory_uri();
+								foreach ($list_marque as $marque) {
 									echo '
 									<li>
 									<div class="company_logo">
-									<a class="anil" href="models.php?pc_id='.$result["pc_id"].'">
-											<img src="admin2/'.$result["pc_image"].'"/>
+									   <a class="anil" href="models.php?pc_id='.$marque->pc_id.'">
+										<img src="'.$dir.'/'.$marque->pc_image.'"/>
 									</a>
 									</div>
 									</li> ';
@@ -405,7 +405,7 @@ Template Name: test
         
         </div>
 	</div>
-    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
 $(document).ready(function()
 {

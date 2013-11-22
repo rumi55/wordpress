@@ -31,10 +31,11 @@
 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 
 <!-- <title><?php wp_title('&#124;', true, 'right'); ?><?php bloginfo('name'); ?></title> -->
-<link href="wp-content/themes/strappress/images/favicon.ico" rel="shortcut icon">
-<link href="wp-content/themes/strappress/images/apple-touch-icon.png" rel="apple-touch-icon">
-<link href="wp-content/themes/strappress/images/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
-<link href="wp-content/themes/strappress/images/apple-touch-icon-114x114.png" sizes="114x114" rel="apple-touch-icon">
+<?php $dir = get_template_directory_uri(); ?>
+<link href=<?php echo $dir."/images/favicon.ico" ?> rel="shortcut icon">
+<link href=<?php echo $dir."/images/apple-touch-icon.png" ?> rel="apple-touch-icon">
+<link href=<?php echo $dir."/images/apple-touch-icon-72x72.png" ?> sizes="72x72" rel="apple-touch-icon">
+<link href=<?php echo $dir."/images/apple-touch-icon-114x114.png" ?> sizes="114x114" rel="apple-touch-icon">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
