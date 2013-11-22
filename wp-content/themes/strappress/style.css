@@ -557,6 +557,7 @@ form div {
 #header #logo {
 	float:left;
 	margin:0;
+	padding-right: 50px;
 }
 
 #header #logo .site-name {
