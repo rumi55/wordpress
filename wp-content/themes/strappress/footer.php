@@ -40,8 +40,7 @@
             <?php } ?>
           </div><!-- end of col-460 -->
 
-          <div class="span6">
-            <div class="span5 copyright">
+          <div class="span6 copyright">
               <?php
               $copyright_text = of_get_option('copyright_text');
               if ($copyright_text){ ?> 
@@ -50,7 +49,6 @@
               <?php esc_attr_e('&copy;', 'responsive'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
               <?php bloginfo('name'); ?>
               <?php } ?>
-            </div> <!-- end copyright -->
           </div><!-- end of col-460 fit -->
         </div>        
       </div>

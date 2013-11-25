@@ -36,12 +36,13 @@
 		        </div><!-- end of .col-460 -->
 
 		        <div id="hero-image" class="span6"> 
-                    <?php
+                  <!--  <?php
                         $list_tel = $wpdb->get_results("SELECT * FROM wp_phone_model");
                         foreach ($list_tel as $tel) {
                             echo $tel->model_name;
                         }
-                    ?>
+                    ?> -->
+                    <h1>Nous sauvons vos smartphones et tablettes</h1>
 		        </div><!-- end of .col-460 fit -->
 		    </div> 
         </div><!-- end of .hero-unit -->

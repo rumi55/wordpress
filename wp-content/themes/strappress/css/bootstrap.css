@@ -580,6 +580,7 @@ h4 small {
 }
 ul,
 ol {
+  text-align: center;
   padding: 0;
   margin: 0 0 10px 25px;
 }
