@@ -15,19 +15,26 @@
 ?>
     <div id="widgets" class="home-widgets">
         <div class="row-fluid">
-        <div class="span4">
-            <img class="picto_home" src="wp-content/themes/strappress/images/cash.png"/>            
-            <p class="p_home">Consulter nos tarifs</p>
+        <div class="span4 picto_home">
+            <img src="wp-content/themes/strappress/images/cash.png"/>            
+            <p class="p_home"><a href="a-propos">Réparation Express</a></p>
         </div><!-- end of .span4 -->
 
-        <div class="span4">
-            <img class="picto_home" src="wp-content/themes/strappress/images/profes.png"/>
-            <p class="p_home">Offres professionnelles</p>
+        <div class="span4 picto_home">
+            <img src="wp-content/themes/strappress/images/profes.png"/>
+            <p class="p_home"><a href="tarifs">Nos tarifs</a></p>
         </div><!-- end of .span4 -->
 
-        <div class="span4">
-            <img class="picto_home" src="wp-content/themes/strappress/images/tele.png"/>
-            <p class="p_home">Vu à la télé</p>
+        <div class="span4 picto_home">
+            <img src="wp-content/themes/strappress/images/tele.png"/>
+            <p class="p_home"><a href="a-propos">Garantie pendant 1 an</a></p>
        </div><!-- end of .span4 -->
+        </div>
+        <div class="row-fluid">
+            <div class="span4 offset8">
+                <a href="https://www.facebook.com/savemysmartphone"><img class="picto2_home" src="wp-content/themes/strappress/images/fb.png"/></a>            
+                <a href="https://twitter.com/damienmorin"><img class="picto2_home" src="wp-content/themes/strappress/images/twi.png"/></a>          
+                <a href="https://plus.google.com/107957583297179616406/posts"><img class="picto2_home" src="wp-content/themes/strappress/images/g+.png"/></a>         
+            </div>
         </div>
     </div><!-- end of #widgets -->

@@ -914,8 +914,8 @@ form div {
 }
 
 #widgets a {
-	display:inline-block;
 	text-decoration:none;
+	color:black;
 }
 
 #widgets ul, #widgets .textwidget, #widgets .tagcloud, #widgets #searchform, #widgets #calendar_wrap {
@@ -2222,9 +2222,36 @@ BDO[DIR="rtl"] {
 }
 
 .picto_home {
-	margin-left: 35%;
+	text-align: center;
+	padding:12px;
+	background-color: rgba(163, 206, 222, 0.2);
+	background: rgba(163, 206, 222, 0.2);
+	color: black;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	font-size: 20px;
 }
 
+.picto2_home {
+	width:50px;
+	float:right;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+
 .p_home {
-	text-align: center;
+	margin-top: 10px;	
+}
+
+.title_home a {
+	color:black;
+
+}
+
+
+.title_home a:hover {
+	color:#cc051c;
+	text-decoration: none;
 }
