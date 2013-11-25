@@ -695,17 +695,17 @@ a.anil:hover img{
 
 .en_boutique_box
 {
-	background: url("../../images/en_boutique.png") no-repeat scroll 0 0 transparent;
+	background: url("../../images/mod1.png") no-repeat scroll 0 0 transparent;
 }
 
 .par_courrier_box
 {
-	background: url("../../images/par_courrier.png") no-repeat scroll 0 0 transparent;
+	background: url("../../images/mod2.png") no-repeat scroll 0 0 transparent;
 }
 
 .par_coursier_box
 {
-	background: url("../../images/par_coursier.png") no-repeat scroll 0 0 transparent;
+	background: url("../../images/mod3.png") no-repeat scroll 0 0 transparent;
 }
 
 .service_details
