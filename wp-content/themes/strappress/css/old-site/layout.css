@@ -272,7 +272,7 @@ address p {
   color: #f90001;
 }
 .contact input[type="text"] {
-  width: 90%;
+  width: 100%;
   padding: 2%;
   background-image: -webkit-linear-gradient(top, #ffffff, #e1e1e1);
   background-image: -moz-linear-gradient(top, #ffffff, #e1e1e1);
@@ -282,7 +282,7 @@ address p {
   font-family: 'Volkswagen-Medium';
 }
 .contact textarea {
-  width: 90%;
+  width: 100%;
   height: 160px;
   padding: 2%;
   resize: none;
@@ -296,9 +296,10 @@ address p {
 .contact input[type="submit"] {
   width: 40%;
   border: none;
-  background: url(../img/nav-bg.png) repeat-x;
+  font-size: 20px;
   text-shadow: none;
-  color: #fff;
+  background-color: rgba(204, 5, 28, 1);
+  color:white;
   font-family: 'Volkswagen-Medium';
 }
 .shop-img {
@@ -333,6 +334,7 @@ span.addresse p {
 }
 p.descp,
 p {
+  font-size: 20px;
   padding: 0;
   margin: 0;
   font-family: 'Volkswagen-Medium';

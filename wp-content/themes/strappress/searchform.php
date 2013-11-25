@@ -14,6 +14,16 @@
  */
 ?>
 	<form method="get" class="form-search form-inline" action="<?php echo home_url( '/' ); ?>">
-		<input type="text" class="input-small search-query" name="s" placeholder="<?php esc_attr_e('search here &hellip;', 'responsive'); ?>" />
-		<button type="submit" class="btn" name="submit" id="searchsubmit" value="<?php esc_attr_e('Go', 'responsive'); ?>">Search</button>
+		<input type="text" class="input-small search-query" name="s" placeholder="<?php esc_attr_e('Recherche ici', 'responsive'); ?>" />
+		<button type="submit" class="btn" name="submit" id="searchsubmit" value="<?php esc_attr_e('Go', 'responsive'); ?>">Recherche</button>
 	</form>
+
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />

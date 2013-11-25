@@ -538,7 +538,7 @@ form div {
 	width:100%;
 	clear:both;
 	padding:10px 0 0 0;
-  	background-color: rgba(204, 5, 28, 0.9);
+  	background-color: rgba(204, 5, 28, 1);
 }
 
 #footer-wrapper {
@@ -2254,4 +2254,33 @@ BDO[DIR="rtl"] {
 .title_home a:hover {
 	color:#cc051c;
 	text-decoration: none;
+}
+
+.pict {
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	width:150px;
+}
+
+.separator {
+
+}
+
+.resume {
+
+}
+
+.team1 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: grey;
+}
+
+.team1 h3 {
+	color: black;
+}
+
+.team1 h4 {
+	color: black;
 }

@@ -19,14 +19,14 @@
         <div class="span9">
 
         <div id="content">
-            <h6><?php _e('We found','responsive'); ?> 
+            <h6><?php _e('Résultat','responsive'); ?> 
 			<?php
                 $allsearch = &new WP_Query("s=$s&showposts=-1");
                 $key = esc_html($s, 1);
                 $count = $allsearch->post_count;
                 _e(' &#8211; ', 'responsive');
                 echo $count . ' ';
-                _e('articles for ', 'responsive');
+                _e('articles pour ', 'responsive');
                 _e('<span class="post-search-terms">', 'responsive');
                 echo $key;
                 _e('</span><!-- end of .post-search-terms -->', 'responsive');
@@ -93,10 +93,9 @@
 
 	    <?php else : ?>
 
-        <h1 class="title-404"><?php _e('404 &#8212; Fancy meeting you here!', 'responsive'); ?></h1>
-        <p><?php _e('Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here.', 'responsive'); ?></p>
-        <h6><?php _e( 'You can return', 'responsive' ); ?> <a href="<?php echo home_url(); ?>/" title="<?php esc_attr_e( 'Home', 'responsive' ); ?>"><?php _e( '&#9166; Home', 'responsive' ); ?></a> <?php _e( 'or search for the page you were looking for', 'responsive' ); ?></h6>
-        <?php get_search_form(); ?>
+        <h1 class="title-404"><?php _e('', 'responsive'); ?></h1>
+        <p><?php _e('', 'responsive'); ?></p>
+        <h6><?php _e( '', 'responsive' ); ?> <?php _e( '', 'responsive' ); ?></h6>
 
 <?php endif; ?>  
       
