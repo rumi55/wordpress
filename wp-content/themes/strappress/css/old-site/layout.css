@@ -576,7 +576,7 @@ a.anil:hover img{
 }
 .phone_model ul li div.model_image:hover
 {
-	background:url(../images/phone_model/shadow.png) no-repeat center bottom transparent;
+	background:url(../../images/phone_model/shadow.png) no-repeat center bottom transparent;
 	opacity:1;
 }
 
@@ -695,17 +695,17 @@ a.anil:hover img{
 
 .en_boutique_box
 {
-	background: url("../images/en_boutique.png") no-repeat scroll 0 0 transparent;
+	background: url("../../images/en_boutique.png") no-repeat scroll 0 0 transparent;
 }
 
 .par_courrier_box
 {
-	background: url("../images/par_courrier.png") no-repeat scroll 0 0 transparent;
+	background: url("../../images/par_courrier.png") no-repeat scroll 0 0 transparent;
 }
 
 .par_coursier_box
 {
-	background: url("../images/par_coursier.png") no-repeat scroll 0 0 transparent;
+	background: url("../../images/par_coursier.png") no-repeat scroll 0 0 transparent;
 }
 
 .service_details
