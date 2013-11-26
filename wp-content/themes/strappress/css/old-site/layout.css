@@ -1,100 +1,4 @@
 
-.logo {
-  width: 25%;
-  float: left;
-}
-nav ul {
-  margin-top: 5%;
-  background: url(../../img/nav-bg.png) repeat-x;
-  height: 32px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-}
-nav ul li {
-  display: block;
-  float: left;
-  height: 32px;
-  padding-left: 3%;
-  padding-right: 1.9%;
-  line-height: 205%;
-  color: #fff;
-  font-weight: bold;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  font-family: 'Volkswagen-Medium';
- 
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Volkswagen-Medium';
-}
-nav ul li a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-nav ul li a:visited {
-  color: #fff;
-}
-nav ul li:hover {
-  background: #a10113;
-  -webkit-box-shadow: 0 0 5px #000 inset;
-  -moz-box-shadow: 0 0 5px #000 inset;
-  -o-box-shadow: 0 0 5px #000 inset;
-  box-shadow: 0 0 5px #000 inset;
-}
-nav ul li:hover:nth-child(1) {
-  -moz-border-radius-topleft: 15px;
-  -webkit-border-top-left-radius: 15px;
-  border-top-left-radius: 15px;
-  -moz-border-radius-bottomleft: 15px;
-  -webkit-border-bottom-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-nav ul li:hover:nth-child(6) {
-  -moz-border-radius-toprright: 15px;
-  -webkit-border-top-right-radius: 15px;
-  border-top-right-radius: 15px;
-  -moz-border-radius-bottomright: 15px;
-  -webkit-border-bottom-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  width:117px;
-}
-
-nav ul li:nth-child(1) {
-  border: 0px;
-}
-nav ul li:nth-child(1).active {
-  background: #a10113;
-  -webkit-box-shadow: 0 0 5px #000 inset;
-  -moz-box-shadow: 0 0 5px #000 inset;
-  -o-box-shadow: 0 0 5px #000 inset;
-  box-shadow: 0 0 5px #000 inset;
-  -moz-border-radius-topleft: 15px;
-  -webkit-border-top-left-radius: 15px;
-  border-top-left-radius: 15px;
-  -moz-border-radius-bottomleft: 15px;
-  -webkit-border-bottom-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-nav ul li:nth-child(6).active {
-  -moz-border-radius-toprright: 15px;
-  -webkit-border-top-right-radius: 15px;
-  border-top-right-radius: 15px;
-  -moz-border-radius-bottomright: 15px;
-  -webkit-border-bottom-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  width:117px;
-}
-nav ul li.active {
-  background: #a10113;
-  -webkit-box-shadow: 0 0 5px #000 inset;
-  -moz-box-shadow: 0 0 5px #000 inset;
-  -o-box-shadow: 0 0 5px #000 inset;
-  box-shadow: 0 0 5px #000 inset;
-
-}
 .mob-menu {
   display: none;
   width: 100%;
@@ -209,28 +113,7 @@ ul.footermenu li.active {
 ul.footermenu li:last-child {
   float: right;
 }
-footer {
-  background: #cc051c;
-  width:100%;
-  margin-top: 5%;
-  overflow: hidden;
-  clear: both;
-  position:relative;
-  bottom:0; 
-  margin: 0 auto;
-}
 
-
-.footer2 {
-  background: #cc051c;
-  width:100%;
-  margin-top: 5%;
-  overflow: hidden;
-  clear: both;
-  position:absolute;
-  bottom:0; 
-  
-}
 
   
 /*
@@ -386,7 +269,8 @@ a.anil:hover img{
 }
 
 .accordion-header 
-{ font-size: 15px;
+{ 
+  font-size: 15px;
 	background-color:#DA021A;
 	margin: 0px 0 0 0;
 	padding: 5px 60px;
@@ -394,7 +278,7 @@ a.anil:hover img{
 	border-top:1px solid #a00d1d;
 	border-bottom:1px solid #a00d1d;
 	letter-spacing:1.2px;
-	font-family: 'Volkswagen-Medium';
+	font-family: 'volkswagen-mediumregular';
 	color: #fff;
 }
 

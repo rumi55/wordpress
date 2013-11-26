@@ -711,6 +711,10 @@ form div {
   }
 }
 
+.post-entry p {
+	font-family: 'volkswagen-mediumregular';
+}
+
 /* =Templates
 -------------------------------------------------------------- */
 .page-template-landing-page-php .navbar, .page-template-landing-page-php #footer, .page-template-landing-page-php .footer-menu, .page-template-landing-page-php .sub-header-menu, .page-template-landing-page-php #header #search-box {
