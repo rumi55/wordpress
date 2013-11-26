@@ -2032,6 +2032,7 @@ BDO[DIR="rtl"] {
 		.powered {
 			text-align:center;
 		}
+
 	}
 
 	@media screen and (max-width: 480px) {
@@ -2089,6 +2090,8 @@ BDO[DIR="rtl"] {
 			text-align:center;
 
 		}
+
+
 	}
 	/*"The last 29 days of the month are the hardest."- Nikola Tesla*/
 

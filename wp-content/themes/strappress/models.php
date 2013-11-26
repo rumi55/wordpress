@@ -37,7 +37,6 @@ $dir = get_template_directory_uri(); ?>
 				?>
 				<div class="brand_image_container">
 					<div class="brand_image">
-					<!-- <img src="images/brands/apple_hover.png" />-->
 					<?php 
 						echo '<img src="'.$dir.'/'.$sql1->pc_image.'" />';
 					?>

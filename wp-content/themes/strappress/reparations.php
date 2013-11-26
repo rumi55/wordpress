@@ -37,7 +37,7 @@ $dir = get_template_directory_uri(); ?>
 							<div class="company_logo">
 								<a class="anil" href="models/?pc_id='.$marque->pc_id.'">
 									<img src="'.$dir.'/'.$marque->pc_image.'"/>
-									<img class="overlay" src="'.$dir.'/'.$marque->pc_hover_image.'" alt="overlay" />
+									
 								</a>
 							</div>
 						</li> ';

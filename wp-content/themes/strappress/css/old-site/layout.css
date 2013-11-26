@@ -339,8 +339,8 @@ a.anil:hover img{
 
 .phone_company ul li 
 {
-    float: left;
-    position: relative;
+  float: left;
+  position: relative;
 	margin-right:10px;
 	margin-bottom:10px;
 }
@@ -360,20 +360,6 @@ a.anil:hover img{
 
 }
 
-.overlay 
-{ 
-	display: none; 
-	position: absolute; 
-	left: 0; 
-	top: -58px;
-	overflow: hidden;
-}
-
-.phone_company ul li div.company_logo:hover .overlay 
-{
-	 display: block; 
-	 text-align:center;
-}
 
 .brand_image_container {
     float: left;  margin-top: 10px;
@@ -386,15 +372,6 @@ a.anil:hover img{
 	text-align:left;	
 }
 
-.brand_phone_model_container
-{
-	float:right;
-	position:relative;
-	width:80%;	
-}
-.brand_phone_model_container{
-	width:100%;
-}
 
 
 .phone_model ul 
@@ -458,6 +435,7 @@ a.anil:hover img{
   top:-10px;
   left:0px;
 }
+
 .phone_model ul li div.model_image:hover
 {
 	background:url(../../images/phone_model/shadow.png) no-repeat center bottom transparent;
@@ -465,7 +443,6 @@ a.anil:hover img{
 }
 
 .phone_service {
-    display: block;
     margin-bottom: 20px;
     margin-top: 20px;
     overflow: hidden;
@@ -474,93 +451,71 @@ a.anil:hover img{
 }
 
 .phone_service_left {
-    float: left;
-    position: relative;
-    width: 250px;
+  float: left;
+  position: relative;
+  width: 240px;
 	margin-left:40px;
-	text-align:left;
+  margin-bottom: 20px;
+  text-align: center;
+  min-width: 150px;
 }
 
 .phone_service_left2 {
-    float: left;
-    position: relative;
-    width: 200px;
+  float: left;
+  position: relative;
+  min-width: 256px;
 	margin-left:10px;
-	text-align:left;
+	text-align: center;
+  margin-bottom: 20px;
 }
 
 .phone_service_right {
-    float: left;
-    position: relative;
-    width: 88%;;
-	margin-left:140px;
-	
+  
+	text-align: center;
 }
 
 .phone_service_right2 {
-    float: left;
-    position: relative;
-    width: 67%;
-	margin-left:90px;
-	
+  float: left;
+  position: relative;
 }
 
-.phone_service_box
-{
-	position:relative;	
+.phone_service_right2 div.row-fluid{
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
 }
 
-.phone_service_box ul {
-    list-style: none outside none;
+.phone_service_right2 div.row-fluid .service-name{
+  float: left;
 }
 
-.phone_service_box ul li {
-    border-bottom: 1px solid #FFFFFF;
-    float: left;
-    font-family: 'Volkswagen-Medium';
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    width: 100%;
+.phone_service_right2 div.row-fluid .service-name a{
+  color: #FFFFFF;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
-.phone_service_box ul li .service-name 
-{
-    float: left;
+.phone_service_right2 div.row-fluid .service-price {
+  color: #FFFFFF;
+  float: right;
+  font-size: 18px;
 }
 
-.phone_service_box ul li .service-name a 
-{
-    color: #FFFFFF;
-    font-size: 18px;
-    text-decoration: none;
-    text-transform: capitalize;
+.phone_service_right2 div.row-fluid .service-price span{
+  color: #000000;
+  font-size: 16px;
+  margin-right: 12px;
 }
 
-.phone_service_box ul li .service-price 
-{
-    color: #FFFFFF;
-    float: right;
-    font-size: 18px;
+.phone_service_right2 div.row-fluid:hover .service-name a{
+  cursor:pointer;
+  color:#ff0000;
 }
 
-.phone_service_box ul li .service-price span 
-{
-    color: #000000;
-    font-size: 16px;
-    margin-right: 12px;
-}
-
-.phone_service_box ul li:hover .service-name a 
-{
-	cursor:pointer;
-	color:#ff0000;
-}
-
-.phone_service_box ul li:hover .service-price
-{
-	cursor:pointer;
-	color:#ff0000;
+.phone_service_right2 div.row-fluid:hover .service-price{
+  cursor:pointer;
+  color:#ff0000;
 }
 
 .sub_service_container
@@ -573,8 +528,7 @@ a.anil:hover img{
     float: left;
     height: 220px;
     position: relative;
-    width: 250px;
-	margin-right:25px;
+    min-width: 300px;
 }
 
 .en_boutique_box
@@ -597,16 +551,15 @@ a.anil:hover img{
 	position:absolute;
 	right:0px;
 	bottom:0px;	
-	font-family: 'Volkswagen-Medium';
-    font-size: 20px;
+	font-family: 'volkswagen-mediumregular';
+  font-size: 20px;
 	color:#fff;
-	text-align:right;
 }
 
 .service_details .service_name
 {
 	text-transform:capitalize;
-	
+	margin-bottom: 5px;
 }
 
 .service_details .service_price
@@ -724,6 +677,7 @@ p.media-desc{
     background-position: 500% 0;
   }
 }
+
 @media only screen and (max-width: 959px) {
   .introtxt {
     font-family: 'volkswagen-regularregular';
@@ -746,16 +700,31 @@ p.media-desc{
     float: left;
   }
 }
+
+
+@media only screen and (min-width: 480px) and (max-width: 1200px) {
+  .phone_service_left2 {
+    width: 100% !important;
+    margin-left: 0% !important;
+  }
+
+  .phone_service_right2 {
+    width: 100% !important;
+    margin-left: 0% !important;
+  }
+}
+
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  
+
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  
+
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   nav ul {
     display: none;
   }
