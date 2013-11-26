@@ -88,61 +88,37 @@ Template Name: team
             <div class="pict_div">
                 <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
             </div>
-            <h3>Prénom Nom</h3>
-            <h4>Poste</h4>
+            <h3>Damien Morin</h3>
+            <h4>Président</h4>
             <div class="separator">
-            </div>
-            <div class="resume">
-                Mlskdjcqklsdfjskldfj
-                svsdfvdfvdvdsfvsfvsdvf
-                svsdfvdsfvsdfvsdfv
-                vdsv.
-            </div>
+            </div>            
         </div>
         <div class="span3 team1">
             <div class="pict_div">
                 <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
             </div>
-            <h3>Prénom Nom</h3>
-            <h4>Poste</h4>
+            <h3>Geoffroy Mercier</h3>
+            <h4>Responsable Opérationnel</h4>
             <div class="separator">
-            </div>
-            <div class="resume">
-                Mlskdjcqklsdfjskldfj
-                svsdfvdfvdvdsfvsfvsdvf
-                svsdfvdsfvsdfvsdfv
-                vdsv.
-            </div>
+            </div>            
         </div>
         <div class="span3 team1">
             <div class="pict_div">
                 <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
             </div>
-            <h3>Prénom Nom</h3>
-            <h4>Poste</h4>
+            <h3>Amaury Dumont</h3>
+            <h4>Relations Entreprises</h4>
             <div class="separator">
             </div>
-            <div class="resume">
-                Mlskdjcqklsdfjskldfj
-                svsdfvdfvdvdsfvsfvsdvf
-                svsdfvdsfvsdfvsdfv
-                vdsv.
-            </div>
-        </div>
+           </div>
         <div class="span3 team1">
             <div class="pict_div">
                 <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
             </div>
-            <h3>Prénom Nom</h3>
-            <h4>Poste</h4>
+            <h3>Julie Peugeot</h3>
+            <h4>Communication / Attachée de Presse</h4>
             <div class="separator">
-            </div>
-            <div class="resume">
-                Mlskdjcqklsdfjskldfj
-                svsdfvdfvdvdsfvsfvsdvf
-                svsdfvdsfvsdfvsdfv
-                vdsv.
-            </div>
+            </div>            
         </div>
     </div>
 
@@ -151,61 +127,37 @@ Template Name: team
         <div class="pict_div">
             <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
         </div>
-        <h3>Prénom Nom</h3>
-        <h4>Poste</h4>
+        <h3>Jeremy Markarian</h3>
+        <h4>Gestion SAV</h4>
         <div class="separator">
-        </div>
-        <div class="resume">
-            Mlskdjcqklsdfjskldfj
-            svsdfvdfvdvdsfvsfvsdvf
-            svsdfvdsfvsdfvsdfv
-            vdsv.
-        </div>
+        </div>       
     </div>
     <div class="span3 team1">
         <div class="pict_div">
             <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
         </div>
-        <h3>Prénom Nom</h3>
-        <h4>Poste</h4>
+        <h3>Alexandre Galeotti</h3>
+        <h4>Direction Technique</h4>
         <div class="separator">
-        </div>
-        <div class="resume">
-            Mlskdjcqklsdfjskldfj
-            svsdfvdfvdvdsfvsfvsdvf
-            svsdfvdsfvsdfvsdfv
-            vdsv.
-        </div>
+        </div>       
     </div>
     <div class="span3 team1">
         <div class="pict_div">
             <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
         </div>
-        <h3>Prénom Nom</h3>
-        <h4>Poste</h4>
+        <h3>Michael Ballesteros</h3>
+        <h4>Responsable Point de vente</h4>
         <div class="separator">
-        </div>
-        <div class="resume">
-            Mlskdjcqklsdfjskldfj
-            svsdfvdfvdvdsfvsfvsdvf
-            svsdfvdsfvsdfvsdfv
-            vdsv.
-        </div>
+        </div>        
     </div>
     <div class="span3 team1">
         <div class="pict_div">
             <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
         </div>
-        <h3>Prénom Nom</h3>
-        <h4>Poste</h4>
+        <h3>Clément Kuhfuss</h3>
+        <h4>Responsable Adjoint Point de Vente</h4>
         <div class="separator">
-        </div>
-        <div class="resume">
-            Mlskdjcqklsdfjskldfj
-            svsdfvdfvdvdsfvsfvsdvf
-            svsdfvdsfvsdfvsdfv
-            vdsv.
-        </div>
+        </div>        
     </div>
 </div>
 
