@@ -71,13 +71,7 @@
                     <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'responsive'), 'after' => '</div><!-- end of .pagination -->')); ?>
                 </div><!-- end of .post-entry -->
                 
-                <div class="post-data">
-				    <?php the_tags(__('Tagged with:', 'responsive') . ' ', ', ', '<br />'); ?> 
-					<?php printf(__('Posted in %s', 'responsive'), get_the_category_list(', ')); ?> | 
-					<?php edit_post_link(__('Edit', 'responsive'), '', ' &#124; '); ?>  
-					<?php comments_popup_link(__('No Comments <i class="icon-arrow-down"></i>', 'responsive'), __('1 Comment <i class="icon-arrow-down"></i>', 'responsive'), __('% Comments <i class="icon-arrow-down"></i>', 'responsive')); ?>
-                </div><!-- end of .post-data -->             
-            
+                           
             </div><!-- end of #post-<?php the_ID(); ?> -->
             
 			<?php comments_template( '', true ); ?>

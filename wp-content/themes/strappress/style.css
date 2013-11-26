@@ -2101,7 +2101,7 @@ BDO[DIR="rtl"] {
 		margin:10px 0 0 0;
 	}
 
-	strong.search-excerpt { background: yellow; }
+	strong.search-excerpt { background: #cc051c; }
 
 	/* ------- Fluid Columns ------- */
 	.one_half{ width:48%; }
