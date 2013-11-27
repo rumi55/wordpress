@@ -49,7 +49,7 @@
               <?php esc_attr_e('&copy;', 'responsive'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
               <?php bloginfo('name'); ?>
               <?php } ?>
-              Réalisé par l'agence web <a href="www.ab-agency.fr">AB Agency</a>
+              </a><a href="http://www.ab-agency.fr" target="_blank">Réalisé par l'agence web AB Agency</a>
           </div><!-- end of col-460 fit -->
         </div>        
       </div>

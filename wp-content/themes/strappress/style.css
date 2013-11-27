@@ -538,13 +538,20 @@ form div {
 	width:100%;
 	clear:both;
 	padding:10px 0 0 0;
-  	background-color: rgba(204, 5, 28, 1);
-  	z-index: 1000;
+  background-color: rgba(204, 5, 28, 1);
+  z-index: 1000;
 }
 
 #footer-wrapper {
 	margin:0;
 	padding:0;
+}
+
+.span6.copyright {
+	font-family: 'volkswagen-mediumregular';
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
 }
 
 /* =Container IE Fixes (Modernizr)

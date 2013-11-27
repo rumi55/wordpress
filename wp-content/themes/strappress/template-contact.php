@@ -79,7 +79,7 @@ Template Name: contact
 <div class="row-fluid">
     <div class="span6">
         <h3>Adresse :</h3> 23 rue Duret 75116 Paris
-        <h3>Métro :</h3> Ligne1cARGENTINE
+        <h3>Métro :</h3> Ligne <?php echo '<img width="18" height="18" alt="1c" src="'.get_template_directory_uri().'/images/1c.png" />'; ?> ARGENTINE
 
         <h3>Téléphone :</h3> <a class="link_contact" href="tel:0177328846">+33 (0)1 77 32 88 46</a>
     </div>
@@ -89,7 +89,7 @@ Template Name: contact
      et de 15h00 à 19h00<br />
      Samedi de 12h00 à 19h00
      <h3>E-mail :</h3> <a class="link_contact" href="mailto:contact@savemysmartphone.fr">contact@savemysmartphone.fr</a>
-     <h3>Site Web :</h3> <a class="link_contact" href="www.savemysmartphone.fr">www.savemysmartphone.fr</a>
+     <h3>Site Web :</h3> <a class="link_contact" href="http://www.savemysmartphone.fr" target="_blank">www.savemysmartphone.fr</a>
  </div>           
 </div>
 
@@ -99,12 +99,12 @@ Template Name: contact
     <?php custom_link_pages(array(
         'before' => '<div class="pagination"><ul>' . __(''),
         'after' => '</ul></div>',
-                            'next_or_number' => 'next_and_number', # activate parameter overloading
-                            'nextpagelink' => __('&rarr;'),
-                            'previouspagelink' => __('&larr;'),
-                            'pagelink' => '%',
-                            'echo' => 1 )
-                            ); ?>
+        'next_or_number' => 'next_and_number', # activate parameter overloading
+        'nextpagelink' => __('&rarr;'),
+        'previouspagelink' => __('&larr;'),
+        'pagelink' => '%',
+        'echo' => 1 )
+        ); ?>
     </div>
 </div>
 
