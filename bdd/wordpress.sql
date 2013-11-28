@@ -2271,7 +2271,7 @@ INSERT INTO `wp_phone_model` (`pm_id`, `pc_id`, `model_name`, `model_image`) VAL
 (24, '6', 'lumia_800', 'images/phone_model/1364292627lumia_800.png'),
 (25, '6', 'lumia_610', 'images/phone_model/1364292653lumia_610.png'),
 (26, '8', 'nexus_7_led', 'images/phone_model/1364293836Nexus_7_LED.png'),
-(27, '8', 'eee_Pad(10.1")', 'images/phone_model/1364294421Eee_pad_10.png'),
+(27, '8', 'eee_Pad(10.1)', 'images/phone_model/1364294421Eee_pad_10.png'),
 (28, '7', 'one_x', 'images/phone_model/1364299399htc_one_x.png'),
 (29, '7', 'one_s', 'images/phone_model/1364299434htc_one_s.png'),
 (30, '7', 'one_v', 'images/phone_model/1364299461htc_one_v.png'),
@@ -2334,10 +2334,10 @@ INSERT INTO `wp_phone_model` (`pm_id`, `pc_id`, `model_name`, `model_image`) VAL
 (208, '2', 'galaxy_nexus', 'images/phone_model/1364290950samsung_galaxy_nexus.png'),
 (209, '2', 'google_nexus_s', 'images/phone_model/google_nexus_s.png'),
 (210, '2', 'galaxy_ace', 'images/phone_model/1364291038samsung_galaxy_ace.png'),
-(211, '2', 'galaxy_tab_2_(10.1")', 'images/phone_model/1364201248samsung_galaxy-tab_2_10_1.png'),
-(212, '2', 'galaxy_tab_2_(7")', 'images/phone_model/1364291611samsung_galaxy_tab_2(7).png'),
-(213, '2', 'galaxy_note_(10.1")', 'images/phone_model/samsung_galaxy_note10-1.png'),
-(214, '2', 'galaxy_tab_(8.2")', 'images/phone_model/1364292303samsung_galaxy_tab_8-2.png'),
+(211, '2', 'galaxy_tab_2_(10.1)', 'images/phone_model/1364201248samsung_galaxy-tab_2_10_1.png'),
+(212, '2', 'galaxy_tab_2_(7)', 'images/phone_model/1364291611samsung_galaxy_tab_2(7).png'),
+(213, '2', 'galaxy_note_(10.1)', 'images/phone_model/samsung_galaxy_note10-1.png'),
+(214, '2', 'galaxy_tab_(8.2)', 'images/phone_model/1364292303samsung_galaxy_tab_8-2.png'),
 (215, '2', 'galaxy_S3_mini', 'images/phone_model/galaxy_s3_mini.png');
 
 -- --------------------------------------------------------
