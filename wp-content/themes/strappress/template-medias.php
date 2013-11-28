@@ -30,20 +30,20 @@ Template Name: medias
 
               <?php while (have_posts()) : the_post(); ?>
 
-                 <?php if(of_get_option('breadcrumbs', '1')) {?>
-                 <?php echo responsive_breadcrumb_lists(); ?>
-                 <?php } ?>
+               <?php if(of_get_option('breadcrumbs', '1')) {?>
+               <?php echo responsive_breadcrumb_lists(); ?>
+               <?php } ?>
 
-                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+               <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                    <div class="page-header">
-                        <h1 class="page-title"><?php the_title(); ?></h1>
+                <div class="page-header">
+                    <h1 class="page-title"><?php the_title(); ?></h1>
 
-                        <div class="post-entry">
-                            <?php the_content(__('Read more &#8250;', 'responsive')); ?>
-                            <?php custom_link_pages(array(
-                                'before' => '<div class="pagination"><ul>' . __(''),
-                                'after' => '</ul></div>',
+                    <div class="post-entry">
+                        <?php the_content(__('Read more &#8250;', 'responsive')); ?>
+                        <?php custom_link_pages(array(
+                            'before' => '<div class="pagination"><ul>' . __(''),
+                            'after' => '</ul></div>',
                             'next_or_number' => 'next_and_number', # activate parameter overloading
                             'nextpagelink' => __('&rarr;'),
                             'previouspagelink' => __('&larr;'),
@@ -67,12 +67,12 @@ Template Name: medias
 
                 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
                     <div class="navigation">
-                       <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
-                       <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
-                   </div><!-- end of .navigation -->
-               <?php endif; ?>
+                     <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
+                     <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
+                 </div><!-- end of .navigation -->
+             <?php endif; ?>
 
-           <?php else : ?>
+         <?php else : ?>
 
             <h1 class="title-404"><?php _e('404 &#8212; Fancy meeting you here!', 'responsive'); ?></h1>
             <p><?php _e('Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here.', 'responsive'); ?></p>
@@ -82,41 +82,126 @@ Template Name: medias
         <?php endif; ?>  
     </div><!-- end of #content -->
 
+    <div class="main">
+
     <div class="row-fluid">
-        <div id="wrapper2">
-            <div id="list2">
-                <div class="item2"> ...<br /><br /><br /> </div>
-                <div class="item2"> ... <br /><br /><br /><br /><br /><br /></div>
-                <div class="item2"> ...<br /><br /><br /> </div>
-                <div class="item2"> ...<br /><br /><br /> </div>
-                <div class="item2"> ... <br /><br /><br /><br /><br /><br /></div>
-                <div class="item2"> ...<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> </div>
-                <div class="item2"> ...<br /><br /><br /> </div>
-                <div class="item2"> ... <br /><br /><br /><br /><br /><br /></div>
-                <div class="item2"> ...<br /><br /><br /><br /><br /><br /><br /><br /><br /> </div>
-                <!-- ... -->
-            </div>
+        <div class="span6">
+            <iframe width="100%" height="300px" src="//www.youtube.com/embed/Mxl6FjvWS3A" frameborder="0" allowfullscreen></iframe>
+        </div>
+         <div class="span6">
+        <h3>Interview de Damien Morin sur BFM Business - Made in Paris</h3>
         </div>
     </div>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
-    <script>
+    <br />
+    <br />
 
-        $( window ).load( function()
-        {
-            var columns    = 3,
-            setColumns = function() { columns = $( window ).width() > 640 ? 3 : $( window ).width() > 320 ? 2 : 1; };
-            
-            setColumns();
-            $( window ).resize( setColumns );
-            
-            $( '#list2' ).masonry(
-            {
-                itemSelector: '.item2',
-                columnWidth:  function( containerWidth ) { return containerWidth / columns; }
-            });
-        });
-    </script>
+    <div class="row-fluid">
+        <div class="span6">
+        <img src="../wp-content/themes/strappress/images/medias/vid.png"/>
+        </div>
+        <div class="span6">
+        <h3>Reportage M6</h3>
+        <p>M6 ont choisi Save my Smartphone pour leur sujet sur la réparation des smartphones dans leur émission 100% Mag!</p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="row-fluid">
+        <div class="span6">
+        <iframe width="100%" height="300px" src="//www.youtube.com/embed/_MOsxyz6hUk" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="span6">
+        <h3>Interview BFM Busines</h3>
+        <p>Save my Smartphone mit en lumière par un journaliste présentant comment faire réparer son smartphone.</p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+     <div class="row-fluid">
+        <div class="span6">
+        <img src="../wp-content/themes/strappress/images/medias/libe.png"/>
+        </div>
+        <div class="span6">
+        <h3>Comuniqué dans Libération</h3>
+        <p>Save my Smartphone apparait dans un communiqué dans Libé.</p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+     <div class="row-fluid">
+        <div class="span6">
+        <img width="400" src="../wp-content/themes/strappress/images/medias/express.jpg"/>
+        </div>
+        <div class="span6">
+        <h3>Article l'Express</h3>
+        <p>Save my Smartphone mit en lumière par un journaliste présentant comment faire réparer son smartphone.</p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+     <div class="row-fluid">
+        <div class="span6">
+        <img width="400" src="../wp-content/themes/strappress/images/medias/sortiraparis.png"/>
+        </div>
+        <div class="span6">
+        <h3>Article Sortir A Paris</h3>
+        <p>SSave my Smartphone mit en lumière sur le site de réference pour les sorties à Paris.</p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+     <div class="row-fluid">
+        <div class="span6">
+        <img src="../wp-content/themes/strappress/images/medias/dg.png"/>
+        </div>
+        <div class="span6">
+        <h3>Article Digital News</h3>
+        <p>Save my Smartphone mit en lumière sur le site Digital News.</p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+     <div class="row-fluid">
+        <div class="span6">
+        <img src="../wp-content/themes/strappress/images/medias/cnews.png"/>
+        </div>
+        <div class="span6">
+        <h3>Article Channel News</h3>
+        <p>Save my Smartphone mit en lumière sur le site Channel News.</p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+     <div class="row-fluid">
+        <div class="span6">
+        <img src="../wp-content/themes/strappress/images/medias/startup.png"/>
+        </div>
+        <div class="span6">
+        <h3>Interview startup</h3>
+        <p>Save my Smartphone donne une interview pour Startup, un magazine dédié aux "Start-up".</p>
+        </div>
+    </div>
+
+    </div>
+
+    
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
 </div><!-- end of .span9 -->
 
 <?php get_footer(); ?>

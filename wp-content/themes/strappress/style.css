@@ -2298,7 +2298,7 @@ BDO[DIR="rtl"] {
 }
 
 .team1 h4 {
-	color: black;
+	color: grey;
 }
 
 .link_contact {
@@ -2448,4 +2448,8 @@ BDO[DIR="rtl"] {
 
 div.wpcf7-validation-errors {
     clear: left;
+}
+
+.main h3 {
+ color: #cc051c;
 }
