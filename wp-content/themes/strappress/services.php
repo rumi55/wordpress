@@ -23,12 +23,12 @@ Template Name: services
 $dir = get_template_directory_uri(); ?>
 
 	<div id="accordion-container">
-		<h2 class="accordion-header"><a href="../tarifs/">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
-		<h2 class="accordion-header second-header"><a href="../models/?pc_name=<?php echo $_SESSION['pc_name']; ?>">Choisissez le modèle de votre smartphone ou tablette</a></h2>
+		<h2 class="accordion-header"><a href="../../tarifs/">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
+		<h2 class="accordion-header second-header"><a href="../../models/<?php echo $_SESSION['pc_name']; ?>">Choisissez le modèle de votre smartphone ou tablette</a></h2>
 		<h2 class="accordion-header third-header">Choisissez le type de réparation</h2>
 		<div class="accordion-content third-content">
 			<?php
-				$model_name =  $_GET['model_name'];
+				$model_name =  $wp_query->query_vars['model_name'];
 				$_SESSION['model_name'] = $model_name;
 				$sql1 = $wpdb->get_row("SELECT model_image FROM wp_phone_model where model_name = '".$model_name."'");
 				$results = $wpdb->get_results("SELECT * FROM wp_model_service LEFT JOIN wp_phone_model ON wp_model_service.pm_id = wp_phone_model.pm_id where model_name = '".$model_name."'");
@@ -50,7 +50,7 @@ $dir = get_template_directory_uri(); ?>
 							echo '
 							<div class="row-fluid">
 								<div class="service-name">
-									<a href="service_type/?pm_id='.$result->pm_id.'&ms_id='.$result->ms_id.'">'.$result->service_name.'</a>
+									<a href="../../service_type/'.$result->pm_id.'/'.$result->ms_id.'">'.$result->service_name.'</a>
 								</div>
 								<div class="service-price"><span>à partir de</span><a href="service_type/?pm_id='.$result->pm_id.'&ms_id='.$result->ms_id.'">'.$result->service_price.' &#8364;</a></div>
 							</div>

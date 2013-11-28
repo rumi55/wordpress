@@ -98,7 +98,7 @@
             }
         ?>  
         <!--<link rel="stylesheet" type="text/css" href="../wp-content/themes/strappress/css/old-site/base.css">-->
-        <link rel="stylesheet" type="text/css" href="../wp-content/themes/strappress/css/old-site/layout.css">
+        <link rel="stylesheet" type="text/css" href=<?php echo $dir."/css/old-site/layout.css" ?>>
         <!--<link rel="stylesheet" type="text/css" href="../wp-content/themes/strappress/css/old-site/skeleton.css">-->
 
 

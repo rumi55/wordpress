@@ -24,11 +24,11 @@ $dir = get_template_directory_uri(); ?>
 <div class="row-fluid">
 	<div class="sixteen colums">
 		<div id="accordion-container">
-			<h2 class="accordion-header"><a href="../tarifs/">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
+			<h2 class="accordion-header"><a href="../../tarifs/">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
 			<h2 class="accordion-header second-header">Choisissez le modèle de votre smartphone ou tablette</h2>
 			<div class="accordion-content second-content">
 				<?php
-					$pc_name =  $_GET['pc_name'];
+					$pc_name =  $wp_query->query_vars['pc_name'];
 					$_SESSION['pc_name'] = $pc_name;
 					
 					$sql1 = $wpdb->get_row("SELECT pc_image FROM wp_phone_company WHERE pc_name =  '".$pc_name."'");
@@ -53,7 +53,7 @@ $dir = get_template_directory_uri(); ?>
 									{
 										echo '<li>
 										<div class="model_image">
-											<a href="services/?model_name='.$model->model_name.'"><img src="'.$dir.'/'.$model->model_image.'"/></a>
+											<a href="../../services/'.$model->model_name.'"><img src="'.$dir.'/'.$model->model_image.'"/></a>
 										</div>
 										</li> ';
 									}

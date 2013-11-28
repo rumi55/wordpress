@@ -23,13 +23,13 @@ Template Name: service type
 $dir = get_template_directory_uri(); ?>
 <div class="row-fluid">
 	<div id="accordion-container">
-		<h2 class="accordion-header"><a href="../tarifs/">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
-		<h2 class="accordion-header second-header"><a href="../models/?pc_name=<?php echo $_SESSION['pc_name']; ?>">Choisissez le modèle de votre smartphone ou tablette</a></h2>
-		<h2 class="accordion-header third-header"><a href="../services/?model_name=<?php echo $_SESSION['model_name']; ?>">Choisissez le type de réparation</a></h2>
+		<h2 class="accordion-header"><a href="../../../tarifs/">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
+		<h2 class="accordion-header second-header"><a href="../../../models/<?php echo $_SESSION['pc_name']; ?>">Choisissez le modèle de votre smartphone ou tablette</a></h2>
+		<h2 class="accordion-header third-header"><a href="../../../services/<?php echo $_SESSION['model_name']; ?>">Choisissez le type de réparation</a></h2>
 		<h2 class="accordion-header four-header">Nous faire parvenir votre appareil</h2>
 		<div class="accordion-content four-content">
 			<?php
-				$pm_id =  $_GET['pm_id'];
+				$pm_id =  $wp_query->query_vars['pm_id'];
 				$sql1 = $wpdb->get_row("SELECT model_image FROM wp_phone_model WHERE pm_id = '".$pm_id."'");
 			?>
 			<div class="phone_service sub_service_container">
@@ -44,7 +44,7 @@ $dir = get_template_directory_uri(); ?>
 				<div class="phone_service_right row-fluid">
     			<div class="phone_service_box row-fluid">
 						<?php
-							$ms_id =  $_GET['ms_id'];
+							$ms_id =  $wp_query->query_vars['ms_id'];
 							$results = $wpdb->get_results("SELECT a.service_name,b.sub_service_price FROM wp_model_service a,wp_model_sub_service b WHERE a.ms_id = '".$ms_id."' AND b.ms_id = '".$ms_id."'");
 							$i=1;
 							foreach ($results as $result)
@@ -52,7 +52,7 @@ $dir = get_template_directory_uri(); ?>
 		            if($i==1)
 		            {	
 									echo ' 
-									<a href="../contact">
+									<a href="../../../contact">
 									<div class="sub_service_box en_boutique_box span3 offset1">
 										<div class="service_details">
 											<span class="service_name">'.$result->service_name.'</span>
@@ -76,7 +76,7 @@ $dir = get_template_directory_uri(); ?>
 								elseif($i==3)
            			{
 									echo '
-									<a href="../adomicile">
+									<a href="../../../adomicile">
 									<div class="sub_service_box par_coursier_box span3 offset1">
 										<div class="service_details">
 											<span class="service_name">'.$result->service_name.'</span>

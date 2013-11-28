@@ -35,9 +35,8 @@ $dir = get_template_directory_uri(); ?>
 						echo '
 						<li>
 							<div class="company_logo">
-								<a class="anil" href="models/?pc_name='.$marque->pc_name.'">
+								<a class="anil" href="../models/'.$marque->pc_name.'">
 									<img src="'.$dir.'/'.$marque->pc_image.'"/>
-									
 								</a>
 							</div>
 						</li> ';

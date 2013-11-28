@@ -15,3 +15,15 @@ if ( !function_exists( 'optionsframework_init' ) ) {
 	define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/' );
 	require_once dirname( __FILE__ ) . '/inc/options-framework.php';
 }
+
+add_action( 'init', 'addMyRules' );
+function addMyRules(){
+    add_rewrite_rule('^models/([^/]*)/?','index.php?page_id=54&pc_name=$matches[1]','top');
+    add_rewrite_tag('%pc_name%','([^&]+)');
+    add_rewrite_rule('^services/([^/]*)/?','index.php?page_id=56&model_name=$matches[1]','top');
+    add_rewrite_tag('%model_name%','([^&]+)');
+    add_rewrite_rule('^service_type/([^/]*)/([^/]*)/?','index.php?page_id=58&pm_id=$matches[1]&ms_id=$matches[2]','top');
+    add_rewrite_tag('%pm_id%','([^&]+)');
+    add_rewrite_tag('%ms_id%','([^&]+)');
+    //flush_rewrite_rules();
+}
