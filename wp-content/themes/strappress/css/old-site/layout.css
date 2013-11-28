@@ -271,7 +271,7 @@ a.anil:hover img{
 .accordion-header 
 { 
   font-size: 15px;
-	background-color:#DA021A;
+  background-color: rgba(215, 44, 44, 0.5);
 	margin: 0px 0 0 0;
 	padding: 5px 60px;
 	cursor: auto;
@@ -304,7 +304,7 @@ a.anil:hover img{
 
 .inactive-header 
 {
-	background: url(../../images/inactive-header.png) #DA021A;
+  background-color: rgba(215, 44, 44, 0.8);
 	background-repeat: no-repeat;
 	background-position: 15px 50%;
 }
