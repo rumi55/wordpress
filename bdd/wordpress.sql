@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Jeu 28 Novembre 2013 à 15:57
+-- Généré le: Jeu 28 Novembre 2013 à 18:30
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.12
 
@@ -2324,7 +2324,7 @@ INSERT INTO `wp_phone_model` (`pm_id`, `pc_id`, `model_name`, `model_image`) VAL
 (109, '1', 'ipad_2', 'images/phone_model/1364290268iPad_2.png'),
 (110, '1', 'ipod_touch_4g', 'images/phone_model/iPod-touch-4G_1.png'),
 (111, '1', 'ipod_touch_3g', 'images/phone_model/iPod-touch-3G_1.png'),
-(201, '2', 'galaxy_s4', 'mages/phone_model/samsung_galaxy_s4.png'),
+(201, '2', 'galaxy_s4', 'images/phone_model/samsung_galaxy_s4.png'),
 (202, '2', 'galaxy_s3', 'images/phone_model/1364290760samsung_galaxy_s3.png'),
 (203, '2', 'galaxy_s2', 'images/phone_model/1364290804samsung_galaxy_s2.png'),
 (204, '2', 'galaxy_s', 'images/phone_model/1364290835samsung_galaxy_s.png'),
