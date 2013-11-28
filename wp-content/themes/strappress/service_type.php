@@ -32,15 +32,16 @@ $dir = get_template_directory_uri(); ?>
 				$pm_id =  $_GET['pm_id'];
 				$sql1 = $wpdb->get_row("SELECT model_image FROM wp_phone_model WHERE pm_id = '".$pm_id."'");
 			?>
-			<div class="phone_service sub_service_container row-fluid">
-				<div class="phone_service_left span2">
+			<div class="phone_service sub_service_container">
+				<div class="phone_service_left row-fluid">
 					<div class="ps_image">
 						<?php
 							echo '<img src="'.$dir.'/'.$sql1->model_image.'" style="height:176px; width="auto;"" />';
 						?>
 					</div>
 				</div>
-				<div class="phone_service_right span10">
+				<div style="clear:both;"></div>
+				<div class="phone_service_right row-fluid">
     			<div class="phone_service_box row-fluid">
 						<?php
 							$ms_id =  $_GET['ms_id'];
@@ -51,8 +52,8 @@ $dir = get_template_directory_uri(); ?>
 		            if($i==1)
 		            {	
 									echo ' 
-									<a href="contact.php">
-									<div class="sub_service_box en_boutique_box span4">
+									<a href="../contact">
+									<div class="sub_service_box en_boutique_box span3 offset1">
 										<div class="service_details">
 											<span class="service_name">'.$result->service_name.'</span>
 											<br/>
@@ -64,7 +65,7 @@ $dir = get_template_directory_uri(); ?>
 								{
 									echo '
 									<a href="formulaire_de_contact_par_courrier.pdf">
-									<div class="sub_service_box par_courrier_box span4">
+									<div class="sub_service_box par_courrier_box span3 offset1">
 										<div class="service_details">
 											<span class="service_name">'.$result->service_name.'</span>
 											<br/>
@@ -75,8 +76,8 @@ $dir = get_template_directory_uri(); ?>
 								elseif($i==3)
            			{
 									echo '
-									<a href="adomicile.php">
-									<div class="sub_service_box par_coursier_box span4">
+									<a href="../adomicile">
+									<div class="sub_service_box par_coursier_box span3 offset1">
 										<div class="service_details">
 											<span class="service_name">'.$result->service_name.'</span>
 											<br/>

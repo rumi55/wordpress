@@ -451,13 +451,10 @@ a.anil:hover img{
 }
 
 .phone_service_left {
-  float: left;
   position: relative;
-  width: 240px;
-	margin-left:40px;
   margin-bottom: 20px;
   text-align: center;
-  min-width: 150px;
+  min-width: 256px;
 }
 
 .phone_service_left2 {
@@ -470,7 +467,6 @@ a.anil:hover img{
 }
 
 .phone_service_right {
-  
 	text-align: center;
 }
 
@@ -525,10 +521,9 @@ a.anil:hover img{
 
 .sub_service_box {
     display: block;
-    float: left;
     height: 220px;
     position: relative;
-    min-width: 300px;
+    min-width: 230px;
 }
 
 .en_boutique_box
@@ -554,12 +549,13 @@ a.anil:hover img{
 	font-family: 'volkswagen-mediumregular';
   font-size: 20px;
 	color:#fff;
+  text-align: right;
 }
 
 .service_details .service_name
 {
 	text-transform:capitalize;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .service_details .service_price
@@ -712,6 +708,29 @@ p.media-desc{
     width: 100% !important;
     margin-left: 0% !important;
   }
+
+  .en_boutique_box
+  {
+		width: 100% !important;
+		margin-left: 30% !important;
+  }
+
+	.par_courrier_box
+	{
+	  width: 100% !important;
+	  margin-left: 30% !important;
+	}
+
+	.par_coursier_box
+	{
+		width: 100% !important;
+		margin-left: 30% !important;
+	}
+
+	.service_details {
+		right: auto;
+		left:150px;
+	}
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -749,6 +768,25 @@ p.media-desc{
     width: 92%;
     overflow: hidden;
   }
+
+  .en_boutique_box
+  {
+		width: 100% !important;
+		margin-left: 28% !important;
+  }
+
+	.par_courrier_box
+	{
+	  width: 100% !important;
+	  margin-left: 28% !important;
+	}
+
+	.par_coursier_box
+	{
+		width: 100% !important;
+		margin-left: 28% !important;
+	}
+
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
@@ -772,6 +810,24 @@ p.media-desc{
     width: 90%;
     overflow: hidden;
   }
+
+  .en_boutique_box
+  {
+		width: 100% !important;
+		margin-left: 23% !important;
+  }
+
+	.par_courrier_box
+	{
+	  width: 100% !important;
+	  margin-left: 23% !important;
+	}
+
+	.par_coursier_box
+	{
+		width: 100% !important;
+		margin-left: 2% !important;
+	}
 }
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
