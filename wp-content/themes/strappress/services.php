@@ -24,14 +24,14 @@ $dir = get_template_directory_uri(); ?>
 
 	<div id="accordion-container">
 		<h2 class="accordion-header"><a href="../tarifs/">Choisissez la marque de votre téléphone ou de votre tablette</a></h2>
-		<h2 class="accordion-header second-header"><a href="../models/?pc_id=<?php echo $_SESSION['pc_id']; ?>">Choisissez le modèle de votre smartphone ou tablette</a></h2>
+		<h2 class="accordion-header second-header"><a href="../models/?pc_name=<?php echo $_SESSION['pc_name']; ?>">Choisissez le modèle de votre smartphone ou tablette</a></h2>
 		<h2 class="accordion-header third-header">Choisissez le type de réparation</h2>
 		<div class="accordion-content third-content">
 			<?php
-				$pm_id =  $_GET['pm_id'];
-				$_SESSION['pm_id'] = $pm_id;
-				$sql1 = $wpdb->get_row("SELECT model_image FROM wp_phone_model where pm_id = '".$pm_id."'");
-				$results = $wpdb->get_results("SELECT * FROM wp_model_service where pm_id = '".$pm_id."'");
+				$model_name =  $_GET['model_name'];
+				$_SESSION['model_name'] = $model_name;
+				$sql1 = $wpdb->get_row("SELECT model_image FROM wp_phone_model where model_name = '".$model_name."'");
+				$results = $wpdb->get_results("SELECT * FROM wp_model_service LEFT JOIN wp_phone_model ON wp_model_service.pm_id = wp_phone_model.pm_id where model_name = '".$model_name."'");
 			?>
 			<div class="phone_service row-fluid">
 				<div class="phone_service_left2 span3">

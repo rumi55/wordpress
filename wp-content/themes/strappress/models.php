@@ -28,12 +28,12 @@ $dir = get_template_directory_uri(); ?>
 			<h2 class="accordion-header second-header">Choisissez le modèle de votre smartphone ou tablette</h2>
 			<div class="accordion-content second-content">
 				<?php
-					$pc_id =  $_GET['pc_id'];
-					$_SESSION['pc_id'] = $pc_id;
+					$pc_name =  $_GET['pc_name'];
+					$_SESSION['pc_name'] = $pc_name;
 					
-					$sql1 = $wpdb->get_row("SELECT pc_image FROM wp_phone_company WHERE pc_id =  '".$pc_id."'");
+					$sql1 = $wpdb->get_row("SELECT pc_image FROM wp_phone_company WHERE pc_name =  '".$pc_name."'");
 					
-					$models = $wpdb->get_results("SELECT * from  wp_phone_model WHERE pc_id = '".$pc_id."'");
+					$models = $wpdb->get_results("SELECT * from  wp_phone_model LEFT JOIN wp_phone_company ON wp_phone_model.pc_id = wp_phone_company.pc_id WHERE pc_name = '".$pc_name."'");
 				?>
 				<div class="brand_image_container">
 					<div class="brand_image">
@@ -53,7 +53,7 @@ $dir = get_template_directory_uri(); ?>
 									{
 										echo '<li>
 										<div class="model_image">
-											<a href="services/?pm_id='.$model->pm_id.'"><img src="'.$dir.'/'.$model->model_image.'"/></a>
+											<a href="services/?model_name='.$model->model_name.'"><img src="'.$dir.'/'.$model->model_image.'"/></a>
 										</div>
 										</li> ';
 									}
