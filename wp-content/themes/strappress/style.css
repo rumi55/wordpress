@@ -145,10 +145,6 @@ body {
 	background: url(images/clouds.png);
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
-	-webkit-animation: bgMove 90s linear infinite;
-	-moz-animation: bgMove 90s linear infinite;
-	-o-animation: bgMove 90s linear infinite;
-	animation: bgMove 90s linear infinite;
 }
 
 /* =Typography
