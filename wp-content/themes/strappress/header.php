@@ -155,12 +155,13 @@
 
             ?>
             
-
+            <!--
             <?php if(of_get_option('search_bar', '1')) {?>
                             <form class="navbar-search pull-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
                                 <input name="s" id="s" type="text" class="search-query" placeholder="<?php _e('Recherche','responsive'); ?>">
                             </form>
                             <?php } ?>
+            -->
  
 
             

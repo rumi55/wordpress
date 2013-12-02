@@ -42,7 +42,7 @@
                             echo $tel->model_name;
                         }
                     ?> -->
-                    <h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes</a></h1>
+                    <h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes tactiles</a></h1>
 		        </div><!-- end of .col-460 fit -->
 		    </div> 
         </div><!-- end of .hero-unit -->
