@@ -1064,6 +1064,10 @@ form div {
 	color:#333;
 }
 
+#menu-menu-header {
+	float:right;
+}
+
 /* =Primary Menu
 -------------------------------------------------------------- */
 .menu {

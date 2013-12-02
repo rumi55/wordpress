@@ -22,10 +22,6 @@
 <?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
-
-         <?php if(of_get_option('breadcrumbs', '1')) {?>
-        <?php echo responsive_breadcrumb_lists(); ?>
-        <?php } ?>
         
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 

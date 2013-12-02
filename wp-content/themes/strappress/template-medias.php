@@ -30,10 +30,6 @@ Template Name: medias
 
               <?php while (have_posts()) : the_post(); ?>
 
-               <?php if(of_get_option('breadcrumbs', '1')) {?>
-               <?php echo responsive_breadcrumb_lists(); ?>
-               <?php } ?>
-
                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
                 <div class="page-header">
@@ -154,7 +150,7 @@ Template Name: medias
         </div>
         <div class="span6">
         <h3>Article Sortir A Paris</h3>
-        <p>SSave my Smartphone mit en lumière sur le site de réference pour les sorties à Paris.</p>
+        <p>Save my Smartphone mit en lumière sur le site de réference pour les sorties à Paris.</p>
         </div>
     </div>
 
@@ -203,5 +199,4 @@ Template Name: medias
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
 </div><!-- end of .span9 -->
-
 <?php get_footer(); ?>
