@@ -3708,6 +3708,7 @@ a.thumbnail:hover {
   line-height: 1;
   color: inherit;
   letter-spacing: -1px;
+  padding-bottom: 20px;
 }
 .hero-unit p {
   font-size: 18px;

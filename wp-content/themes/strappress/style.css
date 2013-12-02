@@ -2234,7 +2234,6 @@ BDO[DIR="rtl"] {
 
 .picto_home {
 	text-align: center;
-	padding:12px;
 	background-color: rgba(163, 206, 222, 0.2);
 	background: rgba(163, 206, 222, 0.2);
 	color: black;
@@ -2449,3 +2448,30 @@ div.wpcf7-validation-errors {
 .main h3 {
  color: #cc051c;
 }
+
+.social {
+	float: right;
+	padding-top: 10px;
+}
+
+.home1 {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 100%;
+	background-color: transparent;
+
+}
+
+.home2 {
+	background-color: transparent;
+
+}
+
+.home3 {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: transparent;
+}
+

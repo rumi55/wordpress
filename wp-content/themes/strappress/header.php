@@ -215,8 +215,9 @@
     <?php responsive_header_end(); // after header hook ?>
     
 	<?php responsive_wrapper(); // before wrapper ?>
-    
+   
     <div class="container">
+    
         <div id="wrapper" class="clearfix">
     
     <?php responsive_in_wrapper(); // wrapper hook ?>
