@@ -44,8 +44,8 @@ $hero_unit = of_get_option('hero_radio', 'no entry' );
                         }
                         ?> -->
                         <h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes tactiles</a></h1>
-                        <a href="#"><img src="wp-content/themes/strappress/images/garantie.png"/></a>            
-                        <a href="#"><img src="wp-content/themes/strappress/images/rep_express.png"/></a> 
+                        <a href="charte-qualite"><img src="wp-content/themes/strappress/images/garantie.png"/></a>            
+                        <a href="charte-qualite"><img src="wp-content/themes/strappress/images/rep_express.png"/></a> 
 
                         <div class="social">
                          <div class="twitter">
