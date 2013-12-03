@@ -26,20 +26,20 @@ $dir = get_template_directory_uri(); ?>
 <div class="row-fluid">
     <div id="content">
 
-            <?php if (have_posts()) : ?>
+        <?php if (have_posts()) : ?>
 
-              <?php while (have_posts()) : the_post(); ?>
+          <?php while (have_posts()) : the_post(); ?>
 
-               <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+           <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                <div class="page-header">
-                    <h1 class="page-title"><?php the_title(); ?></h1>
+            <div class="page-header">
+                <h1 class="page-title"><?php the_title(); ?></h1>
 
-                    <div class="post-entry">
-                        <?php the_content(__('Read more &#8250;', 'responsive')); ?>
-                        <?php custom_link_pages(array(
-                            'before' => '<div class="pagination"><ul>' . __(''),
-                            'after' => '</ul></div>',
+                <div class="post-entry">
+                    <?php the_content(__('Read more &#8250;', 'responsive')); ?>
+                    <?php custom_link_pages(array(
+                        'before' => '<div class="pagination"><ul>' . __(''),
+                        'after' => '</ul></div>',
                             'next_or_number' => 'next_and_number', # activate parameter overloading
                             'nextpagelink' => __('&rarr;'),
                             'previouspagelink' => __('&larr;'),
@@ -77,128 +77,143 @@ $dir = get_template_directory_uri(); ?>
 
         <?php endif; ?>  
     </div><!-- end of #content -->
-    </div>
+</div>
 
-    <div class="main">
+<div class="main">
+
+<div class="row-fluid">
+
+        <div class="span6">
+            <h3>Interview Startup</h3>
+            <p>Save my Smartphone donne une interview pour Startup, un magazine dédié aux "Start-up".</p>
+            <img src="../wp-content/themes/strappress/images/medias/startup.png"/>
+        </div>     
+
+   
+
+        <div class="span6">
+            <h3>01Net Magazine</h3>
+            <p>Damien Morin, mis en lumière à travers un article étonnant et spontané</p>
+            <img src="../wp-content/themes/strappress/images/medias/001.gif"/>
+        </div>
+
+        </div>
+
+<div class="row-fluid">
+
+        <div class="span6">
+            <h3>Le bonbon</h3>
+            <p>Save my Smartphone, article à l’image du magazine Le Bonbon, décalé, 
+            branché et efficace</p>
+            <img src="../wp-content/themes/strappress/images/medias/004.jpg"/>
+        </div>     
+
+   
+
+        <div class="span6">
+            <h3>Neo Domo</h3>
+            <p>Save my Smarthpone mis en avant sur Neo Domo, le nouveau magazine dédié à 
+            la maison connectée, écologique et intelligente.</p>
+            <img src="../wp-content/themes/strappress/images/medias/003.jpg"/>
+        </div>
+
+        </div>
+
+<div class="row-fluid">
+
+        <div class="span6">
+            <img src="../wp-content/themes/strappress/images/medias/002.jpg"/>
+        </div>       
+
+   
+
+        <div class="span6">
+            <h3>DegroupNews</h3>
+            <p>Save my Smartphone, présenté sur Degroup News, site d’informations sur les 
+            telecommunications</p>
+            <img src="../wp-content/themes/strappress/images/001.jpg"/>
+        </div>
+
+        </div>
+
 
     <div class="row-fluid">
+
         <div class="span6">
+            <h3>Interview de Damien Morin sur BFM Business - Made in Paris</h3>
             <iframe width="100%" height="300px" src="//www.youtube.com/embed/Mxl6FjvWS3A" frameborder="0" allowfullscreen></iframe>
-        </div>
-         <div class="span6">
-        <h3>Interview de Damien Morin sur BFM Business - Made in Paris</h3>
-        </div>
-    </div>
+        </div>       
 
-    <br />
-    <br />
+   
 
-    <div class="row-fluid">
         <div class="span6">
-        <img src="../wp-content/themes/strappress/images/medias/vid.png"/>
+            <h3>Reportage M6</h3>
+            <p>M6 ont choisi Save my Smartphone pour leur sujet sur la réparation des smartphones dans leur émission 100% Mag!</p>
+            <img src="../wp-content/themes/strappress/images/medias/vid.png"/>
         </div>
+
+        </div>
+
+
+        <div class="row-fluid">
+
         <div class="span6">
-        <h3>Reportage M6</h3>
-        <p>M6 ont choisi Save my Smartphone pour leur sujet sur la réparation des smartphones dans leur émission 100% Mag!</p>
+             <h3>Interview BFM Business</h3>
+            <p>Save my Smartphone mit en lumière par un journaliste présentant comment faire réparer son smartphone.</p>
+            <iframe width="100%" height="300px" src="//www.youtube.com/embed/_MOsxyz6hUk" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
 
-    <br />
-    <br />
 
-    <div class="row-fluid">
         <div class="span6">
-        <iframe width="100%" height="300px" src="//www.youtube.com/embed/_MOsxyz6hUk" frameborder="0" allowfullscreen></iframe>
+            <h3>Comuniqué dans Libération</h3>
+            <p>Save my Smartphone apparait dans un communiqué dans Libé.</p>
+            <img src="../wp-content/themes/strappress/images/medias/libe.png"/>
         </div>
+     
+        </div>
+
+        <div class="row-fluid">
+
+   
         <div class="span6">
-        <h3>Interview BFM Business</h3>
-        <p>Save my Smartphone mit en lumière par un journaliste présentant comment faire réparer son smartphone.</p>
+            <h3>Article l'Express</h3>
+            <p>Save my Smartphone mit en lumière par un journaliste présentant comment faire réparer son smartphone.</p>
+            <img src="../wp-content/themes/strappress/images/medias/express.jpg"/>
         </div>
-    </div>
-
-    <br />
-    <br />
-
-    <div class="row-fluid">
+                    
+      
         <div class="span6">
-        <img src="../wp-content/themes/strappress/images/medias/libe.png"/>
+            <h3>Article Sortir A Paris</h3>
+            <p>Save my Smartphone mit en lumière sur le site de réference pour les sorties à Paris.</p>
+            <img src="../wp-content/themes/strappress/images/medias/sortiraparis.png"/>
         </div>
+
+        </div>
+
+        <div class="row-fluid">
+      
+
         <div class="span6">
-        <h3>Comuniqué dans Libération</h3>
-        <p>Save my Smartphone apparait dans un communiqué dans Libé.</p>
+            <h3>Article Digital News</h3>
+            <p>Save my Smartphone mit en lumière sur le site Digital News.</p>
+            <img src="../wp-content/themes/strappress/images/medias/dg.png"/>
         </div>
-    </div>
+       
 
-    <br />
-    <br />
 
-    <div class="row-fluid">
         <div class="span6">
-        <img width="400" src="../wp-content/themes/strappress/images/medias/express.jpg"/>
+            <h3>Article Channel News</h3>
+            <p>Save my Smartphone mis en lumière sur le site Channel News.</p>
+            <img src="../wp-content/themes/strappress/images/medias/cnews.png"/>
         </div>
-        <div class="span6">
-        <h3>Article l'Express</h3>
-        <p>Save my Smartphone mit en lumière par un journaliste présentant comment faire réparer son smartphone.</p>
-        </div>
-    </div>
 
-    <br />
-    <br />
+        </div>      
+   
+</div>
 
-    <div class="row-fluid">
-        <div class="span6">
-        <img width="400" src="../wp-content/themes/strappress/images/medias/sortiraparis.png"/>
-        </div>
-        <div class="span6">
-        <h3>Article Sortir A Paris</h3>
-        <p>Save my Smartphone mit en lumière sur le site de réference pour les sorties à Paris.</p>
-        </div>
-    </div>
 
-    <br />
-    <br />
 
-    <div class="row-fluid">
-        <div class="span6">
-        <img src="../wp-content/themes/strappress/images/medias/dg.png"/>
-        </div>
-        <div class="span6">
-        <h3>Article Digital News</h3>
-        <p>Save my Smartphone mit en lumière sur le site Digital News.</p>
-        </div>
-    </div>
-
-    <br />
-    <br />
-
-    <div class="row-fluid">
-        <div class="span6">
-        <img src="../wp-content/themes/strappress/images/medias/cnews.png"/>
-        </div>
-        <div class="span6">
-        <h3>Article Channel News</h3>
-        <p>Save my Smartphone mis en lumière sur le site Channel News.</p>
-        </div>
-    </div>
-
-    <br />
-    <br />
-
-    <div class="row-fluid">
-        <div class="span6">
-        <img src="../wp-content/themes/strappress/images/medias/startup.png"/>
-        </div>
-        <div class="span6">
-        <h3>Interview startup</h3>
-        <p>Save my Smartphone donne une interview pour Startup, un magazine dédié aux "Start-up".</p>
-        </div>
-    </div>
-
-    </div>
-
-    
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
 
 </div>
 </div>

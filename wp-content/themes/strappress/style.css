@@ -2471,3 +2471,26 @@ div.wpcf7-validation-errors {
 .center {
 	text-align: center;
 }
+
+.main p {
+	margin-bottom: 15px;
+}
+
+.main img {
+	max-width: 400px;
+	max-height: 300px;
+}
+
+.main .span6 {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 2px solid #cc051c;
+}
+
+.main .span6:hover {
+	background-color: rgba(255, 255, 255, 1);
+	border: 2px solid black;
+
+
+}

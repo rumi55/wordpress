@@ -222,12 +222,8 @@ p {
   margin: 0;
   font-family: 'Volkswagen-Medium';
 }
-.content { 
-	display:none;
-	margin: 5px;
-	font-size: 105%;
-	font-family: 'Volkswagen-Medium';
-}
+
+
 #improved li {
 	position:relative;
 	overflow:hidden;
