@@ -16,18 +16,37 @@ $dir = get_template_directory_uri();
 ?>
 <div id="widgets" class="home-widgets">
 	<div class="row-fluid">
-		<div class="span4 picto_home home1">
-			<h4>Ils nous font confiance</h4>
-			<?php echo '<img src="'.$dir.'/images/confiance.png">' ?>
+		<div id="owl-demo">
+		    <div class="item"><img src=<?php echo $dir."/images/css3.png" ?> alt="Owl Image"></div>
+		    <div class="item"><img src=<?php echo $dir."/images/modern.png" ?> alt="Owl Image"></div>
+		    <div class="item"><img src=<?php echo $dir."/images/css3.png" ?> alt="Owl Image"></div>
+		    <div class="item"><img src=<?php echo $dir."/images/modern.png" ?> alt="Owl Image"></div>
+		    <div class="item"><img src=<?php echo $dir."/images/css3.png" ?> alt="Owl Image"></div>
+		    <div class="item"><img src=<?php echo $dir."/images/modern.png" ?> alt="Owl Image"></div>
+		    <div class="item"><img src=<?php echo $dir."/images/css3.png" ?> alt="Owl Image"></div>
+		    <div class="item"><img src=<?php echo $dir."/images/modern.png" ?> alt="Owl Image"></div>
+	    </div>
+	</div>
+	<div class="row-fluid">
+		<div class="span6 offset3 picto_home home2">
+		    <iframe width="100%" height="400" src="//www.youtube.com/embed/Mxl6FjvWS3A" frameborder="0" allowfullscreen></iframe>
 		</div><!-- end of .span4 -->
-
-		<div class="span4 picto_home home2">
-		    <iframe width="100%" height="200" src="//www.youtube.com/embed/Mxl6FjvWS3A" frameborder="0" allowfullscreen></iframe>
-		</div><!-- end of .span4 -->
-
-		<div class="span4 picto_home home3">
-			<h4>Ils parlent de nous</h4>
-		  	<?php echo '<img src="'.$dir.'/images/pub.png">' ?>
-		</div><!-- end of .span4 -->
-	</div>       
+	</div>
 </div><!-- end of #widgets -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src=<?php echo $dir."/js/owl.js" ?>></script>
+<script type="text/javascript" language="javascript">
+	$(function() {
+		 $("#owl-demo").owlCarousel({
+ 
+		autoPlay: 3000, //Set AutoPlay to 3 seconds
+		
+		items : 4,
+		itemsDesktop : [1170,4],
+		itemsDesktopSmall : [979,3],
+		navigation : true,
+		navigationText : ["prev","next"]
+		 
+		});
+	});
+</script>
