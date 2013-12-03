@@ -82,7 +82,7 @@ Template Name: team
     <div class="row-fluid">
         <div class="span3 team1">
             <div class="pict_div">
-                <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
+                <img class="pict" src="../wp-content/themes/strappress/images/team/team01.png"/>
             </div>
             <h3>Damien Morin</h3>
             <h4>Président</h4>
@@ -91,7 +91,7 @@ Template Name: team
         </div>
         <div class="span3 team1">
             <div class="pict_div">
-                <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
+                <img class="pict" src="../wp-content/themes/strappress/images/team/team02.jpg"/>
             </div>
             <h3>Geoffroy Mercier</h3>
             <h4>Responsable Opérationnel</h4>
@@ -100,7 +100,7 @@ Template Name: team
         </div>
         <div class="span3 team1">
             <div class="pict_div">
-                <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
+                <img class="pict" src="../wp-content/themes/strappress/images/team/team03.jpg"/>
             </div>
             <h3>Amaury Dumont</h3>
             <h4>Relations Entreprises</h4>
@@ -109,7 +109,7 @@ Template Name: team
            </div>
         <div class="span3 team1">
             <div class="pict_div">
-                <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
+                <img class="pict" src="../wp-content/themes/strappress/images/team/team04.jpg"/>
             </div>
             <h3>Julie Peugeot</h3>
             <h4>Communication / Attachée de Presse</h4>
@@ -121,7 +121,7 @@ Template Name: team
     <div class="row-fluid">
       <div class="span3 team1">
         <div class="pict_div">
-            <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
+            <img class="pict" src="../wp-content/themes/strappress/images/team/team05.jpg"/>
         </div>
         <h3>Jeremy Markarian</h3>
         <h4>Gestion SAV</h4>
@@ -130,7 +130,7 @@ Template Name: team
     </div>
     <div class="span3 team1">
         <div class="pict_div">
-            <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
+            <img class="pict" src="../wp-content/themes/strappress/images/team/team06.jpg"/>
         </div>
         <h3>Alexandre Galeotti</h3>
         <h4>Direction Technique</h4>
@@ -139,7 +139,7 @@ Template Name: team
     </div>
     <div class="span3 team1">
         <div class="pict_div">
-            <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
+            <img class="pict" src="../wp-content/themes/strappress/images/team/team07.jpg"/>
         </div>
         <h3>Michael Ballesteros</h3>
         <h4>Responsable Point de vente</h4>
@@ -148,7 +148,7 @@ Template Name: team
     </div>
     <div class="span3 team1">
         <div class="pict_div">
-            <img class="pict" src="../wp-content/themes/strappress/images/team01.jpg"/>
+            <img class="pict" src="../wp-content/themes/strappress/images/team/team08.jpg"/>
         </div>
         <h3>Clément Kuhfuss</h3>
         <h4>Responsable Adjoint Point de Vente</h4>

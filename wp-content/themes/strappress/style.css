@@ -2241,12 +2241,7 @@ BDO[DIR="rtl"] {
 .picto_home {
 	text-align: center;
 	padding:12px;
-	background-color: rgba(163, 206, 222, 0.2);
-	background: rgba(163, 206, 222, 0.2);
 	color: black;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
 	font-size: 20px;
 	margin-bottom: 50px;
 }
@@ -2470,4 +2465,14 @@ div.wpcf7-validation-errors {
 
 .center {
 	text-align: center;
+}
+
+.facebook img {
+	width: 30px;
+	margin-bottom: 5px;
+}
+
+#post-30 .page-header {
+	margin: 0 0 0 0 !important;
+	padding-bottom: 0px !important;
 }

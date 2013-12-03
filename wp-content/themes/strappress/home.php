@@ -15,6 +15,7 @@
  * @link           N/A
  * @since          available since Release 1.0
  */
+$dir = get_template_directory_uri();
 ?>
 <?php get_header(); ?>
 
@@ -52,7 +53,7 @@ $hero_unit = of_get_option('hero_radio', 'no entry' );
                           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                       </div>
                       <div class="facebook">
-
+                      	<a href="https://www.facebook.com/savemysmartphone" target="_blank"><?php echo '<img src="'.$dir.'/images/fb.png">' ?></a>
                       </div>
                       <div class="googleplus">
                           <!-- Place this tag where you want the +1 button to render. -->
@@ -123,8 +124,6 @@ $hero_unit = of_get_option('hero_radio', 'no entry' );
 
             <?php } ?> 
             <?php get_sidebar('home'); ?>       
-
-            <!-- Place this tag after the last +1 button tag. -->
             <script type="text/javascript">
                 window.___gcfg = {lang: 'fr'};
 
