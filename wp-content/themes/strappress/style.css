@@ -2459,12 +2459,7 @@ div.wpcf7-validation-errors {
 }
 
 .home1 {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	height: 100%;
-	background-color: transparent;
-
+	
 }
 
 .home2 {
@@ -2473,9 +2468,10 @@ div.wpcf7-validation-errors {
 }
 
 .home3 {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	background-color: transparent;
+	
 }
 
+
+.center {
+	text-align: center;
+}

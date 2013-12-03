@@ -16,6 +16,7 @@
     <div id="widgets" class="home-widgets">
         <div class="row-fluid">
         <div class="span4 picto_home home1">
+        <h4>Ils nous font confiance</h4>
            
         </div><!-- end of .span4 -->
 
@@ -24,6 +25,7 @@
         </div><!-- end of .span4 -->
 
         <div class="span4 picto_home home3">
+        <h4>Ils parlent de nous</h4>
           
        </div><!-- end of .span4 -->
         </div>       

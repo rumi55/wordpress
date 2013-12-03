@@ -31,16 +31,41 @@ Template Name: propos
 
               <?php while (have_posts()) : the_post(); ?>
 
-               <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                <div class="page-header">
-                    <h1 class="page-title"><?php the_title(); ?></h1>
+                    <div class="page-header">
+                        <h1 class="page-title"><?php the_title(); ?></h1>
 
-                    <div class="post-entry">
-                        <?php the_content(__('Read more &#8250;', 'responsive')); ?>
-                        <?php custom_link_pages(array(
-                            'before' => '<div class="pagination"><ul>' . __(''),
-                            'after' => '</ul></div>',
+                        <h4>Les engagements de Save my Smartphone</h4>
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="span3 center">
+                                <img src="../wp-content/themes/strappress/images/1.png"/>
+                                <p>Votre mobile ne fonctionne plus</p>
+                            </div>
+                            <div class="span3 center">
+                                <img src="../wp-content/themes/strappress/images/2.png"/>
+                                <p>Nous diagnostiquons les réparations</p>
+                            </div>
+                            <div class="span3 center">
+                                <img src="../wp-content/themes/strappress/images/3.png"/>
+                                <p>Nous procédons à sa réparation</p>                           
+                            </div>
+                            <div class="span3 center">
+                                <img src="../wp-content/themes/strappress/images/4.png"/>
+                                <p>Vous repartez heureux</p>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+
+
+                        <div class="post-entry">
+                            <?php the_content(__('Read more &#8250;', 'responsive')); ?>
+                            <?php custom_link_pages(array(
+                                'before' => '<div class="pagination"><ul>' . __(''),
+                                'after' => '</ul></div>',
                             'next_or_number' => 'next_and_number', # activate parameter overloading
                             'nextpagelink' => __('&rarr;'),
                             'previouspagelink' => __('&larr;'),
@@ -64,12 +89,12 @@ Template Name: propos
 
                 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
                     <div class="navigation">
-                     <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
-                     <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
-                 </div><!-- end of .navigation -->
-             <?php endif; ?>
+                       <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
+                       <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
+                   </div><!-- end of .navigation -->
+               <?php endif; ?>
 
-         <?php else : ?>
+           <?php else : ?>
 
             <h1 class="title-404"><?php _e('404 &#8212; Fancy meeting you here!', 'responsive'); ?></h1>
             <p><?php _e('Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here.', 'responsive'); ?></p>
@@ -91,7 +116,7 @@ Template Name: propos
         </div>
     </div>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
 
 </div><!-- end of .span9 -->
 
