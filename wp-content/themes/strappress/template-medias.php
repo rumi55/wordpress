@@ -20,11 +20,11 @@ Template Name: medias
 ?>
 
 
-<?php get_header(); ?>
+<?php get_header();
+$dir = get_template_directory_uri(); ?>
 
 <div class="row-fluid">
-    <div class="span">
-        <div id="content">
+    <div id="content">
 
             <?php if (have_posts()) : ?>
 
@@ -77,6 +77,7 @@ Template Name: medias
 
         <?php endif; ?>  
     </div><!-- end of #content -->
+    </div>
 
     <div class="main">
 
@@ -110,7 +111,7 @@ Template Name: medias
         <iframe width="100%" height="300px" src="//www.youtube.com/embed/_MOsxyz6hUk" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="span6">
-        <h3>Interview BFM Busines</h3>
+        <h3>Interview BFM Business</h3>
         <p>Save my Smartphone mit en lumière par un journaliste présentant comment faire réparer son smartphone.</p>
         </div>
     </div>
@@ -118,7 +119,7 @@ Template Name: medias
     <br />
     <br />
 
-     <div class="row-fluid">
+    <div class="row-fluid">
         <div class="span6">
         <img src="../wp-content/themes/strappress/images/medias/libe.png"/>
         </div>
@@ -131,7 +132,7 @@ Template Name: medias
     <br />
     <br />
 
-     <div class="row-fluid">
+    <div class="row-fluid">
         <div class="span6">
         <img width="400" src="../wp-content/themes/strappress/images/medias/express.jpg"/>
         </div>
@@ -144,7 +145,7 @@ Template Name: medias
     <br />
     <br />
 
-     <div class="row-fluid">
+    <div class="row-fluid">
         <div class="span6">
         <img width="400" src="../wp-content/themes/strappress/images/medias/sortiraparis.png"/>
         </div>
@@ -157,7 +158,7 @@ Template Name: medias
     <br />
     <br />
 
-     <div class="row-fluid">
+    <div class="row-fluid">
         <div class="span6">
         <img src="../wp-content/themes/strappress/images/medias/dg.png"/>
         </div>
@@ -170,20 +171,20 @@ Template Name: medias
     <br />
     <br />
 
-     <div class="row-fluid">
+    <div class="row-fluid">
         <div class="span6">
         <img src="../wp-content/themes/strappress/images/medias/cnews.png"/>
         </div>
         <div class="span6">
         <h3>Article Channel News</h3>
-        <p>Save my Smartphone mit en lumière sur le site Channel News.</p>
+        <p>Save my Smartphone mis en lumière sur le site Channel News.</p>
         </div>
     </div>
 
     <br />
     <br />
 
-     <div class="row-fluid">
+    <div class="row-fluid">
         <div class="span6">
         <img src="../wp-content/themes/strappress/images/medias/startup.png"/>
         </div>
@@ -198,5 +199,7 @@ Template Name: medias
     
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
-</div><!-- end of .span9 -->
+
+</div>
+</div>
 <?php get_footer(); ?>
