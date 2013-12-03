@@ -2241,12 +2241,7 @@ BDO[DIR="rtl"] {
 .picto_home {
 	text-align: center;
 	padding:12px;
-	background-color: rgba(163, 206, 222, 0.2);
-	background: rgba(163, 206, 222, 0.2);
 	color: black;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
 	font-size: 20px;
 	margin-bottom: 50px;
 }
@@ -2472,6 +2467,7 @@ div.wpcf7-validation-errors {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .main p {
 	margin-bottom: 15px;
 }
@@ -2493,4 +2489,14 @@ div.wpcf7-validation-errors {
 	border: 2px solid black;
 
 
+=======
+.facebook img {
+	width: 30px;
+	margin-bottom: 5px;
+}
+
+#post-30 .page-header {
+	margin: 0 0 0 0 !important;
+	padding-bottom: 0px !important;
+>>>>>>> 643b71085aa757622921e874b45583e7c929745d
 }

@@ -12,21 +12,22 @@
  * @link           http://codex.wordpress.org/Theme_Development#Widgets_.28sidebar.php.29
  * @since          available since Release 1.0
  */
+$dir = get_template_directory_uri();
 ?>
-    <div id="widgets" class="home-widgets">
-        <div class="row-fluid">
-        <div class="span4 picto_home home1">
-        <h4>Ils nous font confiance</h4>
-           
-        </div><!-- end of .span4 -->
+<div id="widgets" class="home-widgets">
+	<div class="row-fluid">
+		<div class="span4 picto_home home1">
+			<h4>Ils nous font confiance</h4>
+			<?php echo '<img src="'.$dir.'/images/confiance.png">' ?>
+		</div><!-- end of .span4 -->
 
-        <div class="span4 picto_home home2">
-            <iframe width="100%" height="200" src="//www.youtube.com/embed/Mxl6FjvWS3A" frameborder="0" allowfullscreen></iframe>
-        </div><!-- end of .span4 -->
+		<div class="span4 picto_home home2">
+		    <iframe width="100%" height="200" src="//www.youtube.com/embed/Mxl6FjvWS3A" frameborder="0" allowfullscreen></iframe>
+		</div><!-- end of .span4 -->
 
-        <div class="span4 picto_home home3">
-        <h4>Ils parlent de nous</h4>
-          
-       </div><!-- end of .span4 -->
-        </div>       
-    </div><!-- end of #widgets -->
+		<div class="span4 picto_home home3">
+			<h4>Ils parlent de nous</h4>
+		  	<?php echo '<img src="'.$dir.'/images/pub.png">' ?>
+		</div><!-- end of .span4 -->
+	</div>       
+</div><!-- end of #widgets -->
