@@ -1,0 +1,98 @@
+div[class^=custom_section_] > h3{
+	font-weight:bold;
+	font-size:30px;
+	padding-bottom:15px;
+	padding-left:7px;	
+	margin:0;
+	color:#189ac9;
+}
+div[class^=custom_section_] > p{
+	color:#818181;
+	font-size:14px;
+	margin:0;
+	padding:0;
+}
+.codespacing_container{
+	border-bottom: 4px solid #189ac9;
+	background: #fbfbfb;
+}
+ul.codespacing_menu{
+	width: 200px;
+	margin: 0px;
+	padding: 0px;
+	padding-top:7px;	
+}
+ul.codespacing_menu li.codespacing_li{
+	margin-left: 0px;
+	list-style: none;
+	width: 153px;
+	padding: 10px 20px 10px 30px;
+	background: none;
+	border-bottom: 0px solid #e8ebec;
+	font-size: 16px;
+	font-weight:bold;
+	color:#596266;
+	cursor:pointer;
+	margin:0;
+}
+ul.codespacing_menu li.current{
+	border-left:3px solid #189ac9;
+	background:#fff;	
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+div[class^=custom_section_] input[type=text]:hover, div[class^=custom_section_] input[type=text]:focus{
+	border-color:#0e76a8;
+}
+div[class^=custom_section_] > table.form-table > tbody > tr > th{
+	font-size:13px;
+	color:#4d5053;
+}
+div[class^=custom_section_] > table.form-table input[type=text],
+div[class^=custom_section_] > table.form-table select{
+	height:30px;
+	padding-left:5px;
+}
+div[class^=custom_section_] > table.form-table input[type=submit]{
+	height:40px;
+}
+div.codespacing_header{
+	width:auto;
+	height:70px;
+	background:#2c3d4f url(../img/bg.png) repeat;
+	border-bottom:4px solid #097faa;
+}
+input.custom-button-primary{
+	border:2px solid #097faa;
+	border-radius:4px;
+	background:#57a1e2 url(../img/bg.png) repeat;
+	padding:10px 20px;
+	color:#fff;
+	font-size:14px;
+	cursor:pointer;
+	float:right;
+	box-shadow:0px 3px 0px #dededc;
+	margin-bottom:20px;
+}
+input.custom-button-primary:hover{
+	box-shadow:0px -3px 0px #dededc;
+}
+#codespacing_form em .error{
+	color:#e02131;
+	font-weight:bold;
+}
+label.custom_wpsf {
+	position:relative;
+	top:-6px;
+}
+sup{
+	font-size:9px;
+}
+.section_sub_title{
+	color:#ff6600;
+	font-size:18px;
+	border-bottom:0px solid #e8ebec;
+}

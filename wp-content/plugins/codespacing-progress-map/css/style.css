@@ -1,0 +1,317 @@
+
+.codespacing_progress_map_area {
+	width: 100%;
+	background: #fff;
+	border-bottom:0px solid #097faa;
+	border-top:0px solid #097faa;
+}
+
+#codespacing_progress_map_div{
+	margin: 0px auto;	
+}
+
+#codespacing_progress_map_div img{
+	max-width:none;
+}
+
+.marker_holder img{
+	border:5px solid #0066cc;			
+	text-align:center;
+	width:70px;
+	height:70px;
+	border-radius: 50%;
+}
+
+
+/* ==== Rounded Overlay ==== */
+
+.pin_overlay_img{
+	border-radius: 50%;	
+	width: 55px;
+	height: 55px;	
+}
+
+.pin_overlay{
+	border-radius: 50% 50% 50% 0%;
+	position: relative;
+	cursor: default;
+	border:2px solid rgba(255,255,255,0.6);
+	/*box-shadow: 
+		inset 0 0 0 0px rgba(255,255,255,1),
+		0px 1px 2px rgba(0,0,0,0.7);*/
+		
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	z-index:1;
+	background: rgba(255,255,255,0.9);
+	width: 59px;
+	height: 59px;	
+}
+
+.pin_overlay_content {
+	position: absolute;
+	background: rgba(255,255,255, 0.7);
+	border-radius: 50%;
+	opacity: 0;
+	width: 55px;
+	height: 55px;		
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	
+	-webkit-backface-visibility: hidden;
+}
+
+.pin_overlay_content a {
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	position:relative;
+	top:30%;
+	left:25%;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+	color: #097faa;
+}
+
+.pin_overlay_content a:hover {
+	color:#189ac9;
+}
+
+.pin_overlay:hover {
+	/*box-shadow: 
+		inset 0 0 0 6px rgba(255,255,255,0.9),
+		1px 1px 1px rgba(0,0,0,0.0);*/
+}
+
+.pin_overlay:hover .pin_overlay_content, .pin_overlay_content-active {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 0.7;
+}
+
+/* ===== InfoWindow Overlay ==== */
+
+.infoWindowOverlay{
+	width:250px; 
+	height:150px;
+}
+
+.infoWindowOverlayTop{
+	background:#fff; 
+	width:250px; 
+	height:120px; 
+	border-bottom:7px solid #0066cc;	
+}
+
+.infoWindowOverlayTopLeft{
+	width:55px;
+	height:120px; 
+	float:left;	
+}
+
+.InfoWindowOverlayImgHolder{
+	position:relative; 
+	top:-10px; 
+	left:-10px;	
+}
+
+.infoWindowOverlayImg{
+	border-radius:50%; 
+	box-shadow:none; 
+	border:3px solid #fff;	
+	width: 55px;
+	height: 55px;
+	position: relative;
+	cursor: default;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	z-index:1;
+	
+}
+
+.infoWindowOverlayClose{
+	margin:30px 0 0 10px;
+	background:url(../img/close.png) no-repeat left bottom;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+}
+
+.infoWindowOverlayTopRight{
+	height:auto; 
+	width:185px; 
+	float:left;
+	margin-top:6px;
+	height:120px;
+	overflow:hidden;
+}
+
+.infoWindowOverlayTopRight p strong{
+	font-size:14px;
+}
+
+.infoWindowOverlayTopRight p{
+	font-size:12px;
+	height:100px;
+	overflow:auto;
+}
+
+.infoWindowOverlayTopRight p a{
+	font-weight:normal;
+	color:#097faa;
+	font-size:13px;
+}
+
+.infoWindowOverlayTopRight p a:hover{
+	color:#189ac9;
+}
+
+.infoWindowOverlayArrow{
+	width:2px; 
+	height:30px; 
+	background:#0066cc; 
+	margin:auto;	
+}
+
+/* ==== Zoom Control ==== */
+
+.codespacing_zoom_container {
+	position: absolute;
+	width: 46px;
+	height: 76px;
+	z-index: 999; 
+	margin: 20px 0 0 20px;
+}
+
+.codespacing_map_zoom_in { 	
+	position: relative; 
+	left: 0px; 
+	top: 1px; 
+	width: 46px; 
+	height: 38px; 
+	background-image: url(../img/zoom-in.jpg); 
+	background-repeat: no-repeat; 
+	background-position: 50% 50%; 
+	z-index: 9; 
+	cursor: pointer; 
+}
+
+.codespacing_map_zoom_out { 
+	position: relative; 
+	left: 0px; 
+	top: 2px; 
+	width: 46px; 
+	height: 38px; 
+	background-image: url(../img/zoom-out.jpg); 
+	background-repeat: no-repeat; 
+	background-position: 50% 50%;
+	z-index: 9; 
+	cursor: pointer; 
+}
+
+
+/* ==== Details Area ==== */
+
+.details_title{
+	font-size:14px; 
+	font-family: "PT Sans", Arial, Helvetica, sans-serif !important;
+	background:rgba(0,102,204,0.2);
+	color:#063f74;
+	font-weight:normal;
+	padding:5px 10px;
+}
+
+.details_infos{
+	font-size:12px; 
+	font-weight:normal; 	
+	font-family: "PT Sans", Arial, Helvetica, sans-serif !important;	
+	color:#343434; 
+	padding:5px 10px; 
+}
+
+/* ==== Details Button ==== */
+
+.item_infos{
+	width:100%; 
+	height:100%; 
+	padding:0px; 
+	margin:auto; 
+}
+
+.details_container{
+	padding:0;
+	float:left;
+	overflow:hidden;
+}
+
+.item_infos:hover div.details_btn{
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);	
+}
+
+div.details_btn{
+	position:absolute; 
+	height:30px; 
+	width:auto; 
+	padding:0 20px; 
+	text-align:center; 
+	line-height:29px; 
+	background:rgba(255,255,255, 0.9); 
+	/*bottom:15px;*/
+	box-shadow:1px 1px 0px #ccc;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);	
+}
+
+div.details_btn a{
+	font-size:11px;
+	color:#097faa;
+}
+
+div.details_btn a:hover{
+	color:#189ac9;
+}
+
+
+
