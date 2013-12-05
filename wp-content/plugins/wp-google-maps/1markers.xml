@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<markers>
+  <marker>
+    <marker_id>1</marker_id>
+    <map_id>1</map_id>
+    <title></title>
+    <address>23 rue Duret 75116 Paris</address>
+    <desc></desc>
+    <pic></pic>
+    <icon></icon>
+    <linkd></linkd>
+    <lat>48.874710</lat>
+    <lng>2.286034</lng>
+    <anim></anim>
+    <category>0</category>
+    <infoopen></infoopen>
+  </marker>
+</markers>

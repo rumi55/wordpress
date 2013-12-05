@@ -2513,3 +2513,7 @@ div.wpcf7-validation-errors {
 	text-align: center;
 	margin-bottom: 20px;
 }
+
+.main_content_slider_wrapper {
+	margin-top: 150px !important;
+}
