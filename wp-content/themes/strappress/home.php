@@ -36,31 +36,13 @@ $hero_unit = of_get_option('hero_radio', 'no entry' );
    <img class="shadow" alt="shadow" src="wp-content/themes/strappress/images/shadow.png">
 </div><!-- end of .col-460 -->
 
-<div id="hero-image" class="span6"> 
-                  <!--  <?php
-                        $list_tel = $wpdb->get_results("SELECT * FROM wp_phone_model");
-                        foreach ($list_tel as $tel) {
-                            echo $tel->model_name;
-                        }
-                        ?> -->
-                        <h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes tactiles</a></h1>
-                        <a href="charte-qualite"><img src="wp-content/themes/strappress/images/garantie.png"/></a>            
-                        <a href="charte-qualite"><img src="wp-content/themes/strappress/images/rep_express.png"/></a> 
-
-                        <div class="social">
-                         <div class="twitter">
-                          <a href="https://twitter.com/damienmorin" class="twitter-follow-button" data-show-count="true" data-lang="fr">Follow @twitterapi</a>
-                          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                      </div>
-                      <div class="facebook">
-                      	<a href="https://www.facebook.com/savemysmartphone" target="_blank"><?php echo '<img src="'.$dir.'/images/fb.png">' ?></a>
-                      </div>
-                      <div class="googleplus">
-                          <!-- Place this tag where you want the +1 button to render. -->
-                          <div class="g-plusone" data-href="https://plus.google.com/107957583297179616406"></div>
-                      </div>
-                  </div> 
-              </div><!-- end of .col-460 fit -->
+<div id="hero-image" class="span6">
+                    <h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes tactiles</a></h1>
+                    <div class="row-fluid">
+                   		<center><a href="charte-qualite" class="span6"><img src="wp-content/themes/strappress/images/garantie.png"/></a></center>
+                    	<center><a href="charte-qualite" class="span6"><img src="wp-content/themes/strappress/images/rep_express.png"/></a></center>
+                    </div>
+</div><!-- end of .col-460 fit -->
           </div> 
       </div><!-- end of .hero-unit -->
       <?php } else { ?>     

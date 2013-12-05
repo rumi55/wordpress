@@ -2259,13 +2259,12 @@ BDO[DIR="rtl"] {
 }
 
 .title_home a {
-	color:black;
-
+	color:#cc051c;
 }
 
 
 .title_home a:hover {
-	color:#cc051c;
+	color:black;
 	text-decoration: none;
 }
 
@@ -2493,17 +2492,27 @@ div.wpcf7-validation-errors {
 	margin-bottom: 5px;
 }
 
+.facebook, .twitter, .googleplus{
+	float:left;
+}
+
 #post-30 .page-header {
 	margin: 0 0 0 0 !important;
 	padding-bottom: 0px !important;
 }
 
 #owl-demo .item{
-margin: 3px;
-}
-#owl-demo .item img{
-display: block;
-width: 100%;
-height: 58px;
+	margin: 3px;
 }
 
+#owl-demo .item img{
+	display: block;
+	width: 100%;
+	height: 70px;
+}
+
+.title_home {
+	text-transform: uppercase;
+	font-size: 50px !important;
+	text-align: center;
+}

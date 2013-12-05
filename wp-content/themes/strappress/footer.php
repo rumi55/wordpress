@@ -12,6 +12,7 @@
  * @link           http://codex.wordpress.org/Theme_Development#Footer_.28footer.php.29
  * @since          available since Release 1.0
  */
+$dir = get_template_directory_uri();
 ?>
 </div><!-- end of wrapper-->
 <?php responsive_wrapper_end(); // after wrapper hook ?>
@@ -52,6 +53,18 @@
               </a><a href="http://www.ab-agency.fr" target="_blank">Réalisé par l'agence web AB Agency</a>
           </div><!-- end of col-460 fit -->
         </div>        
+      </div>
+      <div class="row-fluid">
+				<center><div class="facebook">
+					<div class="fb-like" data-href="https://www.facebook.com/savemysmartphone" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+					</div>
+				<div class="twitter">
+					<a href="https://twitter.com/damienmorin" class="twitter-follow-button" data-show-count="true" data-lang="fr">Follow @twitterapi</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+				<div class="googleplus">
+					<div class="g-plusone" data-size="medium" data-href="https://plus.google.com/107957583297179616406"></div>
+				</div></center>
       </div>
 
     </div><!-- end of col-940 -->
