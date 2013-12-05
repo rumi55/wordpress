@@ -740,18 +740,61 @@ p.media-desc{
 	.hero-unit h1 {
 		font-size: 50px;
 	}
+	
+}
+
+@media only screen and (min-width: 1200px) {
+	.googleplus {
+		margin-left: 4.8% !important;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.facebook{
+		margin-left: 34.188% !important;
+	}
+	
+	.twitter{
+		margin-left: 6% !important;
+	}
+
+	.googleplus {
+		margin-left: 9% !important;
+	}
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.facebook{
+		margin-left: 25% !important;
+	}
+	
+	.twitter{
+		margin-left: 10% !important;
+	}
 
+	.googleplus {
+		margin-left: 18% !important;
+	}
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 	.hero-unit h1 {
 		font-size: 35px;
 	}
+
+	.facebook {
+		margin-left: 0 !important;
+		width: 100%!important;
+	}
 }
+
+
+@media only screen and (min-width: 650px) and (max-width: 767px) {
+		.facebook, .twitter, .googleplus {
+			text-align: center !important;
+		}
+	}
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 

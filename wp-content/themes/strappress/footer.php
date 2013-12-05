@@ -54,7 +54,7 @@ $dir = get_template_directory_uri();
           </div><!-- end of col-460 fit -->
         </div>        
       </div>
-      <div class="row">
+      <div class="row-fluid">
 				<div class="facebook offset4 span1">
 					<div class="fb-like" data-href="https://www.facebook.com/savemysmartphone" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 					</div>
