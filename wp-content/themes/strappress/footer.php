@@ -70,7 +70,16 @@ $dir = get_template_directory_uri();
     </div><!-- end of col-940 -->
   </div>
 </div><!-- end #footer-wrapper -->
-</div>  
+</div>
+<script type="text/javascript">
+    window.___gcfg = {lang: 'fr'};
+
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </div><!-- end #footer -->
 
 <?php wp_footer(); ?>
