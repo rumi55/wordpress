@@ -2487,13 +2487,8 @@ div.wpcf7-validation-errors {
 	border: 2px solid black;
 }
 
-.facebook img {
-	width: 30px;
-	margin-bottom: 5px;
-}
-
-.facebook, .twitter, .googleplus{
-	float:left;
+.googleplus {
+	margin-left: 4.8% !important;
 }
 
 #post-30 .page-header {
@@ -2515,4 +2510,9 @@ div.wpcf7-validation-errors {
 	text-transform: uppercase;
 	font-size: 50px !important;
 	text-align: center;
+}
+
+.post-entry h2 {
+	text-align: center;
+	margin-bottom: 20px;
 }

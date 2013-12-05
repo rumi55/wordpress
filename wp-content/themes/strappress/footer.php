@@ -54,17 +54,17 @@ $dir = get_template_directory_uri();
           </div><!-- end of col-460 fit -->
         </div>        
       </div>
-      <div class="row-fluid">
-				<center><div class="facebook">
+      <div class="row">
+				<div class="facebook offset4 span1">
 					<div class="fb-like" data-href="https://www.facebook.com/savemysmartphone" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 					</div>
-				<div class="twitter">
+				<div class="twitter span2">
 					<a href="https://twitter.com/damienmorin" class="twitter-follow-button" data-show-count="true" data-lang="fr">Follow @twitterapi</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
-				<div class="googleplus">
+				<div class="googleplus span1">
 					<div class="g-plusone" data-size="medium" data-href="https://plus.google.com/107957583297179616406"></div>
-				</div></center>
+				</div>
       </div>
 
     </div><!-- end of col-940 -->
