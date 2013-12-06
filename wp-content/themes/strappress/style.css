@@ -1810,6 +1810,7 @@ img.wp-post-image, img.attachment-thumbnail, img.attachment-medium, img.attachme
 	color:#333;
 	font-size:11px;
 	line-height:1.5em;
+	border-top: 1px solid black;
 }
 
 #footer a {
@@ -2366,7 +2367,6 @@ BDO[DIR="rtl"] {
 }
 
 #contact li{
-	float: left;
     height: 60px;
 	margin:0 0 20px;
     position: relative;
@@ -2546,7 +2546,14 @@ div.wpcf7-validation-errors {
 		0px 2px 2px rgba(0,0,0,0.1);
 }
 .ac-container label:hover{
-	background: #fff;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+	background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
 }
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
@@ -2575,7 +2582,7 @@ div.wpcf7-validation-errors {
 }
 .ac-container article{
 	font-size: 18px;
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.3);
 	margin-top: -1px;
 	overflow: hidden;
 	height: 0px;
@@ -2699,3 +2706,7 @@ p.codrops-demos a.current-demo:hover{
 }
 
 input:checked .pad { padding: 10px;}
+
+.content_slider_text_block_wrap h3 {
+	margin-bottom: 10px !important;
+}
