@@ -50,7 +50,7 @@ $dir = get_template_directory_uri(); ?>
 				<div class="row-fluid">
 					<center><h2>Vu sur BFM Business</h2></center>
 					<div class="picto_home home2">
-				    	<center><iframe width="500" height="350" src="//www.youtube.com/embed/Mxl6FjvWS3A" frameborder="0" allowfullscreen></iframe></center>
+				    	<center><object id="flashObj" width="480" height="270" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=2767624404001&playerID=1145041260001&playerKey=AQ~~,AAABCkUhxfE~,OL4KeREqNaXsUSopmr6xNsd1gcdbfk93&domain=embed&dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=2767624404001&playerID=1145041260001&playerKey=AQ~~,AAABCkUhxfE~,OL4KeREqNaXsUSopmr6xNsd1gcdbfk93&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="480" height="270" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object></center>
 					</div>
 				</div>
                 <div class="post-entry">
