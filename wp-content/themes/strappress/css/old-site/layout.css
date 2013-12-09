@@ -783,9 +783,13 @@ p.media-desc{
 		font-size: 35px;
 	}
 
-	.facebook {
+	/*.facebook {
 		margin-left: 0 !important;
 		width: 100%!important;
+	}*/
+
+	.facebook, .twitter, .googleplus {
+		display: none !important;
 	}
 }
 
