@@ -4429,6 +4429,12 @@ button.close {
   display: inherit !important;
 }
 @media (min-width: 768px) and (max-width: 979px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
   .hidden-desktop {
     display: inherit !important;
   }

@@ -34,9 +34,11 @@ $dir = get_template_directory_uri(); ?>
 				<div class="hero-unit">
 					<div class="row-fluid">
 						<div class="span6">
-							<img class="floating" alt="iphone" src="wp-content/themes/strappress/images/iphone.png">
-							<img class="shadow" alt="shadow" src="wp-content/themes/strappress/images/shadow.png">
-						</div><!-- end of .col-460 -->
+                            <div class="floating2">
+    							<img class="floating" alt="iphone" src="wp-content/themes/strappress/images/iphone.png">
+    						</div>
+                                <img class="shadow" alt="shadow" src="wp-content/themes/strappress/images/shadow.png">
+                        </div>
 
 						<div id="hero-image" class="span6">
 							<h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes tactiles</a></h1>
@@ -44,7 +46,7 @@ $dir = get_template_directory_uri(); ?>
 								<center><a href="charte-qualite"><img src="wp-content/themes/strappress/images/garantie.png"/></a>
 								<a href="charte-qualite"><img src="wp-content/themes/strappress/images/rep_express.png"/></a></center>
 							</div>
-						</div><!-- end of .col-460 fit -->
+						</div>
 					</div> 
 				</div>
 				<div class="row-fluid">
