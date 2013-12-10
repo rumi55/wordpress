@@ -795,6 +795,10 @@ p.media-desc{
 		width: 100%!important;
 	}*/
 
+	#footer {
+		position: relative !important;
+	}
+
 	.facebook, .twitter, .googleplus {
 		display: none !important;
 	}
