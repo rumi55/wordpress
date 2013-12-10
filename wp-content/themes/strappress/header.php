@@ -99,8 +99,6 @@
         ?>  
         <!--<link rel="stylesheet" type="text/css" href="../wp-content/themes/strappress/css/old-site/base.css">-->
         <link rel="stylesheet" type="text/css" href=<?php echo $dir."/css/old-site/layout.css" ?>>
-        <link rel="stylesheet" type="text/css" href=<?php echo $dir."/css/owl.css" ?>>
-        <link rel="stylesheet" type="text/css" href=<?php echo $dir."/css/owl.theme.css" ?>>
         <!--<link rel="stylesheet" type="text/css" href="../wp-content/themes/strappress/css/old-site/skeleton.css">-->
 
 

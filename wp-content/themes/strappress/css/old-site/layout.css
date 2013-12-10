@@ -777,6 +777,13 @@ p.media-desc{
 		margin-left: 18% !important;
 	}
 }
+
+@media only screen and (max-width: 980px) {
+	#wrapper {
+		margin: 0px auto 20px !important;
+	}
+}
+
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 	.hero-unit h1 {
