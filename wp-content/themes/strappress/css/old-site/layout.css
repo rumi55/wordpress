@@ -338,7 +338,6 @@ a.anil:hover img{
   float: left;
   position: relative;
 	margin-right:10px;
-	margin-bottom:10px;
 }
 
 .phone_company ul li img{
@@ -347,7 +346,7 @@ a.anil:hover img{
 
 .phone_company ul li div.company_logo 
 {
-    overflow: hidden;
+  overflow: hidden;
 	height:135px;
 }
 
@@ -851,10 +850,30 @@ p.media-desc{
 		width: 100% !important;
 		margin-left: 2% !important;
 	}
+}
 
+
+@media only screen and (max-width: 639px) {
 	.accordion-header {
 		font-size: 12px !important;
 	}
-}
 
+	.phone_company ul {
+		margin-left: auto !important;
+	}
+
+	.phone_company ul li {
+		float: none;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+	.phone_company ul li img{
+    width: 33%;
+	}
+
+	.company_logo {
+		height: auto!important;
+	}
+}
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
