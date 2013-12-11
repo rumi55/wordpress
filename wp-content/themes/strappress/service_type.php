@@ -41,54 +41,53 @@ $dir = get_template_directory_uri(); ?>
 					</div>
 				</div>
 				<div style="clear:both;"></div>
-				<div class="phone_service_right row-fluid">
-    			<div class="phone_service_box row-fluid">
-						<?php
-							$ms_id =  $wp_query->query_vars['ms_id'];
-							$results = $wpdb->get_results("SELECT a.service_name,b.sub_service_price FROM wp_model_service a,wp_model_sub_service b WHERE a.ms_id = '".$ms_id."' AND b.ms_id = '".$ms_id."'");
-							$i=1;
-							foreach ($results as $result)
-							{
-		            if($i==1)
-		            {	
-									echo ' 
-									<a href="../../../contact">
-									<div class="sub_service_box en_boutique_box span3 offset1">
+  			<div class="row-fluid">
+					<?php
+						$ms_id =  $wp_query->query_vars['ms_id'];
+						$results = $wpdb->get_results("SELECT a.service_name,b.sub_service_price FROM wp_model_service a,wp_model_sub_service b WHERE a.ms_id = '".$ms_id."' AND b.ms_id = '".$ms_id."'");
+						$i=1;
+						foreach ($results as $result)
+						{
+	            if($i==1)
+	            {	
+								echo '
+									<div class="span4">
+										<center><a href="../../../contact"><img alt="iphone" src="'.$dir.'/images/mod1.png"></a></center>
 										<div class="service_details">
 											<span class="service_name">'.$result->service_name.'</span>
 											<br/>
 											<span class="service_price">'.$result->sub_service_price.' &#8364;</span>
 										</div>
-									</div></a>';
-								}
-								elseif($i==2)
-								{
-									echo '
-									<a href="'.$dir.'/pdf/formulaire_de_contact_par_courrier.pdf">
-									<div class="sub_service_box par_courrier_box span3 offset1">
-										<div class="service_details">
-											<span class="service_name">'.$result->service_name.'</span>
-											<br/>
-											<span class="service_price">'.$result->sub_service_price.' &#8364;</span>
-										</div>
-									</div></a>';
-								}
-								elseif($i==3)
-           			{
-									echo '
-									<a href="../../../adomicile">
-									<div class="sub_service_box par_coursier_box span3 offset1">
-										<div class="service_details">
-											<span class="service_name">'.$result->service_name.'</span>
-											<br/>
-											<span class="service_price">'.$result->sub_service_price.' &#8364;</span>
-										</div>
-									</div></a>';
-								}
-								$i++;
+									</div>
+								</a>';
 							}
-						?>
-					</div>
+							elseif($i==2)
+							{
+								echo '
+								<div class="span4">
+									<center><a href="'.$dir.'/pdf/formulaire_de_contact_par_courrier.pdf"><img src="'.$dir.'/images/mod2.png"></a></center>
+									<div class="service_details">
+										<span class="service_name">'.$result->service_name.'</span>
+										<br/>
+										<span class="service_price">'.$result->sub_service_price.' &#8364;</span>
+									</div>
+								</div></a>';
+							}
+							elseif($i==3)
+							{
+								echo '
+								<div class="span4">
+									<center><a href="mailto:contact@savemysmartphone.fr"><img src="'.$dir.'/images/mod3.png"></a></center>
+									<div class="service_details">
+										<span class="service_name">'.$result->service_name.'</span>
+										<br/>
+										<span class="service_price">'.$result->sub_service_price.' &#8364;</span>
+									</div>
+								</div></a>';
+							}
+							$i++;
+						}
+					?>
 				</div>
 			</div>
 			<div style="clear:both;"></div>

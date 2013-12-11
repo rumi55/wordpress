@@ -461,10 +461,6 @@ a.anil:hover img{
   margin-bottom: 20px;
 }
 
-.phone_service_right {
-	text-align: center;
-}
-
 .phone_service_right2 {
   float: left;
   position: relative;
@@ -538,13 +534,10 @@ a.anil:hover img{
 
 .service_details
 {
-	position:absolute;
-	right:0px;
-	bottom:0px;	
 	font-family: 'volkswagen-mediumregular';
   font-size: 20px;
 	color:#fff;
-  text-align: right;
+  text-align: center;
 }
 
 .service_details .service_name
@@ -794,7 +787,7 @@ p.media-desc{
   .en_boutique_box
   {
 		width: 100% !important;
-		margin-left: 28% !important;
+		margin-left: auto !important;
   }
 
 	.par_courrier_box
@@ -856,6 +849,8 @@ p.media-desc{
 @media only screen and (max-width: 639px) {
 	.accordion-header {
 		font-size: 12px !important;
+		letter-spacing: 0.5px;
+		padding: 0px 45px;
 	}
 
 	.phone_company ul {
@@ -874,6 +869,20 @@ p.media-desc{
 
 	.company_logo {
 		height: auto!important;
+	}
+
+	.brand_image_container {
+		margin-top: 0px;
+		width: auto;
+	}
+
+	.phone_model ul li {
+		margin-bottom: 0px !important;
+		margin-right: 0px !important;
+	}
+
+	.phone_model ul li div.model_image {
+		padding-bottom: 10px;
 	}
 }
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
