@@ -2343,3 +2343,7 @@ input:checked .pad { padding: 10px;}
 .space_home {
 	margin-bottom: 20px;
 }
+
+.fluid-width-video-wrapper embed {
+	z-index: 1;
+}
