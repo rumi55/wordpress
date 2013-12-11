@@ -2228,7 +2228,6 @@ div.wpcf7-validation-errors {
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 }
 .ac-container input:checked ~ article.ac-small{
-	height: 140px;
 	font-size: 18px;
 	padding: 10px;
 }
@@ -2347,3 +2346,4 @@ input:checked .pad { padding: 10px;}
 .fluid-width-video-wrapper embed {
 	z-index: 1;
 }
+
