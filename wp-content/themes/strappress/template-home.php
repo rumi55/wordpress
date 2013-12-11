@@ -28,49 +28,51 @@ $dir = get_template_directory_uri(); ?>
 
       <?php while (have_posts()) : the_post(); ?>
 
-         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+       <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-            <div class="page-header">
-                <div class="hero-unit">
-                   <div class="row-fluid">
-                      <div class="span6">
-                        <div class="floating2">
-                         <img class="floating" alt="iphone" src="wp-content/themes/strappress/images/iphone.png">
-                     </div>
-                     <img class="shadow" alt="shadow" src="wp-content/themes/strappress/images/shadow.png">
-                 </div>
-
-                 <div id="hero-image" class="span6">
-                     <h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes tactiles</a></h1>
-                     <div class="row-fluid">
-                        <center><a href="charte-qualite"><img src="wp-content/themes/strappress/images/garantie.png"/></a>
-                            <a href="charte-qualite"><img src="wp-content/themes/strappress/images/rep_express.png"/></a></center>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div class="row-fluid space_home">
-                <div class="span4">
-                <center><a href="../../../contact"><img alt="iphone" src="wp-content/themes/strappress/images/mod1.png"></a></center>
-             </div>
-             <div class="span4">
-                 <center><a href="<?php echo $dir; ?>/pdf/formulaire_de_contact_par_courrier.pdf"><img src="wp-content/themes/strappress/images/mod2.png"></a></center>
-             </div>
-             <div class="span4">
-                 <center><a href="mailto:contact@savemysmartphone.fr"><img src="wp-content/themes/strappress/images/mod3.png"></a></center>
-             </div>
-         </div>
-         <div class="row-fluid">
-           <center><h2>Vu sur BFM Business</h2></center>
-           <div class="video_home">
-               <object id="flashObj" width="480" height="270" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=2767624404001&playerID=1145041260001&playerKey=AQ~~,AAABCkUhxfE~,OL4KeREqNaXsUSopmr6xNsd1gcdbfk93&domain=embed&dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=2767624404001&playerID=1145041260001&playerKey=AQ~~,AAABCkUhxfE~,OL4KeREqNaXsUSopmr6xNsd1gcdbfk93&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="480" height="270" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object>
+        <div class="page-header">
+            <div class="hero-unit">
+             <div class="row-fluid">
+              <div class="span6">
+                <div class="floating2">
+                   <img class="floating" alt="iphone" src="wp-content/themes/strappress/images/iphone.png">
+               </div>
+               <img class="shadow" alt="shadow" src="wp-content/themes/strappress/images/shadow.png">
            </div>
+
+           <div id="hero-image" class="span6">
+               <h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes tactiles</a></h1>
+               <div class="row-fluid">
+                <center><a href="charte-qualite"><img src="wp-content/themes/strappress/images/garantie.png"/></a>
+                    <a href="charte-qualite"><img src="wp-content/themes/strappress/images/rep_express.png"/></a></center>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <center><h2>Comment nous faire parvenir vos appareils ?</h2></center>
+    <center><h2>3 choix s’offrent a vous :</h2></center>
+    <div class="row-fluid space_home">
+        <div class="span4">
+            <center><a href="../../../contact"><img alt="iphone" src="wp-content/themes/strappress/images/mod1.png"></a></center>
+        </div>
+        <div class="span4">
+           <center><a href="<?php echo $dir; ?>/pdf/formulaire_de_contact_par_courrier.pdf"><img src="wp-content/themes/strappress/images/mod2.png"></a></center>
        </div>
-       <div class="post-entry">
-        <?php the_content(__('Read more &#8250;', 'responsive')); ?>
-        <?php custom_link_pages(array(
-            'before' => '<div class="pagination"><ul>' . __(''),
-            'after' => '</ul></div>',
+       <div class="span4">
+           <center><a href="mailto:contact@savemysmartphone.fr"><img src="wp-content/themes/strappress/images/mod3.png"></a></center>
+       </div>
+   </div>
+   <div class="row-fluid">
+     <center><h2>Vu sur BFM Business</h2></center>
+     <div class="video_home">
+         <object id="flashObj" width="480" height="270" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=2767624404001&playerID=1145041260001&playerKey=AQ~~,AAABCkUhxfE~,OL4KeREqNaXsUSopmr6xNsd1gcdbfk93&domain=embed&dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=2767624404001&playerID=1145041260001&playerKey=AQ~~,AAABCkUhxfE~,OL4KeREqNaXsUSopmr6xNsd1gcdbfk93&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="480" height="270" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object>
+     </div>
+ </div>
+ <div class="post-entry">
+    <?php the_content(__('Read more &#8250;', 'responsive')); ?>
+    <?php custom_link_pages(array(
+        'before' => '<div class="pagination"><ul>' . __(''),
+        'after' => '</ul></div>',
                             'next_or_number' => 'next_and_number', # activate parameter overloading
                             'nextpagelink' => __('&rarr;'),
                             'previouspagelink' => __('&larr;'),
@@ -94,12 +96,12 @@ $dir = get_template_directory_uri(); ?>
 
                 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
                     <div class="navigation">
-                       <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
-                       <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
-                   </div><!-- end of .navigation -->
-               <?php endif; ?>
+                     <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
+                     <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
+                 </div><!-- end of .navigation -->
+             <?php endif; ?>
 
-           <?php else : ?>
+         <?php else : ?>
 
             <h1 class="title-404"><?php _e('404 &#8212; Fancy meeting you here!', 'responsive'); ?></h1>
             <p><?php _e('Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here.', 'responsive'); ?></p>

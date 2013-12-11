@@ -2230,6 +2230,7 @@ div.wpcf7-validation-errors {
 .ac-container input:checked ~ article.ac-small{
 	font-size: 18px;
 	padding: 10px;
+	height: auto;
 }
 .ac-container input:checked ~ article.ac-medium{
 	height: 180px;
