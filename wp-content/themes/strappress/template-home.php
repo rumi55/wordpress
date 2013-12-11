@@ -50,7 +50,7 @@ $dir = get_template_directory_uri(); ?>
         </div> 
     </div>
     <center><h2>Comment nous faire parvenir vos appareils ?</h2></center>
-    <center><h2>3 choix s’offrent a vous :</h2></center>
+    <center><h2>3 choix s’offrent à vous :</h2></center>
     <div class="row-fluid space_home">
         <div class="span4">
             <center><a href="../../../contact"><img alt="iphone" src="wp-content/themes/strappress/images/mod1.png"></a></center>
