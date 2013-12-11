@@ -49,15 +49,15 @@ $dir = get_template_directory_uri(); ?>
                     </div>
                 </div> 
             </div>
-            <div class="row-fluid">
+            <div class="row-fluid space_home">
                 <div class="span4">
                 <center><a href="../../../contact"><img alt="iphone" src="wp-content/themes/strappress/images/mod1.png"></a></center>
              </div>
              <div class="span4">
-                 <center><a href="../../../pdf/formulaire_de_contact_par_courrier.pdf"><img src="wp-content/themes/strappress/images/mod2.png"></a></center>
+                 <center><a href="<?php echo $dir; ?>/pdf/formulaire_de_contact_par_courrier.pdf"><img src="wp-content/themes/strappress/images/mod2.png"></a></center>
              </div>
              <div class="span4">
-                 <center><a href="../../../adomicile"><img src="wp-content/themes/strappress/images/mod3.png"></a></center>
+                 <center><a href="mailto:contact@savemysmartphone.fr"><img src="wp-content/themes/strappress/images/mod3.png"></a></center>
              </div>
          </div>
          <div class="row-fluid">

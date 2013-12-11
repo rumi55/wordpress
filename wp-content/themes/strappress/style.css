@@ -2339,3 +2339,7 @@ input:checked .pad { padding: 10px;}
 	margin-top: 30px;
 	margin-bottom: 25px;
 }
+
+.space_home {
+	margin-bottom: 20px;
+}
