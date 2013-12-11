@@ -2330,3 +2330,12 @@ input:checked .pad { padding: 10px;}
 .content_slider_text_block_wrap h3 {
 	margin-bottom: 10px !important;
 }
+
+.video_home {
+	max-width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
