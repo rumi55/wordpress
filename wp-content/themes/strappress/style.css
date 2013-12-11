@@ -1990,7 +1990,7 @@ BDO[DIR="rtl"] {
     height: 60px;
 	margin:0 0 20px;
     position: relative;
-    width: 540px;
+    width: 100%;
 }
 #contact li .text{
 	background: #F0EFEF;
@@ -2014,6 +2014,7 @@ BDO[DIR="rtl"] {
 }
 #contact li .wpcf7-form-control-wrap{
 	position: absolute;
+	width: 100%;
 }
 #contact li .wpcf7-form-control-wrap input, #contact li .wpcf7-form-control-wrap textarea{
 	background:#fff;
@@ -2022,10 +2023,10 @@ BDO[DIR="rtl"] {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	padding:15px 10px 25px;
-	width: 509px;
 	text-indent:95px;
 	z-index:100;
 	margin:0;
+	width: 100%;
 }
 #contact li .wpcf7-form-control-wrap input:focus, #contact li .wpcf7-form-control-wrap textarea:focus{
 	background:#F0EFEF
@@ -2033,7 +2034,7 @@ BDO[DIR="rtl"] {
 #contact li .wpcf7-form-control-wrap textarea{
 	line-height: 28px;
     padding: 10px;
-	height:200px;
+	height: 200px;
 }
 #contact li#message{
 	min-height:220px;
@@ -2056,6 +2057,10 @@ BDO[DIR="rtl"] {
 
 div.wpcf7-validation-errors {
     clear: left;
+}
+
+.wpcf7-form {
+	margin: 30px 30px 0px 0px;
 }
 
 .main h3 {
