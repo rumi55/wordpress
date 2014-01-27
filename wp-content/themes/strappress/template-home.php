@@ -44,7 +44,9 @@ $dir = get_template_directory_uri(); ?>
                <h1 class="title_home"><a href="tarifs/">Nous sauvons vos smartphones et tablettes tactiles</a></h1>
                <div class="row-fluid">
                 <center><a href="charte-qualite"><img src="wp-content/themes/strappress/images/garantie.png"/></a>
-                    <a href="charte-qualite"><img src="wp-content/themes/strappress/images/rep_express.png"/></a></center>
+                    <a href="charte-qualite"><img src="wp-content/themes/strappress/images/rep_express.png"/></a>
+                    <a href="charte-qualite"><img src="wp-content/themes/strappress/images/telephone.png"/></a>
+                    </center>
                 </div>
             </div>
         </div> 
