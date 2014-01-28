@@ -45,7 +45,7 @@ $dir = get_template_directory_uri(); ?>
                <div class="row-fluid">
                 <center><a href="charte-qualite"><img src="wp-content/themes/strappress/images/garantie.png"/></a>
                     <a href="charte-qualite"><img src="wp-content/themes/strappress/images/rep_express.png"/></a>
-                    <a href="charte-qualite"><img src="wp-content/themes/strappress/images/telephone.png"/></a>
+                    <a href="tel:0141032876"><img src="wp-content/themes/strappress/images/telephone.png"/></a>
                     </center>
                 </div>
             </div>
